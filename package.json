@@ -1,0 +1,17 @@
+{
+	"name": "fractures-ui",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"babel-plugin-inline-import": "^2.0.6",
+		"classcat": "^3.0.0",
+		"fractures": "^1.2.0",
+		"next": "4.4.0-canary.3",
+		"react": "16.2.0",
+		"react-dom": "16.2.0"
+	}
+}
