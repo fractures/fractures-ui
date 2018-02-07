@@ -66,9 +66,9 @@ class Button extends Component {
 					}
 
 					.btn--disabled {
-						background-color: var(--color-blue-2);
-						border-color: var(--color-blue-2);
-						color: var(--color-blue-1);
+						opacity: 0.6;
+
+						border-color: transparent;
 
 						pointer-events: none;
 					}

@@ -27,6 +27,7 @@ class Index extends Component {
 					</div>
 					<div className="flex flex-gap-1 my-1">
 						<Button type="primary" value="Disabled" disabled={true} />
+						<Button type="secondary" value="Disabled" disabled={true} />
 					</div>
 				</Container>
 				<style jsx global>
