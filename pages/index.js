@@ -88,11 +88,11 @@ class Index extends Component {
 						--shade-6: ${ themes[this.state.theme][6] };
 					}
 
-					/* body,
+					body,
 					input {
 						font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-					} */
+					}
 
 					input {
 						font-family: Roboto;
