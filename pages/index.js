@@ -2,7 +2,7 @@ import { Component } from "react"
 import Button from "../components/Button"
 import Checkbox from "../components/Checkbox"
 import Container from "../components/Container"
-import fractures from "fractures/dist/fractures.css"
+import "fractures/dist/fractures.css"
 
 const themes = [
 	["#e8f2fd", "#b2d4f9", "#6cacf5", "#3482da", "#255e9e", "#1b4370", "#102a45"],
@@ -74,9 +74,6 @@ class Index extends Component {
 						</div>
 					</div>
 				</Container>
-				<style jsx global>
-					{fractures}
-				</style>
 				<style jsx global>{`
 					:root {
 						--shade-0: ${ themes[this.state.theme][0] };
