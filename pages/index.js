@@ -1,33 +1,53 @@
 import { Component } from "react"
 import Button from "../components/Button"
+import Checkbox from "../components/Checkbox"
 import Container from "../components/Container"
 import fractures from "fractures/dist/fractures.css"
 
 class Index extends Component {
 	constructor(props) {
 		super(props)
+
+		this.state = {
+			checkbox: false
+		}
 	}
 
-	mock(e) {
-		console.log(e)
+	// Mock change function for checkbox
+	toggleCheckbox() {
+		this.setState({ checkbox: !this.state.checkbox })
 	}
 
 	render() {
 		return (
-			<div className="minvh-100" style={ { backgroundColor: "var(--color-blue-0)" } }>
+			<div className="minvh-100">
 				<Container className="py-4">
-					<h1 className="my-4">Buttons</h1>
-					<div className="flex flex-gap-1 my-1">
-						<Button type="primary" value="Primary" />
-						<Button type="secondary" value="Secondary" />
+					<div className="my-4">
+						<h1 className="my-2">Buttons</h1>
+						<div className="flex flex-gap-1 my-1">
+							<Button type="primary" value="Primary" />
+							<Button type="secondary" value="Secondary" />
+						</div>
+						<div className="flex flex-gap-1 my-1">
+							<Button type="primary" value="Primary small" small={ true } />
+							<Button type="secondary" value="Secondary small" small={ true } />
+						</div>
+						<div className="flex flex-gap-1 my-1">
+							<Button type="primary" value="Disabled" disabled={ true } />
+							<Button type="secondary" value="Disabled" disabled={ true } />
+						</div>
 					</div>
-					<div className="flex flex-gap-1 my-1">
-						<Button type="primary" value="Primary small" small={ true } />
-						<Button type="secondary" value="Secondary small" small={ true } />
-					</div>
-					<div className="flex flex-gap-1 my-1">
-						<Button type="primary" value="Disabled" disabled={ true } />
-						<Button type="secondary" value="Disabled" disabled={ true } />
+					<div className="my-4">
+						<h1 className="my-2">Checkbox</h1>
+						<div className="flex flex-gap-1 flex-column my-1">
+							<Checkbox
+								label="Checkbox, hmm"
+								isChecked={ this.state.checkbox }
+								check={ () => this.toggleCheckbox() }
+							/>
+							<Checkbox label="This is disabled, checked" isChecked={ true } isDisabled={ true } />
+							<Checkbox label="This is disabled, unchecked" isChecked={ false } isDisabled={ true } />
+						</div>
 					</div>
 				</Container>
 				<style jsx global>
