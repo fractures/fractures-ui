@@ -1,5 +1,5 @@
 export default props => (
-	<div className={`fr-container mx-auto ${props.className ? `${props.className}` : ``}`}>
+	<div className={ `fr-container mx-auto ${ props.className ? `${ props.className }` : `` }` }>
 		{props.children}
 		<style jsx global>{`
 			@media (max-width: 1120px) {

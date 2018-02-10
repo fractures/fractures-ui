@@ -13,5 +13,13 @@
 		"next": "5.0.0",
 		"react": "16.2.0",
 		"react-dom": "16.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^4.17.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"eslint-plugin-react": "^7.6.1",
+		"prettier": "^1.10.2",
+		"prettier-eslint": "^8.8.1"
 	}
 }

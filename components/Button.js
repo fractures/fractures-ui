@@ -1,4 +1,4 @@
-import {Component} from "react"
+import { Component } from "react"
 import cc from "classcat"
 
 const defaultProps = {
@@ -18,7 +18,7 @@ class Button extends Component {
 
 		return (
 			<div className="flex flex-ycenter">
-				<input className={buttonClasses} type="button" value={this.props.value} />
+				<input className={ buttonClasses } type="button" value={ this.props.value } />
 				<style jsx global>{`
 					.btn {
 						display: inline-block;
