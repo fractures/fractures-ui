@@ -4,12 +4,18 @@ import Checkbox from "../components/Checkbox"
 import Container from "../components/Container"
 import fractures from "fractures/dist/fractures.css"
 
+const themes = [
+	["#e8f2fd", "#b2d4f9", "#6cacf5", "#3482da", "#255e9e", "#1b4370", "#102a45"],
+	["#f8f8f8", "#eee", "#999", "#777", "#555", "#333", "#111"]
+]
+
 class Index extends Component {
 	constructor(props) {
 		super(props)
 
 		this.state = {
-			checkbox: false
+			checkbox: false,
+			theme: 0
 		}
 	}
 
@@ -21,6 +27,24 @@ class Index extends Component {
 	render() {
 		return (
 			<div className="minvh-100">
+				<aside className="sticky top-0 right-0 flex flex-gap-1 p-2">
+					<a onClick={ () => this.setState({ theme: 0 }) }>
+						<Button
+							type="primary"
+							value="theme blue"
+							small={ true }
+							isActive={ this.state.theme === 0 && true }
+						/>
+					</a>
+					<a onClick={ () => this.setState({ theme: 1 }) }>
+						<Button
+							type="primary"
+							value="theme black"
+							small={ true }
+							isActive={ this.state.theme === 1 && true }
+						/>
+					</a>
+				</aside>
 				<Container className="py-4">
 					<div className="my-4">
 						<h1 className="my-2">Buttons</h1>
@@ -35,6 +59,10 @@ class Index extends Component {
 						<div className="flex flex-gap-1 my-1">
 							<Button type="primary" value="Disabled" disabled={ true } />
 							<Button type="secondary" value="Disabled" disabled={ true } />
+						</div>
+						<div className="flex flex-gap-1 my-1">
+							<Button type="primary" value="Active" isActive={ true } />
+							<Button type="secondary" value="Active" isActive={ true } />
 						</div>
 					</div>
 					<div className="my-4">
@@ -55,13 +83,13 @@ class Index extends Component {
 				</style>
 				<style jsx global>{`
 					:root {
-						--color-blue-0: #e8f2fd;
-						--color-blue-1: #b2d4f9;
-						--color-blue-2: #6cacf5;
-						--color-blue-3: #3482da;
-						--color-blue-4: #255e9e;
-						--color-blue-5: #1b4370;
-						--color-blue-6: #102a45;
+						--shade-0: ${ themes[this.state.theme][0] };
+						--shade-1: ${ themes[this.state.theme][1] };
+						--shade-2: ${ themes[this.state.theme][2] };
+						--shade-3: ${ themes[this.state.theme][3] };
+						--shade-4: ${ themes[this.state.theme][4] };
+						--shade-5: ${ themes[this.state.theme][5] };
+						--shade-6: ${ themes[this.state.theme][6] };
 					}
 
 					body,

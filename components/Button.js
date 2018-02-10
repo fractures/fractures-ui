@@ -2,6 +2,7 @@ import { Component } from "react"
 import cc from "classcat"
 
 const defaultProps = {
+	isActive: false,
 	type: "primary",
 	value: ""
 }
@@ -10,10 +11,11 @@ class Button extends Component {
 	render() {
 		const buttonClasses = cc({
 			btn: true,
-			"btn--small": this.props.small,
 			"btn-primary": this.props.type === "primary",
 			"btn-secondary": this.props.type === "secondary",
-			"btn--disabled": this.props.disabled
+			"btn--small": this.props.small,
+			"btn--disabled": this.props.disabled,
+			"btn--active": this.props.isActive
 		})
 
 		return (
@@ -44,25 +46,37 @@ class Button extends Component {
 					}
 
 					.btn-primary {
-						background-color: var(--color-blue-3);
-						border: 1px solid var(--color-blue-3);
+						background-color: var(--shade-3);
+						border: 1px solid var(--shade-3);
 						color: white;
 					}
 
-					.btn-primary:hover {
-						background-color: var(--color-blue-6);
-						border-color: var(--color-blue-6);
+					.btn-primary:not(.btn--active):hover {
+						background-color: var(--shade-6);
+						border-color: var(--shade-6);
+					}
+
+					.btn-primary.btn--active {
+						background-color: var(--shade-6);
+						border-color: var(--shade-6);
+						color: var(--shade-0);
 					}
 
 					.btn-secondary {
-						border: 1px solid var(--color-blue-3);
-						color: var(--color-blue-4);
+						border: 1px solid var(--shade-3);
+						color: var(--shade-4);
 					}
 
-					.btn-secondary:hover {
-						background-color: var(--color-blue-0);
-						border-color: var(--color-blue-3);
-						color: var(--color-blue-4);
+					.btn-secondary:not(.btn--active):hover {
+						background-color: var(--shade-0);
+						border-color: var(--shade-3);
+						color: var(--shade-4);
+					}
+
+					.btn-secondary.btn--active {
+						background-color: var(--shade-0);
+						border-color: var(--shade-2);
+						color: var(--shade-5);
 					}
 
 					.btn--disabled {
@@ -74,7 +88,7 @@ class Button extends Component {
 					}
 
 					.btn:focus:not(.btn--disabled):not(.btn--loading) {
-						box-shadow: 0 0 0 0.15rem var(--color-blue-1);
+						box-shadow: 0 0 0 0.15rem var(--shade-1);
 					}
 				`}</style>
 			</div>

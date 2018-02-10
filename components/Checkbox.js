@@ -46,17 +46,17 @@ class Checkbox extends Component {
 						height: 2rem;
 						width: 2rem;
 
-						background-color: var(--color-blue-0);
-						box-shadow: inset 0 0 0 2px var(--color-blue-3);
+						background-color: var(--shade-0);
+						box-shadow: inset 0 0 0 2px var(--shade-3);
 						border-radius: 0.25rem;
 					}
 
 					.fr-checkbox--checked .fr-checkbox__display {
-						background-color: var(--color-blue-3);
+						background-color: var(--shade-3);
 					}
 
 					.fr-checkbox--unchecked .fr-checkbox__display {
-						background-color: var(--color-blue-0);
+						background-color: var(--shade-0);
 					}
 
 					.fr-checkbox--disabled {
@@ -65,7 +65,7 @@ class Checkbox extends Component {
 					}
 
 					.fr-checkbox__label {
-						color: var(--color-blue-4);
+						color: var(--shade-4);
 						cursor: pointer;
 
 						font-size: 0.875rem;
@@ -89,7 +89,7 @@ class Checkbox extends Component {
 					}
 
 					.fr-checkbox input:checked + label {
-						background: var(--color-blue-3);
+						background: var(--shade-3);
 					}
 
 					.fr-checkbox input:checked + label:after {
