@@ -17,8 +17,9 @@ TODO
 * [ ] Process
 * [ ] Range
 * [ ] Button group
-* [ ] Button rounded
+* [x] Button rounded
 * [ ] Button consider cleaning up multiple types
+* [ ] Button action
 * [ ] Tooltip
 * [ ] Themes
 * [ ] Copy

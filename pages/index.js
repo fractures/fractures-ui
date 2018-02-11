@@ -49,16 +49,20 @@ class Index extends Component {
 					<div className="my-4">
 						<h1 className="my-2">Buttons</h1>
 						<div className="flex flex-gap-1 my-1">
-							<Button type="primary" value="Primary" />
+							<Button type="primary" value="Default" />
 							<Button type="primary" value="Active" isActive={ true } />
 							<Button type="primary" value="Disabled" disabled={ true } />
-							<Button type="primary" value="Primary small" small={ true } />
+							<Button type="primary" value="Rounded" isRounded={ true } />
+							<Button type="primary" value="Small" small={ true } />
+							<Button type="primary" value="Small Rounded" small={ true } isRounded={ true } />
 						</div>
 						<div className="flex flex-gap-1 my-1">
-							<Button type="secondary" value="Secondary" />
+							<Button type="secondary" value="Default" />
 							<Button type="secondary" value="Active" isActive={ true } />
 							<Button type="secondary" value="Disabled" disabled={ true } />
-							<Button type="secondary" value="Secondary small" small={ true } />
+							<Button type="secondary" value="Rounded" isRounded={ true } />
+							<Button type="secondary" value="Small" small={ true } />
+							<Button type="secondary" value="Small Rounded" small={ true } isRounded={ true } />
 						</div>
 					</div>
 					<div className="my-4">

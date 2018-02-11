@@ -3,6 +3,7 @@ import cc from "classcat"
 
 const defaultProps = {
 	isActive: false,
+	isRounded: false,
 	type: "primary",
 	value: ""
 }
@@ -15,7 +16,9 @@ class Button extends Component {
 			"btn-secondary": this.props.type === "secondary",
 			"btn--small": this.props.small,
 			"btn--disabled": this.props.disabled,
-			"btn--active": this.props.isActive
+			"btn--active": this.props.isActive,
+			"btn--radius": !this.props.isRounded,
+			"radius-max": this.props.isRounded
 		})
 
 		return (
@@ -27,7 +30,6 @@ class Button extends Component {
 						padding: 0.25rem 1rem;
 
 						border: 0;
-						border-radius: 0.25rem;
 						outline: none;
 
 						font-size: 0.875rem;
@@ -35,14 +37,7 @@ class Button extends Component {
 						line-height: 2rem;
 						cursor: pointer;
 
-						transition: box-shadow 100ms ease-in-out;
-					}
-
-					.btn.btn--small {
-						padding: 0.125rem 0.5rem;
-
-						font-size: 0.75rem;
-						line-height: 1.5rem;
+						transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
 					}
 
 					.btn-primary {
@@ -52,11 +47,12 @@ class Button extends Component {
 					}
 
 					.btn-primary:not(.btn--active):hover {
-						background-color: var(--shade-6);
-						border-color: var(--shade-6);
+						background-color: var(--shade-5);
+						border-color: var(--shade-5);
 					}
 
-					.btn-primary.btn--active {
+					.btn-primary.btn--active,
+					.btn-primary:active {
 						background-color: var(--shade-6);
 						border-color: var(--shade-6);
 						color: var(--shade-0);
@@ -69,14 +65,26 @@ class Button extends Component {
 
 					.btn-secondary:not(.btn--active):hover {
 						background-color: var(--shade-0);
-						border-color: var(--shade-3);
+						border-color: var(--shade-2);
 						color: var(--shade-4);
 					}
 
-					.btn-secondary.btn--active {
+					.btn.btn-secondary.btn--active,
+					.btn.btn-secondary:active {
 						background-color: var(--shade-0);
-						border-color: var(--shade-2);
+						border-color: var(--shade-3);
 						color: var(--shade-5);
+					}
+
+					.btn--radius {
+						border-radius: 0.25rem;
+					}
+
+					.btn.btn--small {
+						padding: 0.125rem 0.5rem;
+
+						font-size: 0.75rem;
+						line-height: 1.5rem;
 					}
 
 					.btn--disabled {
