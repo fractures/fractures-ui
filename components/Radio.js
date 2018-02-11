@@ -38,12 +38,12 @@ class Radio extends Component {
 
 						font-size: 0.875rem;
 						font-weight: 500;
-						line-height: 1.75rem;
+						line-height: 1.5rem;
 					}
 
 					.fr-radio__checkmark {
-						height: 1.75rem;
-						width: 1.75rem;
+						height: 1.5rem;
+						width: 1.5rem;
 
 						background-color: var(--shade-0);
 						border: 2px solid var(--shade-5);
@@ -55,12 +55,12 @@ class Radio extends Component {
 
 					.fr-radio__checkmark:after {
 						position: absolute;
-						top: 0.375rem;
-						left: 0.375rem;
+						top: 0.3125rem;
+						left: 0.3125rem;
 
 						opacity: 0;
-						height: 1rem;
-						width: 1rem;
+						height: 0.875rem;
+						width: 0.875rem;
 
 						border-radius: 100%;
 						background: var(--shade-5);

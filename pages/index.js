@@ -31,9 +31,9 @@ const themes = [
 			.colors(7)
 	],
 	[
-		"#22232E",
+		"#fff",
 		...chroma
-			.scale(["#393D63", "#656D99", "#EBEDF7"])
+			.scale(["#EBEDF7", "#4452EB", "#1D1D1F"])
 			.mode("lch")
 			.colors(7)
 	]
