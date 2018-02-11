@@ -60,6 +60,11 @@ class Index extends Component {
 		this.setState({ radio: value })
 	}
 
+	// Mock action function for button
+	mockClick() {
+		console.log("Clicked.")
+	}
+
 	render() {
 		return (
 			<div className="minvh-100" style={ { backgroundColor: themes[this.state.theme][0] } }>
@@ -104,7 +109,7 @@ class Index extends Component {
 					<div className="my-4">
 						<h1 className="my-2">Buttons</h1>
 						<div className="flex flex-gap-1 my-1">
-							<Button type="primary" value="Default" />
+							<Button type="primary" value="Default" action={ () => this.mockClick() } />
 							<Button type="primary" value="Active" isActive={ true } />
 							<Button type="primary" value="Disabled" disabled={ true } />
 							<Button type="primary" value="Rounded" isRounded={ true } />

@@ -19,7 +19,7 @@ TODO
 * [ ] Button group
 * [x] Button rounded
 * [ ] Button consider cleaning up multiple types
-* [ ] Button action
+* [x] Button action
 * [ ] Tooltip
 * [ ] Themes
 * [ ] Copy

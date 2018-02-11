@@ -2,6 +2,7 @@ import { Component } from "react"
 import cc from "classcat"
 
 const defaultProps = {
+	action: () => null,
 	isActive: false,
 	isRounded: false,
 	type: "primary",
@@ -22,7 +23,7 @@ class Button extends Component {
 		})
 
 		return (
-			<div className="flex flex-ycenter">
+			<div className="flex flex-ycenter" onClick={ () => this.props.action() }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
 				<style jsx global>{`
 					.btn {
