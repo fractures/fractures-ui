@@ -61,7 +61,7 @@ class Button extends Component {
 					.btn-secondary {
 						background-color: var(--shade-0);
 						border: 1px solid var(--shade-4);
-						color: var(--shade-5);
+						color: var(--shade-4);
 					}
 
 					.btn-secondary:not(.btn--active):hover {

@@ -19,21 +19,21 @@ const themes = [
 	[
 		"white",
 		...chroma
-			.scale(["#eee", "#111"])
+			.scale(["#eee", "#666", "#111"])
 			.mode("lch")
 			.colors(7)
 	],
 	[
 		"#111",
 		...chroma
-			.scale(["#303030", "#eee"])
+			.scale(["#303030", "#888", "#eee"])
 			.mode("lch")
 			.colors(7)
 	],
 	[
-		"white",
+		"#22232E",
 		...chroma
-			.scale(["#F3F0F4", "#A74EBF", "#351E3C"])
+			.scale(["#393D63", "#656D99", "#EBEDF7"])
 			.mode("lch")
 			.colors(7)
 	]
