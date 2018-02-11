@@ -1,14 +1,42 @@
 import { Component } from "react"
 import Button from "../components/Button"
-import Radio from "../components/Radio"
 import Checkbox from "../components/Checkbox"
+import Color from "../components/Color"
 import Container from "../components/Container"
+import Radio from "../components/Radio"
+import chroma from "chroma-js"
+
 import "fractures/dist/fractures.css"
 
 const themes = [
-	["#e8f2fd", "#b2d4f9", "#6cacf5", "#3482da", "#255e9e", "#1b4370", "#102a45"],
-	["#f8f9f9", "#dee1e3", "#bec4c8", "#97a1a7", "#7f8a93", "#5f6e78", "#374047"],
-	["#374047", "#5f6e78", "#7f8a93", "#97a1a7", "#bec4c8", "#dee1e3", "#f8f9f9"]
+	[
+		"white",
+		...chroma
+			.scale(["#e8f2fd", "#3482da", "#102a45"])
+			.mode("lch")
+			.colors(7)
+	],
+	[
+		"white",
+		...chroma
+			.scale(["#eee", "#111"])
+			.mode("lch")
+			.colors(7)
+	],
+	[
+		"#111",
+		...chroma
+			.scale(["#303030", "#eee"])
+			.mode("lch")
+			.colors(7)
+	],
+	[
+		"white",
+		...chroma
+			.scale(["#F3F0F4", "#A74EBF", "#351E3C"])
+			.mode("lch")
+			.colors(7)
+	]
 ]
 
 class Index extends Component {
@@ -34,8 +62,11 @@ class Index extends Component {
 
 	render() {
 		return (
-			<div className="minvh-100" style={ this.state.theme === 2 ? { backgroundColor: "#374047" } : {} }>
-				<aside className="sticky top-0 right-0 flex flex-gap-1 p-2">
+			<div className="minvh-100" style={ { backgroundColor: themes[this.state.theme][0] } }>
+				<div className="flex">
+					{themes[this.state.theme].map((color, key) => <Color key={ key } hex={ color } name={ key } />)}
+				</div>
+				<aside className="sticky top-0 right-0 flex flex-right flex-gap-1 p-2">
 					<a onClick={ () => this.setState({ theme: 0 }) }>
 						<Button
 							type="primary"
@@ -58,6 +89,14 @@ class Index extends Component {
 							value="theme invert"
 							small={ true }
 							isActive={ this.state.theme === 2 && true }
+						/>
+					</a>
+					<a onClick={ () => this.setState({ theme: 3 }) }>
+						<Button
+							type="primary"
+							value="theme fun"
+							small={ true }
+							isActive={ this.state.theme === 3 && true }
 						/>
 					</a>
 				</aside>
@@ -111,11 +150,12 @@ class Index extends Component {
 						--shade-4: ${ themes[this.state.theme][4] };
 						--shade-5: ${ themes[this.state.theme][5] };
 						--shade-6: ${ themes[this.state.theme][6] };
+						--shade-7: ${ themes[this.state.theme][7] };
 					}
 
 					body,
 					input {
-						color: var(--shade-5);
+						color: var(--shade-4);
 
 						font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

@@ -41,39 +41,40 @@ class Button extends Component {
 					}
 
 					.btn-primary {
-						background-color: var(--shade-3);
-						border: 1px solid var(--shade-3);
-						color: white;
+						background-color: var(--shade-4);
+						border: 1px solid var(--shade-4);
+						color: var(--shade-0);
 					}
 
 					.btn-primary:not(.btn--active):hover {
-						background-color: var(--shade-5);
-						border-color: var(--shade-5);
+						background-color: var(--shade-6);
+						border-color: var(--shade-6);
 					}
 
 					.btn.btn-primary.btn--active,
 					.btn.btn-primary:active {
-						background-color: var(--shade-6);
-						border-color: var(--shade-6);
-						color: var(--shade-0);
+						background-color: var(--shade-7);
+						border-color: var(--shade-7);
+						color: var(--shade-1);
 					}
 
 					.btn-secondary {
-						border: 1px solid var(--shade-3);
-						color: var(--shade-4);
+						background-color: var(--shade-0);
+						border: 1px solid var(--shade-4);
+						color: var(--shade-5);
 					}
 
 					.btn-secondary:not(.btn--active):hover {
-						background-color: var(--shade-0);
-						border-color: var(--shade-2);
-						color: var(--shade-4);
+						background-color: var(--shade-1);
+						border-color: var(--shade-3);
+						color: var(--shade-5);
 					}
 
 					.btn.btn-secondary.btn--active,
 					.btn.btn-secondary:active {
-						background-color: var(--shade-0);
-						border-color: var(--shade-3);
-						color: var(--shade-5);
+						background-color: var(--shade-1);
+						border-color: var(--shade-4);
+						color: var(--shade-6);
 					}
 
 					.btn--radius {
@@ -96,7 +97,7 @@ class Button extends Component {
 					}
 
 					.btn:focus:not(.btn--disabled):not(.btn--loading) {
-						box-shadow: 0 0 0 0.15rem var(--shade-1);
+						box-shadow: 0 0 0 0.15rem var(--shade-2);
 					}
 				`}</style>
 			</div>
