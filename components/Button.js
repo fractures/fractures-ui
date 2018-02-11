@@ -51,8 +51,8 @@ class Button extends Component {
 						border-color: var(--shade-5);
 					}
 
-					.btn-primary.btn--active,
-					.btn-primary:active {
+					.btn.btn-primary.btn--active,
+					.btn.btn-primary:active {
 						background-color: var(--shade-6);
 						border-color: var(--shade-6);
 						color: var(--shade-0);

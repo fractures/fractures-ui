@@ -6,7 +6,7 @@ import "fractures/dist/fractures.css"
 
 const themes = [
 	["#e8f2fd", "#b2d4f9", "#6cacf5", "#3482da", "#255e9e", "#1b4370", "#102a45"],
-	["#f8f8f8", "#eee", "#999", "#777", "#555", "#333", "#111"]
+	["#f8f9f9", "#dee1e3", "#bec4c8", "#97a1a7", "#7f8a93", "#5f6e78", "#374047"]
 ]
 
 class Index extends Component {
