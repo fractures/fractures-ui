@@ -1,12 +1,14 @@
 import { Component } from "react"
 import Button from "../components/Button"
+import Radio from "../components/Radio"
 import Checkbox from "../components/Checkbox"
 import Container from "../components/Container"
 import "fractures/dist/fractures.css"
 
 const themes = [
 	["#e8f2fd", "#b2d4f9", "#6cacf5", "#3482da", "#255e9e", "#1b4370", "#102a45"],
-	["#f8f9f9", "#dee1e3", "#bec4c8", "#97a1a7", "#7f8a93", "#5f6e78", "#374047"]
+	["#f8f9f9", "#dee1e3", "#bec4c8", "#97a1a7", "#7f8a93", "#5f6e78", "#374047"],
+	["#374047", "#5f6e78", "#7f8a93", "#97a1a7", "#bec4c8", "#dee1e3", "#f8f9f9"]
 ]
 
 class Index extends Component {
@@ -15,6 +17,7 @@ class Index extends Component {
 
 		this.state = {
 			checkbox: false,
+			radio: 1,
 			theme: 0
 		}
 	}
@@ -24,9 +27,14 @@ class Index extends Component {
 		this.setState({ checkbox: !this.state.checkbox })
 	}
 
+	// Mock change function for radio
+	setRadio(value) {
+		this.setState({ radio: value })
+	}
+
 	render() {
 		return (
-			<div className="minvh-100">
+			<div className="minvh-100" style={ this.state.theme === 2 ? { backgroundColor: "#374047" } : {} }>
 				<aside className="sticky top-0 right-0 flex flex-gap-1 p-2">
 					<a onClick={ () => this.setState({ theme: 0 }) }>
 						<Button
@@ -42,6 +50,14 @@ class Index extends Component {
 							value="theme black"
 							small={ true }
 							isActive={ this.state.theme === 1 && true }
+						/>
+					</a>
+					<a onClick={ () => this.setState({ theme: 2 }) }>
+						<Button
+							type="primary"
+							value="theme invert"
+							small={ true }
+							isActive={ this.state.theme === 2 && true }
 						/>
 					</a>
 				</aside>
@@ -77,6 +93,14 @@ class Index extends Component {
 							<Checkbox label="This is disabled, unchecked" isChecked={ false } isDisabled={ true } />
 						</div>
 					</div>
+					<div className="my-4">
+						<h1 className="my-2">Radio</h1>
+						<div className="flex flex-gap-1 flex-column my-1">
+							<Radio label="Val 1" value={ 0 } state={ this.state.radio } set={ e => this.setRadio(e) } />
+							<Radio label="Val 2" value={ 1 } state={ this.state.radio } set={ e => this.setRadio(e) } />
+							<Radio label="Disabled" value={ 4 } state={ this.state.radio } isDisabled={ true } />
+						</div>
+					</div>
 				</Container>
 				<style jsx global>{`
 					:root {
@@ -91,12 +115,10 @@ class Index extends Component {
 
 					body,
 					input {
+						color: var(--shade-5);
+
 						font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-					}
-
-					input {
-						font-family: Roboto;
 					}
 				`}</style>
 			</div>

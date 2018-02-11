@@ -8,7 +8,7 @@ Quick mock on top of [fractures](https://github.com/fractures/fractures).
 TODO
 
 * [x] Finalize checkbox
-* [ ] Radio
+* [x] Radio
 * [ ] Input
 * [ ] Dropdown
 * [ ] Date

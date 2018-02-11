@@ -3,16 +3,13 @@ import cc from "classcat"
 
 const defaultProps = {
 	check: () => null,
-	label: "",
 	isChecked: false,
-	isDisabled: false
+	isDisabled: false,
+	label: ""
 }
 
 class Checkbox extends Component {
 	render() {
-
-		// TODO Lets make this true unique
-		// const checkboxId = `checkbox-${ Math.floor(Math.random() * Math.floor(99999999)) }`
 		const checkboxClasses = cc({
 			"fr-checkbox flex flex-gap-1 relative": true,
 			"fr-checkbox--checked": this.props.isChecked,
@@ -64,7 +61,7 @@ class Checkbox extends Component {
 						opacity: 0;
 						width: 0.5rem;
 
-						border: solid white;
+						border: solid var(--shade-0);
 						border-width: 0 0.1875rem 0.1875rem 0;
 						transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 						transition: all 120ms ease-in-out;
@@ -83,8 +80,8 @@ class Checkbox extends Component {
 					}
 
 					.fr-checkbox--disabled {
-						pointer-events: none;
 						opacity: 0.5;
+						pointer-events: none;
 					}
 				`}</style>
 			</label>
