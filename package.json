@@ -1,10 +1,22 @@
 {
 	"name": "fractures-ui",
 	"version": "0.0.1",
+	"description": "React UI components with fractures",
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
 		"start": "next start"
+	},
+	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
+	"author": "Krisztian Puska",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fractures/fractures-ui"
+	},
+	"license": "MIT",
+	"homepage": "https://fractures.space/ui",
+	"bugs": {
+		"url": "https://github.com/fractures/fractures-ui/issues"
 	},
 	"dependencies": {
 		"@zeit/next-css": "^0.0.7",
