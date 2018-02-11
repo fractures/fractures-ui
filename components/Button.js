@@ -12,13 +12,13 @@ const defaultProps = {
 class Button extends Component {
 	render() {
 		const buttonClasses = cc({
-			btn: true,
-			"btn-primary": this.props.type === "primary",
-			"btn-secondary": this.props.type === "secondary",
-			"btn--small": this.props.small,
-			"btn--disabled": this.props.disabled,
-			"btn--active": this.props.isActive,
-			"btn--radius": !this.props.isRounded,
+			"fr-btn": true,
+			"fr-btn-primary": this.props.type === "primary",
+			"fr-btn-secondary": this.props.type === "secondary",
+			"fr-btn--small": this.props.small,
+			"fr-btn--disabled": this.props.disabled,
+			"fr-btn--active": this.props.isActive,
+			"fr-btn--radius": !this.props.isRounded,
 			"radius-max": this.props.isRounded
 		})
 
@@ -26,7 +26,7 @@ class Button extends Component {
 			<div className="flex flex-ycenter" onClick={ () => this.props.action() }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
 				<style jsx global>{`
-					.btn {
+					.fr-btn {
 						display: inline-block;
 						padding: 0.25rem 1rem;
 
@@ -41,55 +41,55 @@ class Button extends Component {
 						transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
 					}
 
-					.btn-primary {
+					.fr-btn-primary {
 						background-color: var(--shade-4);
 						border: 1px solid var(--shade-4);
 						color: var(--shade-0);
 					}
 
-					.btn-primary:not(.btn--active):hover {
+					.fr-btn-primary:not(.fr-btn--active):hover {
 						background-color: var(--shade-6);
 						border-color: var(--shade-6);
 					}
 
-					.btn.btn-primary.btn--active,
-					.btn.btn-primary:active {
+					.fr-btn.fr-btn-primary.fr-btn--active,
+					.fr-btn.fr-btn-primary:active {
 						background-color: var(--shade-7);
 						border-color: var(--shade-7);
 						color: var(--shade-1);
 					}
 
-					.btn-secondary {
+					.fr-btn-secondary {
 						background-color: var(--shade-0);
 						border: 1px solid var(--shade-4);
 						color: var(--shade-4);
 					}
 
-					.btn-secondary:not(.btn--active):hover {
+					.fr-btn-secondary:not(.fr-btn--active):hover {
 						background-color: var(--shade-1);
 						border-color: var(--shade-3);
 						color: var(--shade-5);
 					}
 
-					.btn.btn-secondary.btn--active,
-					.btn.btn-secondary:active {
+					.fr-btn.fr-btn-secondary.fr-btn--active,
+					.fr-btn.fr-btn-secondary:active {
 						background-color: var(--shade-1);
 						border-color: var(--shade-4);
 						color: var(--shade-6);
 					}
 
-					.btn--radius {
+					.fr-btn--radius {
 						border-radius: 0.25rem;
 					}
 
-					.btn.btn--small {
+					.fr-btn.fr-btn--small {
 						padding: 0.125rem 0.5rem;
 
 						font-size: 0.75rem;
 						line-height: 1.5rem;
 					}
 
-					.btn--disabled {
+					.fr-btn--disabled {
 						opacity: 0.6;
 
 						border-color: transparent;
@@ -97,7 +97,7 @@ class Button extends Component {
 						pointer-events: none;
 					}
 
-					.btn:focus:not(.btn--disabled):not(.btn--loading) {
+					.fr-btn:focus:not(.fr-btn--disabled):not(.fr-btn--loading) {
 						box-shadow: 0 0 0 0.15rem var(--shade-2);
 					}
 				`}</style>
