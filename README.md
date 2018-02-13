@@ -13,8 +13,9 @@ TODO
 * [ ] Date
 * [ ] Textarea
 * [ ] Password
-* [ ] Process
-* [ ] Range
+* [x] Process
+* [x] Range
+* [ ] Range ticks
 * [ ] Button group
 * [x] Button rounded
 * [ ] Button consider cleaning up multiple types
@@ -23,4 +24,6 @@ TODO
 * [ ] Tooltip
 * [ ] Themes
 * [ ] Copy
+* [ ] Browser tests
+* [ ] Sync animation
 * [ ] Distribute

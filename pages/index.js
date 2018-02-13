@@ -4,6 +4,7 @@ import Checkbox from "../components/Checkbox"
 import Color from "../components/Color"
 import Container from "../components/Container"
 import Radio from "../components/Radio"
+import Range from "../components/Range"
 import Progress from "../components/Progress"
 import chroma from "chroma-js"
 
@@ -47,23 +48,31 @@ class Index extends Component {
 		this.state = {
 			checkbox: false,
 			radio: 1,
+			range: 0,
 			theme: 0
 		}
 	}
 
-	// Mock change function for checkbox
+	// Mock checkbox change
 	toggleCheckbox() {
 		this.setState({ checkbox: !this.state.checkbox })
 	}
 
-	// Mock change function for radio
+	// Mock radio change
 	setRadio(value) {
 		this.setState({ radio: value })
 	}
 
-	// Mock action function for button
+	// Mock button click
 	mockClick() {
 		console.log("Clicked.")
+	}
+
+	// Mock range change
+	setRange(value) {
+		console.log(value)
+
+		this.setState({ range: value })
 	}
 
 	render() {
@@ -147,9 +156,15 @@ class Index extends Component {
 						</div>
 					</div>
 					<div className="my-4">
+						<h1 className="my-2">Range {this.state.range}</h1>
+						<div className="flex flex-gap-1 flex-column my-1">
+							<Range value={ this.state.range } set={ e => this.setRange(e) } />
+						</div>
+					</div>
+					<div className="my-4">
 						<h1 className="my-2">Progress</h1>
 						<div className="flex flex-gap-1 flex-column my-1">
-							<Progress value={ 34 } />
+							<Progress value={ this.state.range } />
 							<Progress value={ 34 } max={ 60 } />
 							<Progress value={ 100 } />
 						</div>
@@ -173,6 +188,10 @@ class Index extends Component {
 
 						font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
 							"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+					}
+
+					h1 {
+						font-weight: normal;
 					}
 				`}</style>
 			</div>
