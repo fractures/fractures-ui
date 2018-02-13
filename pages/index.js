@@ -4,6 +4,7 @@ import Checkbox from "../components/Checkbox"
 import Color from "../components/Color"
 import Container from "../components/Container"
 import Radio from "../components/Radio"
+import Progress from "../components/Progress"
 import chroma from "chroma-js"
 
 import "fractures/dist/fractures.css"
@@ -143,6 +144,14 @@ class Index extends Component {
 							<Radio label="Val 1" value={ 0 } state={ this.state.radio } set={ e => this.setRadio(e) } />
 							<Radio label="Val 2" value={ 1 } state={ this.state.radio } set={ e => this.setRadio(e) } />
 							<Radio label="Disabled" value={ 4 } state={ this.state.radio } isDisabled={ true } />
+						</div>
+					</div>
+					<div className="my-4">
+						<h1 className="my-2">Progress</h1>
+						<div className="flex flex-gap-1 flex-column my-1">
+							<Progress value={ 34 } />
+							<Progress value={ 34 } max={ 60 } />
+							<Progress value={ 100 } />
 						</div>
 					</div>
 				</Container>
