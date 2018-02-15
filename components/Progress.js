@@ -1,4 +1,4 @@
-import { Component, Fragment } from "react"
+import React, { Component, Fragment } from "react"
 
 const defaultProps = {
 	max: 100,

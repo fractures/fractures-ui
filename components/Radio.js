@@ -1,4 +1,4 @@
-import { Component } from "react"
+import React, { Component } from "react"
 import cc from "classcat"
 
 const defaultProps = {
