@@ -27,3 +27,4 @@ TODO
 * [ ] Browser tests
 * [ ] Sync animation
 * [ ] Distribute
+* [ ] Default theme export
