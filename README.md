@@ -1,6 +1,26 @@
-# React UI components with fractures
+# fractures UI
 
-WIP. Quick mock on top of [fractures](https://github.com/fractures/fractures).
+React components built on top of [fractures](https://github.com/fractures/fractures).
+
+WIP
+
+* Things are broken
+* Things will break
+* No documentation, only a sneak peak — [UI](https://fractures.space/ui)
+* TODOs
+
+Usage
+
+```
+npm i fractures-ui
+
+import { Button } from "fractures-ui"
+
+<Button type="primary" value="Primary button" />
+
+```
+
+Goals
 
 * Minimum viable design
 * Fast, working prototypes
