@@ -18,6 +18,7 @@ TODO
 * [ ] Range ticks
 * [ ] Button group
 * [x] Button rounded
+* [ ] Button loading
 * [ ] Button consider cleaning up multiple types
 * [x] Button action
 * [ ] Button dropdown
@@ -26,5 +27,8 @@ TODO
 * [ ] Copy
 * [ ] Browser tests
 * [ ] Sync animation
+* [ ] Sync naming
 * [ ] Distribute
+* [ ] Proptypes
+* [ ] Tests
 * [ ] Default theme export

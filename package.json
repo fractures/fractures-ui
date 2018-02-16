@@ -5,7 +5,7 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"prepare": "webpack",
-		"watch": "webpack --watch --verbose",
+		"watch": "webpack --watch",
 		"dev": "next",
 		"build": "webpack",
 		"start": "next start"
