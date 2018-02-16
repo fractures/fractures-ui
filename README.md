@@ -32,3 +32,4 @@ TODO
 * [ ] Proptypes
 * [ ] Tests
 * [ ] Default theme export
+* [ ] Export size
