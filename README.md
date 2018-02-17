@@ -45,6 +45,7 @@ TODO
 * [ ] Button dropdown
 * [ ] Tooltip
 * [ ] Themes
+* [ ] Handle colors for buttons / progress, etc
 * [ ] Copy
 * [ ] Browser tests
 * [ ] Sync animation

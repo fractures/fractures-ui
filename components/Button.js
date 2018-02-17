@@ -12,24 +12,26 @@ const defaultProps = {
 
 const iconLoading = (
 	<svg xmlns="http://www.w3.org/2000/svg" className="fr-btn__loading">
-		<path
-			fill-rule="evenodd"
-			fill="var(--shade-1)"
-			d="M 12 20C 16.4183 20 20 16.4183 20 12C 20 7.58172 16.4183 4 12 4C 7.58172 4 4 7.58172 4 12C 4 16.4183 7.58172 20 12 20ZM 12 24C 18.6274 24 24 18.6274 24 12C 24 5.37258 18.6274 0 12 0C 5.37258 0 0 5.37258 0 12C 0 18.6274 5.37258 24 12 24Z"
-		/>
-		<path
-			fill="var(--shade-3)"
-			d="M 12 4C 7.58172 4 4 7.58172 4 12C 4 16.4183 7.58172 20 12 20L 12 24C 5.37258 24 0 18.6274 0 12C 0 5.37258 5.37258 0 12 0L 12 4Z"
+		<circle fill="none" strokeWidth={ 4 } stroke="var(--shade-1)" cx="12" cy="12" r="10" />
+		<circle
+			fill="none"
+			strokeWidth={ 4 }
+			strokeDasharray="28"
+			strokeLinecap="round"
+			stroke="var(--shade-3)"
+			cx="12"
+			cy="12"
+			r="10"
 		>
 			<animateTransform
 				attributeName="transform"
 				type="rotate"
 				from="0 12 12"
 				to="360 12 12"
-				dur="600ms"
+				dur="750ms"
 				repeatCount="indefinite"
 			/>
-		</path>
+		</circle>
 	</svg>
 )
 
@@ -48,7 +50,7 @@ class Button extends Component {
 		})
 
 		return (
-			<div className="flex flex-ycenter relative" onClick={ () => this.props.action() }>
+			<div className="inline-flex flex-ycenter relative" onClick={ () => this.props.action() }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
 				{this.props.isLoading && iconLoading}
 				<style jsx global>{`
