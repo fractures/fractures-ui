@@ -95,6 +95,7 @@ class Button extends Component {
 
 					/* Secondary */
 					.fr-btn-secondary {
+						background-color: var(--shade-0);
 						box-shadow: inset 0 0 0 1px var(--shade-4);
 						color: var(--shade-4);
 					}
