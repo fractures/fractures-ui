@@ -36,9 +36,10 @@ TODO
 * [x] Process
 * [x] Range
 * [ ] Range ticks
-* [ ] Button group
+* [x] Button group
 * [x] Button rounded
 * [ ] Button loading
+* [ ] Button icon
 * [ ] Button consider cleaning up multiple types
 * [x] Button action
 * [ ] Button dropdown
