@@ -55,7 +55,9 @@ Upcoming
 	* [ ] Handle colors for buttons / progress, etc
 	* [ ] Load fractures from default
 * [ ] Button dropdown
-* [ ] Range ticks
+* [ ] Range
+	* [ ] Add ticks
+	* [ ] Add number option
 * [ ] Button icon
 * [ ] Tooltip component
 * [ ] Container with parameters
