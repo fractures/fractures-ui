@@ -51,8 +51,10 @@ TODO
 
 Upcoming
 
+* [ ] Meta
+	* [ ] Handle colors for buttons / progress, etc
+	* [ ] Load fractures from default
 * [ ] Button dropdown
-* [ ] Handle colors for buttons / progress, etc
 * [ ] Range ticks
 * [ ] Button icon
 * [ ] Tooltip component

@@ -44,6 +44,7 @@ class Input extends Component {
 				{isTextarea ? textarea : input}
 				<style jsx global>{`
 					.fr-input {
+						background-color: var(--shade-0);
 						border: 1px solid var(--shade-3);
 						border-radius: 0.125rem;
 						color: var(--shade-6);
