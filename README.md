@@ -27,12 +27,6 @@ Goals
 
 TODO
 
-* [ ] Figure out a way to handle inputs
-	* [ ] Input
-	* [ ] Date
-	* [ ] Number
-	* [ ] Textarea
-	* [ ] Password
 * [ ] Buttons
 	* [ ] Button cleanup
 * [ ] Themes
@@ -50,22 +44,30 @@ TODO
 	* [ ] Reorder, reused components should be unified
 	* [ ] Look into export sizes
 	* [ ] Write copy and update docs
-	* [ ] Usage
-	* [ ] Limitations
-	* [ ] Goals
+	* [ ] Usage, Limitations, Goals, Opinionated
 	* [ ] Separate further todo into issues
 
 ---
 
 Upcoming
 
-
 * [ ] Button dropdown
 * [ ] Handle colors for buttons / progress, etc
 * [ ] Range ticks
 * [ ] Button icon
-* [ ] Tooltip
+* [ ] Tooltip component
 * [ ] Container with parameters
 * [ ] Color meta
 * [ ] ARIA
-* [ ] Focus on every element
+	* [ ] Roles
+	* [ ] Focus on every element
+* [ ] Inputs
+	* [ ] htmlfor
+	* [ ] rows for textarea
+	* [ ] Length
+	* [ ] Validation
+	* [ ] Happy states
+	* [ ] Number steps
+	* [ ] Number minmax
+	* [ ] Number suggested values
+	
