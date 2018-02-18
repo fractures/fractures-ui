@@ -1,5 +1,6 @@
-import React, { Component } from "react"
 import cc from "classcat"
+import Label from "./shared/Label"
+import React, { Component } from "react"
 
 const defaultProps = {
 	check: () => null,
@@ -26,19 +27,11 @@ class Checkbox extends Component {
 					className="h-0 w-0 none absolute"
 				/>
 				<span className="fr-checkbox__mark" />
-				<span className="fr-checkbox__label nowrap ellipsis">{this.props.label}</span>
+				<Label>{this.props.label}</Label>
 				<style jsx>{`
 					.fr-checkbox {
 						cursor: pointer;
 						user-select: none;
-					}
-
-					.fr-checkbox__label {
-						color: var(--shade-5);
-
-						font-size: 0.875rem;
-						font-weight: 500;
-						line-height: 1.75rem;
 					}
 
 					.fr-checkbox__mark {

@@ -1,5 +1,6 @@
-import React, { Component } from "react"
 import cc from "classcat"
+import Label from "./shared/Label"
+import React, { Component } from "react"
 
 const defaultProps = {
 	change: () => null,
@@ -40,7 +41,11 @@ class Input extends Component {
 
 		return (
 			<div className="flex flex-column">
-				{this.props.label && <label className="fr-input__label">{this.props.label}</label>}
+				{this.props.label && (
+					<label>
+						<Label>{this.props.label}</Label>
+					</label>
+				)}
 				{isTextarea ? textarea : input}
 				<style jsx global>{`
 					.fr-input {
@@ -77,14 +82,6 @@ class Input extends Component {
 
 					.fr-input::-webkit-input-placeholder {
 						color: var(--shade-3);
-					}
-
-					.fr-input__label {
-						color: var(--shade-5);
-
-						font-size: 0.875rem;
-						font-weight: 500;
-						line-height: 1.75rem;
 					}
 				`}</style>
 			</div>

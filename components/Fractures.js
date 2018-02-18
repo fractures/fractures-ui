@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+import React, { Component, Fragment } from "react"
+import Color from "./shared/Color"
 
 // Default themes
 const themes = [
@@ -20,27 +21,35 @@ const themes = [
 	}
 ]
 
-// XXX Getting root values
-// const style = getComputedStyle(document.body)
-// const shade = style.getPropertyValue("--shade-0")
-
 class Fractures extends Component {
+
+	// TODO
+	updateColor() {}
+
 	render() {
 		const theme = (themes.find(theme => this.props.theme === theme.name) || themes[0]).colors
+		const meta = (
+			<div className="flex">
+				{theme.map((color, key) => <Color key={ key } hex={ color } change={ e => this.updateColor(e) } />)}
+			</div>
+		)
 
 		return (
-			<style jsx global>{`
-				:root {
-					--shade-0: ${ theme[0] };
-					--shade-1: ${ theme[1] };
-					--shade-2: ${ theme[2] };
-					--shade-3: ${ theme[3] };
-					--shade-4: ${ theme[4] };
-					--shade-5: ${ theme[5] };
-					--shade-6: ${ theme[6] };
-					--shade-7: ${ theme[7] };
-				}
-			`}</style>
+			<Fragment>
+				{this.props.meta && meta}
+				<style jsx global>{`
+					:root {
+						--shade-0: ${ theme[0] };
+						--shade-1: ${ theme[1] };
+						--shade-2: ${ theme[2] };
+						--shade-3: ${ theme[3] };
+						--shade-4: ${ theme[4] };
+						--shade-5: ${ theme[5] };
+						--shade-6: ${ theme[6] };
+						--shade-7: ${ theme[7] };
+					}
+				`}</style>
+			</Fragment>
 		)
 	}
 }

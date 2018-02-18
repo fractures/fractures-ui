@@ -1,5 +1,6 @@
-import React, { Component } from "react"
 import cc from "classcat"
+import Label from "./shared/Label"
+import React, { Component } from "react"
 
 const defaultProps = {
 	isDisabled: false,
@@ -26,19 +27,11 @@ class Radio extends Component {
 					defaultChecked={ this.props.state === this.props.value }
 				/>
 				<span className="fr-radio__checkmark radius-max" />
-				<span className="fr-radio__label">{this.props.label}</span>
+				<Label>{this.props.label}</Label>
 				<style jsx global>{`
 					.fr-radio {
 						cursor: pointer;
 						user-select: none;
-					}
-
-					.fr-radio__label {
-						color: var(--shade-5);
-
-						font-size: 0.875rem;
-						font-weight: 500;
-						line-height: 1.5rem;
 					}
 
 					.fr-radio__checkmark {
