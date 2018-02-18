@@ -27,31 +27,39 @@ Goals
 
 TODO
 
-* [x] Finalize checkbox
-* [x] Radio
-* [ ] Input
-* [ ] Date
-* [ ] Textarea
-* [ ] Password
-* [x] Process
-* [x] Range
-* [ ] Range ticks
-* [x] Button group
-* [x] Button rounded
-* [ ] Button loading
-* [ ] Button icon
-* [ ] Button consider cleaning up multiple types
-* [x] Button action
-* [ ] Button dropdown
-* [ ] Tooltip
+* [ ] Figure out a way to handle inputs
+	* [ ] Input
+	* [ ] Date
+	* [ ] Number
+	* [ ] Textarea
+	* [ ] Password
+* [ ] Buttons
+	* [ ] Button cleanup
 * [ ] Themes
+	* [ ] Cleanup defaults
+	* [ ] Create fractures theme
+	* [ ] Export default theme
+* [ ] Sync
+	* [ ] Animation
+	* [ ] Naming
+* [ ] Tests 
+	* [ ] Proptypes
+	* [ ] Check in browsers
+	* [ ] Write unit test
+* [ ] Release
+	* [ ] Look into export sizes
+	* [ ] Write copy and update docs
+	* [ ] Usage
+	* [ ] Limitations
+	* [ ] Goals
+
+---
+
+Upcoming
+
+* [ ] Button dropdown
 * [ ] Handle colors for buttons / progress, etc
-* [ ] Copy
-* [ ] Browser tests
-* [ ] Sync animation
-* [ ] Sync naming
-* [ ] Distribute
-* [ ] Proptypes
-* [ ] Tests
-* [ ] Default theme export
-* [ ] Export size
+* [ ] Range ticks
+* [ ] Button icon
+* [ ] Tooltip
+* [ ] Container with parameters
