@@ -47,15 +47,18 @@ TODO
 	* [ ] Check in browsers
 	* [ ] Write unit test
 * [ ] Release
+	* [ ] Reorder, reused components should be unified
 	* [ ] Look into export sizes
 	* [ ] Write copy and update docs
 	* [ ] Usage
 	* [ ] Limitations
 	* [ ] Goals
+	* [ ] Separate further todo into issues
 
 ---
 
 Upcoming
+
 
 * [ ] Button dropdown
 * [ ] Handle colors for buttons / progress, etc
@@ -63,3 +66,6 @@ Upcoming
 * [ ] Button icon
 * [ ] Tooltip
 * [ ] Container with parameters
+* [ ] Color meta
+* [ ] ARIA
+* [ ] Focus on every element
