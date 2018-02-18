@@ -10,28 +10,19 @@ const defaultProps = {
 	value: ""
 }
 
-const iconLoading = (
+const IconLoading = props => (
 	<svg xmlns="http://www.w3.org/2000/svg" className="fr-btn__loading">
-		<circle fill="none" strokeWidth={ 4 } stroke="var(--shade-1)" cx="12" cy="12" r="10" />
+		<circle fill="none" strokeWidth={ 4 } stroke="var(--shade-2)" cx="12" cy="12" r="10" style={ { opacity: 0.25 } } />
 		<circle
 			fill="none"
 			strokeWidth={ 4 }
-			strokeDasharray="28"
+			stroke={ props.color || "var(--shade-1)" }
+			strokeDasharray="32"
 			strokeLinecap="round"
-			stroke="var(--shade-3)"
 			cx="12"
 			cy="12"
 			r="10"
-		>
-			<animateTransform
-				attributeName="transform"
-				type="rotate"
-				from="0 12 12"
-				to="360 12 12"
-				dur="750ms"
-				repeatCount="indefinite"
-			/>
-		</circle>
+		/>
 	</svg>
 )
 
@@ -52,7 +43,7 @@ class Button extends Component {
 		return (
 			<div className="inline-flex flex-ycenter relative" onClick={ () => this.props.action() }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
-				{this.props.isLoading && iconLoading}
+				{this.props.isLoading && <IconLoading color={ this.props.type === "secondary" && "var(--shade-4)" } />}
 				<style jsx global>{`
 					.fr-btn {
 						display: inline-block;
@@ -169,12 +160,25 @@ class Button extends Component {
 						animation: fr-button-show 180ms ease-in-out;
 					}
 
+					.fr-btn__loading circle {
+						animation: fr-button-dash 480ms linear forwards infinite;
+					}
+
 					@keyframes fr-button-show {
 						0% {
 							opacity: 0;
 						}
 						100% {
 							opacity: 1;
+						}
+					}
+
+					@keyframes fr-button-dash {
+						from {
+							stroke-dashoffset: 0;
+						}
+						to {
+							stroke-dashoffset: 64;
 						}
 					}
 
