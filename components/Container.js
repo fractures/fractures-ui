@@ -6,7 +6,7 @@ class Container extends Component {
 			<div className={ `fr-container mx-auto ${ this.props.className ? `${ this.props.className }` : `` }` }>
 				{this.props.children}
 				<style jsx global>{`
-					@media (max-width: 1120px) {
+					@media screen and (max-width: 1120px) {
 						.fr-container {
 							margin-left: 1.5rem !important;
 							margin-right: 1.5rem !important;

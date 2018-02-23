@@ -41,7 +41,7 @@ class Button extends Component {
 		})
 
 		return (
-			<div className="inline-flex flex-ycenter relative" onClick={ () => this.props.action() }>
+			<div className="inline-flex flex-ycenter relative" onClick={ e => this.props.action(e) }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
 				{this.props.isLoading && <IconLoading color={ this.props.type === "secondary" && "var(--fr-500)" } />}
 				<style jsx global>{`
