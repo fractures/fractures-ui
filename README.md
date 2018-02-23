@@ -30,9 +30,9 @@ TODO
 * [ ] Buttons
 	* [ ] Button cleanup
 * [ ] Themes
-	* [ ] Cleanup defaults
-	* [ ] Create fractures theme
-	* [ ] Export default theme
+	* [x] Cleanup defaults
+	* [x] Create fractures theme
+	* [x] Export default theme
 * [ ] Sync
 	* [ ] Animation
 	* [ ] Naming
@@ -51,6 +51,8 @@ TODO
 
 Upcoming
 
+* [ ] Colors
+	* [ ] Compute from key
 * [ ] Meta
 	* [ ] Handle colors for buttons / progress, etc
 	* [ ] Load fractures from default

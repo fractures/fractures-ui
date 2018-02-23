@@ -41,7 +41,7 @@ class Checkbox extends Component {
 
 						background-color: var(--fr-ground);
 						border-radius: 0.125rem;
-						border: 2px solid var(--fr-900);
+						border: 2px solid var(--fr-500);
 						transition: border-color 120ms ease-in-out;
 					}
 
@@ -54,7 +54,7 @@ class Checkbox extends Component {
 						opacity: 0;
 						width: 0.5rem;
 
-						border: solid var(--fr-900);
+						border: solid var(--fr-500);
 						border-width: 0 0.1875rem 0.1875rem 0;
 						transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 						transition: all 120ms ease-in-out;

@@ -43,14 +43,14 @@ class Range extends Component {
 						border-radius: 1rem;
 						border: 0;
 
-						background: var(--fr-700);
+						background: var(--fr-500);
 						cursor: pointer;
 						transform: translateY(-0.375rem);
 						-webkit-appearance: none;
 					}
 
 					.fr-range:focus::-webkit-slider-thumb {
-						box-shadow: 0 0 0 0.15rem var(--fr-300);
+						box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 					}
 				`}</style>
 			</Fragment>

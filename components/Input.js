@@ -69,7 +69,7 @@ class Input extends Component {
 					}
 
 					.fr-input:focus {
-						box-shadow: 0 0 0 0.15rem var(--fr-300);
+						box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 					}
 
 					.fr-input:active {
@@ -77,11 +77,11 @@ class Input extends Component {
 					}
 
 					.fr-input:placeholder {
-						color: var(--fr-500);
+						color: var(--fr-300);
 					}
 
 					.fr-input::-webkit-input-placeholder {
-						color: var(--fr-500);
+						color: var(--fr-300);
 					}
 				`}</style>
 			</div>

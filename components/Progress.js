@@ -23,7 +23,7 @@ class Progress extends Component {
 					}
 
 					.fr-progress::-webkit-progress-value {
-						background-color: var(--fr-700);
+						background-color: var(--fr-500);
 						border-radius: 1rem;
 					}
 				`}</style>

@@ -12,7 +12,7 @@ const themes = [
 			shade500: "#3482da",
 			shade700: "#2463a5",
 			shade900: "#102a45",
-			focus: "rgba(52, 130, 218, 0.5)"
+			focus: "rgba(52, 130, 218, 0.4)"
 		}
 	},
 	{
