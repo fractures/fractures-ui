@@ -39,9 +39,9 @@ class Checkbox extends Component {
 						overflow: hidden;
 						width: 1.75rem;
 
-						background-color: var(--shade-0);
+						background-color: var(--fr-ground);
 						border-radius: 0.125rem;
-						border: 2px solid var(--shade-5);
+						border: 2px solid var(--fr-900);
 						transition: border-color 120ms ease-in-out;
 					}
 
@@ -54,7 +54,7 @@ class Checkbox extends Component {
 						opacity: 0;
 						width: 0.5rem;
 
-						border: solid var(--shade-5);
+						border: solid var(--fr-900);
 						border-width: 0 0.1875rem 0.1875rem 0;
 						transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 						transition: all 120ms ease-in-out;
@@ -69,7 +69,7 @@ class Checkbox extends Component {
 					}
 
 					.fr-checkbox input:checked ~ .fr-checkbox__mark {
-						background-color: var(--shade-0);
+						background-color: var(--fr-ground);
 					}
 
 					.fr-checkbox--disabled {

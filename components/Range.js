@@ -30,7 +30,7 @@ class Range extends Component {
 						height: 0.5rem;
 						width: 100%;
 
-						background-color: var(--shade-1);
+						background-color: var(--fr-100);
 						border-radius: 1rem;
 
 						cursor: pointer;
@@ -43,14 +43,14 @@ class Range extends Component {
 						border-radius: 1rem;
 						border: 0;
 
-						background: var(--shade-4);
+						background: var(--fr-700);
 						cursor: pointer;
 						transform: translateY(-0.375rem);
 						-webkit-appearance: none;
 					}
 
 					.fr-range:focus::-webkit-slider-thumb {
-						box-shadow: 0 0 0 0.15rem var(--shade-2);
+						box-shadow: 0 0 0 0.15rem var(--fr-300);
 					}
 				`}</style>
 			</Fragment>

@@ -12,11 +12,11 @@ const defaultProps = {
 
 const IconLoading = props => (
 	<svg xmlns="http://www.w3.org/2000/svg" className="fr-btn__loading">
-		<circle fill="none" strokeWidth={ 4 } stroke="var(--shade-2)" cx="12" cy="12" r="10" style={ { opacity: 0.25 } } />
+		<circle fill="none" strokeWidth={ 4 } stroke="var(--fr-300)" cx="12" cy="12" r="10" style={ { opacity: 0.25 } } />
 		<circle
 			fill="none"
 			strokeWidth={ 4 }
-			stroke={ props.color || "var(--shade-1)" }
+			stroke={ props.color || "var(--fr-100)" }
 			strokeDasharray="32"
 			strokeLinecap="round"
 			cx="12"
@@ -43,7 +43,7 @@ class Button extends Component {
 		return (
 			<div className="inline-flex flex-ycenter relative" onClick={ () => this.props.action() }>
 				<input className={ buttonClasses } type="button" value={ this.props.value } />
-				{this.props.isLoading && <IconLoading color={ this.props.type === "secondary" && "var(--shade-4)" } />}
+				{this.props.isLoading && <IconLoading color={ this.props.type === "secondary" && "var(--fr-500)" } />}
 				<style jsx global>{`
 					.fr-btn {
 						display: inline-block;
@@ -63,56 +63,52 @@ class Button extends Component {
 
 					/* Primary */
 					.fr-btn-primary {
-						background-color: var(--shade-4);
-						color: var(--shade-0);
+						background-color: var(--fr-500);
+						color: var(--fr-ground);
 					}
 
 					.fr-btn-primary:not(.fr-btn--active):not(.fr-btn--loading):hover {
-						background-color: var(--shade-6);
+						background-color: var(--fr-700);
 					}
 
 					.fr-btn.fr-btn-primary.fr-btn--active,
-					.fr-btn.fr-btn-primary:active {
-						background-color: var(--shade-7);
-						color: var(--shade-1);
+					.fr-btn.fr-btn-primary:active,
+					.fr-btn.fr-btn-primary:active:focus {
+						background-color: var(--fr-900);
+						color: var(--fr-100);
 					}
 
 					.fr-btn-primary.fr-btn--loading {
-						color: var(--shade-2);
+						color: var(--fr-300);
 					}
 
 					.fr-btn-primary.fr-btn--disabled {
-						background-color: var(--shade-1);
-						color: var(--shade-2);
+						background-color: var(--fr-100);
+						color: var(--fr-300);
 					}
 
 					/* Secondary */
 					.fr-btn-secondary {
-						background-color: var(--shade-0);
-						box-shadow: inset 0 0 0 1px var(--shade-4);
-						color: var(--shade-4);
+						background-color: var(--fr-ground);
+						box-shadow: inset 0 0 0 1px var(--fr-300);
+						color: var(--fr-500);
 					}
 
 					.fr-btn-secondary:not(.fr-btn--active):not(.fr-btn--loading):hover {
-						background-color: var(--shade-1);
-						box-shadow: inset 0 0 0 1px var(--shade-3);
-						color: var(--shade-5);
+						box-shadow: inset 0 0 0 1px var(--fr-500);
+						color: var(--fr-700);
 					}
 
 					.fr-btn.fr-btn-secondary.fr-btn--active,
 					.fr-btn.fr-btn-secondary:active {
-						background-color: var(--shade-1);
-						box-shadow: inset 0 0 0 1px var(--shade-4);
-						color: var(--shade-6);
-					}
-
-					.fr-btn-secondary.fr-btn--loading {
-						color: var(--shade-3);
+						background-color: var(--fr-100);
+						box-shadow: inset 0 0 0 1px var(--fr-500);
+						color: var(--fr-900);
 					}
 
 					.fr-btn-secondary.fr-btn--disabled {
-						box-shadow: inset 0 0 0 1px var(--shade-3);
-						color: var(--shade-2);
+						box-shadow: inset 0 0 0 1px var(--fr-100);
+						color: var(--fr-300);
 					}
 
 					/* Default radius */
@@ -183,12 +179,16 @@ class Button extends Component {
 					}
 
 					/* Focus */
+					.fr-btn:focus {
+						z-index: 1;
+					}
+
 					.fr-btn:focus:not(.fr-btn--disabled):not(.fr-btn--loading) {
-						box-shadow: 0 0 0 0.15rem var(--shade-2);
+						box-shadow: 0 0 0 0.125rem var(--fr-focus);
 					}
 
 					.fr-btn.fr-btn-secondary:focus:not(.fr-btn--disabled):not(.fr-btn--loading) {
-						box-shadow: inset 0 0 0 1px var(--shade-4), 0 0 0 0.15rem var(--shade-2);
+						box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.125rem var(--fr-focus);
 					}
 				`}</style>
 			</div>

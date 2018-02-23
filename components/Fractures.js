@@ -5,32 +5,62 @@ import Color from "./shared/Color"
 const themes = [
 	{
 		name: "blue",
-		colors: ["white", "#e8f2fd", "#aecdf2", "#76a7e7", "#3482da", "#2463a5", "#184673", "#102a45"]
+		colors: {
+			ground: "#fff",
+			shade100: "#e8f2fd",
+			shade300: "#76a7e7",
+			shade500: "#3482da",
+			shade700: "#2463a5",
+			shade900: "#102a45",
+			focus: "rgba(52, 130, 218, 0.5)"
+		}
 	},
 	{
 		name: "black",
-		colors: ["white", "#eeeeee", "#bebebe", "#919191", "#666666", "#484848", "#2c2c2c", "#111111"]
+		colors: {
+			ground: "#fff",
+			shade100: "#eee",
+			shade300: "#919191",
+			shade500: "#666666",
+			shade700: "#484848",
+			shade900: "#111",
+			focus: "rgba(102, 102, 102, 0.5)"
+		}
 	},
 	{
 		name: "invert",
-		colors: ["#111", "#303030", "#4c4c4c", "#696969", "#888888", "#a9a9a9", "#cbcbcb", "#eeeeee"]
+		colors: {
+			ground: "#111",
+			shade100: "#303030",
+			shade300: "#696969",
+			shade500: "#888888",
+			shade700: "#a9a9a9",
+			shade900: "#eee",
+			focus: "rgba(136, 136, 136, 0.5)"
+		}
 	},
 	{
 		name: "test",
-		colors: ["#caffb8", "#92dfb4", "#67bdad", "#4e999d", "#437684", "#3c5564", "#303741", "#1d1d1f"]
+		colors: {
+			ground: "#caffb8",
+			shade100: "#92dfb4",
+			shade300: "#4e999d",
+			shade500: "#437684",
+			shade700: "#3c5564",
+			shade900: "#1d1d1f",
+			focus: "rgba(67, 118, 132, 0.5)"
+		}
 	}
 ]
 
 class Fractures extends Component {
-
-	// TODO
-	updateColor() {}
-
 	render() {
 		const theme = (themes.find(theme => this.props.theme === theme.name) || themes[0]).colors
 		const meta = (
 			<div className="flex">
-				{theme.map((color, key) => <Color key={ key } hex={ color } change={ e => this.updateColor(e) } />)}
+				{Object.keys(theme).map((color, key) => (
+					<Color key={ key } hex={ theme[color] } change={ e => this.updateColor(e) } />
+				))}
 			</div>
 		)
 
@@ -39,14 +69,13 @@ class Fractures extends Component {
 				{this.props.meta && meta}
 				<style jsx global>{`
 					:root {
-						--shade-0: ${ theme[0] };
-						--shade-1: ${ theme[1] };
-						--shade-2: ${ theme[2] };
-						--shade-3: ${ theme[3] };
-						--shade-4: ${ theme[4] };
-						--shade-5: ${ theme[5] };
-						--shade-6: ${ theme[6] };
-						--shade-7: ${ theme[7] };
+						--fr-ground: ${ theme.ground };
+						--fr-focus: ${ theme.focus };
+						--fr-100: ${ theme.shade100 };
+						--fr-300: ${ theme.shade300 };
+						--fr-500: ${ theme.shade500 };
+						--fr-700: ${ theme.shade700 };
+						--fr-900: ${ theme.shade900 };
 					}
 				`}</style>
 			</Fragment>

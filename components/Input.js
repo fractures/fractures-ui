@@ -49,8 +49,8 @@ class Input extends Component {
 				{isTextarea ? textarea : input}
 				<style jsx global>{`
 					.fr-input {
-						background-color: var(--shade-0);
-						border: 1px solid var(--shade-3);
+						background-color: var(--fr-ground);
+						border: 1px solid var(--fr-500);
 						border-radius: 0.125rem;
 						color: var(--shade-6);
 						outline: none;
@@ -69,19 +69,19 @@ class Input extends Component {
 					}
 
 					.fr-input:focus {
-						box-shadow: 0 0 0 0.15rem var(--shade-2);
+						box-shadow: 0 0 0 0.15rem var(--fr-300);
 					}
 
 					.fr-input:active {
-						border-color: var(--shade-4);
+						border-color: var(--fr-700);
 					}
 
 					.fr-input:placeholder {
-						color: var(--shade-3);
+						color: var(--fr-500);
 					}
 
 					.fr-input::-webkit-input-placeholder {
-						color: var(--shade-3);
+						color: var(--fr-500);
 					}
 				`}</style>
 			</div>

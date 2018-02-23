@@ -38,12 +38,12 @@ class Radio extends Component {
 						height: 1.5rem;
 						width: 1.5rem;
 
-						background-color: var(--shade-0);
-						border: 2px solid var(--shade-5);
+						background-color: var(--fr-ground);
+						border: 2px solid var(--fr-900);
 					}
 
 					.fr-radio input:checked ~ .fr-radio__checkmark {
-						background-color: var(--shade-0);
+						background-color: var(--fr-ground);
 					}
 
 					.fr-radio__checkmark:after {
@@ -56,7 +56,7 @@ class Radio extends Component {
 						width: 0.875rem;
 
 						border-radius: 100%;
-						background: var(--shade-5);
+						background: var(--fr-900);
 						transform: scale(0);
 						transition: all 120ms ease-in-out;
 

@@ -10,7 +10,14 @@
 		"build": "webpack",
 		"start": "next start"
 	},
-	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
+	"keywords": [
+		"react",
+		"react-component",
+		"ui",
+		"ui-element",
+		"functional-ui",
+		"css"
+	],
 	"author": "Krisztian Puska",
 	"repository": {
 		"type": "git",

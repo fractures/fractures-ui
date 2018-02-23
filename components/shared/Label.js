@@ -5,7 +5,7 @@ const Label = props => (
 		<span className="fr-label nowrap ellipsis">{props.children}</span>
 		<style jsx global>{`
 			.fr-label {
-				color: var(--shade-5);
+				color: var(--fr-900);
 
 				font-size: 0.875rem;
 				font-weight: 500;

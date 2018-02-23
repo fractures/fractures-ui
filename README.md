@@ -54,7 +54,9 @@ Upcoming
 * [ ] Meta
 	* [ ] Handle colors for buttons / progress, etc
 	* [ ] Load fractures from default
-* [ ] Button dropdown
+* [ ] Button
+	* [ ] Button dropdown
+	* [ ] Button focus should be opaque
 * [ ] Range
 	* [ ] Add ticks
 	* [ ] Add number option
