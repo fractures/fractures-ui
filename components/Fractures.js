@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react"
 import Color from "./shared/Color"
+import Button from "./Button"
 
 // Default themes
 const themes = [
@@ -54,30 +55,58 @@ const themes = [
 ]
 
 class Fractures extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			theme: this.props.theme ? this.props.theme : null
+		}
+	}
+
 	render() {
-		const theme = (themes.find(theme => this.props.theme === theme.name) || themes[0]).colors
-		const meta = (
-			<div className="flex">
+		const isThemed = this.state.theme
+		const theme = (themes.find(theme => this.state.theme === theme.name) || themes[0]).colors
+		const themeList = [{ name: null }, { name: "blue" }, { name: "black" }, { name: "invert" }, { name: "test" }]
+		const colorList = (
+			<div className="flex mb-2">
 				{Object.keys(theme).map((color, key) => (
-					<Color key={ key } hex={ theme[color] } change={ e => this.updateColor(e) } />
+					<Color key={ key } name={ color } hex={ theme[color] } change={ e => this.updateColor(e) } />
 				))}
 			</div>
 		)
+		const meta = [
+			<aside className="sticky flex flex-gap-1 flex-ycenter flex-right top-0 mr-2" style={ { top: "5rem" } }>
+				<small>TBD. Themes?</small>
+				{themeList.map((theme, key) => (
+					<Button
+						action={ () => this.setState({ theme: theme.name }) }
+						isActive={ this.state.theme === theme.name && true }
+						key={ key }
+						small={ true }
+						type="primary"
+						value={ theme.name ? theme.name : "Nope" }
+					/>
+				))}
+			</aside>
+		]
 
 		return (
 			<Fragment>
+				{this.props.meta && isThemed && colorList}
 				{this.props.meta && meta}
-				<style jsx global>{`
-					:root {
-						--fr-ground: ${ theme.ground };
-						--fr-focus: ${ theme.focus };
-						--fr-100: ${ theme.shade100 };
-						--fr-300: ${ theme.shade300 };
-						--fr-500: ${ theme.shade500 };
-						--fr-700: ${ theme.shade700 };
-						--fr-900: ${ theme.shade900 };
-					}
-				`}</style>
+				{isThemed && (
+					<style jsx global>{`
+						:root {
+							--fr-ground: ${ theme.ground };
+							--fr-focus: ${ theme.focus };
+							--fr-100: ${ theme.shade100 };
+							--fr-300: ${ theme.shade300 };
+							--fr-500: ${ theme.shade500 };
+							--fr-700: ${ theme.shade700 };
+							--fr-900: ${ theme.shade900 };
+						}
+					`}</style>
+				)}
 			</Fragment>
 		)
 	}

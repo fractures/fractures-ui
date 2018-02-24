@@ -23,16 +23,10 @@ import { Button } from "fractures-ui"
 Goals
 
 * Minimum viable design
-* Fast, working prototypes
+* Functional prototypes
 
 TODO
 
-* [ ] Buttons
-	* [ ] Button cleanup
-* [ ] Themes
-	* [x] Cleanup defaults
-	* [x] Create fractures theme
-	* [x] Export default theme
 * [ ] Sync
 	* [ ] Animation
 	* [ ] Naming
@@ -51,18 +45,20 @@ TODO
 
 Upcoming
 
-* [ ] Colors
-	* [ ] Compute from key
+* [ ] Theming
+	* [ ] Compute colors from key
+	* [ ] Default themes
 * [ ] Meta
 	* [ ] Handle colors for buttons / progress, etc
 	* [ ] Load fractures from default
 * [ ] Button
 	* [ ] Button dropdown
 	* [ ] Button focus should be opaque
+	* [ ] Button icon
+	* [ ] Button cleanup
 * [ ] Range
 	* [ ] Add ticks
 	* [ ] Add number option
-* [ ] Button icon
 * [ ] Tooltip component
 * [ ] Container with parameters
 * [ ] Color meta
@@ -78,4 +74,5 @@ Upcoming
 	* [ ] Number steps
 	* [ ] Number minmax
 	* [ ] Number suggested values
+* [ ] Reconsider styled components instead
 	
