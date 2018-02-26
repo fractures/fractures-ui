@@ -13,7 +13,8 @@ module.exports = {
 			{
 				test: /\.(js)$/,
 				use: "babel-loader"
-			}
+			},
+			{ test: /\.css$/, loader: "style-loader!css-loader" }
 		]
 	},
 
