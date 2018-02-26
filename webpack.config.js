@@ -14,15 +14,15 @@ module.exports = {
 				test: /\.(js)$/,
 				use: "babel-loader"
 			},
-			{ test: /\.css$/, loader: "style-loader!css-loader" }
+			{ test: /\.css$/, loader: "raw-loader" }
 		]
 	},
 	externals: {
 		react: {
-			root: "react",
-			commonjs2: "react",
+			amd: "react",
 			commonjs: "react",
-			amd: "react"
+			commonjs2: "react",
+			root: "react"
 		},
 		"react-dom": "commonjs react-dom"
 	}
