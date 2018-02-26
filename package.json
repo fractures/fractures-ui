@@ -1,6 +1,6 @@
 {
 	"name": "fractures-ui",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"description": "React UI components with fractures",
 	"main": "dist/index.js",
 	"scripts": {
