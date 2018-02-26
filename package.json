@@ -9,7 +9,14 @@
 		"dev": "webpack --watch",
 		"build": "webpack"
 	},
-	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
+	"keywords": [
+		"react",
+		"react-component",
+		"ui",
+		"ui-element",
+		"functional-ui",
+		"css"
+	],
 	"author": "Krisztian Puska",
 	"repository": {
 		"type": "git",
@@ -22,6 +29,7 @@
 	},
 	"dependencies": {
 		"classcat": "^3.0.1",
+		"prop-types": "^15.6.0",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
 		"styled-jsx": "^2.2.5"

@@ -1,6 +1,5 @@
 import { themes } from "../config/themes"
 import Button from "./Button"
-import Color from "./shared/Color"
 import fractures from "fractures"
 import React, { Fragment } from "react"
 

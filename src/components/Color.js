@@ -1,4 +1,10 @@
-import React, { Component } from "react"
+import PropTypes from "prop-types"
+import React from "react"
+
+const propTypes = {
+	hex: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired
+}
 
 const Color = () => (
 	<small className="fr-color grow-1 p-2 nowrap white" style={ { backgroundColor: props.hex } }>
@@ -12,5 +18,7 @@ const Color = () => (
 		`}</style>
 	</small>
 )
+
+Color.propTypes = propTypes
 
 export default Color

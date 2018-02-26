@@ -1,4 +1,9 @@
 import React, { Fragment } from "react"
+import PropTypes from "prop-types"
+
+const propTypes = {
+	children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired
+}
 
 const Label = props => (
 	<Fragment>
@@ -14,5 +19,7 @@ const Label = props => (
 		`}</style>
 	</Fragment>
 )
+
+Label.propTypes = propTypes
 
 export default Label

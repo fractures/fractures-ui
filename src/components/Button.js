@@ -1,11 +1,21 @@
-import React, { Component } from "react"
 import cc from "classcat"
+import PropTypes from "prop-types"
+import React from "react"
+
+const propTypes = {
+	action: PropTypes.func.isRequired,
+	isActive: PropTypes.bool,
+	isLoading: PropTypes.bool,
+	isRounded: PropTypes.bool,
+	type: PropTypes.oneOf(["primary", "secondary"]),
+	value: PropTypes.string.isRequired
+}
 
 const defaultProps = {
 	action: () => null,
 	isActive: false,
 	isLoading: false,
-	isRounded: false,
+	isRounded: null,
 	type: "primary",
 	value: ""
 }
@@ -200,6 +210,7 @@ class Button extends Component {
 	}
 }
 
+Button.propTypes = propTypes
 Button.defaultProps = defaultProps
 
 export default Button
