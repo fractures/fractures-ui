@@ -2,6 +2,7 @@ const path = require("path")
 const webpack = require("webpack")
 
 module.exports = {
+	entry: "./src/index.js",
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "index.js",
@@ -16,7 +17,6 @@ module.exports = {
 			{ test: /\.css$/, loader: "style-loader!css-loader" }
 		]
 	},
-
 	externals: {
 		react: {
 			root: "react",

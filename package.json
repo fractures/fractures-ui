@@ -4,11 +4,10 @@
 	"description": "React UI components with fractures",
 	"main": "dist/index.js",
 	"scripts": {
-		"prepare": "webpack --mode production",
-		"watch": "webpack --watch --mode development",
-		"dev": "webpack --watch --mode development",
-		"build": "webpack --mode production",
-		"start": "next start"
+		"prepare": "webpack",
+		"watch": "webpack --watch",
+		"dev": "webpack --watch",
+		"build": "webpack"
 	},
 	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
 	"author": "Krisztian Puska",
@@ -46,7 +45,6 @@
 		"prettier": "^1.10.2",
 		"prettier-eslint": "^8.8.1",
 		"style-loader": "^0.20.2",
-		"webpack": "^4.0.0",
-		"webpack-cli": "^2.0.9"
+		"webpack": "^3.11.0"
 	}
 }
