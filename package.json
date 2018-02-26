@@ -4,19 +4,12 @@
 	"description": "React UI components with fractures",
 	"main": "dist/index.js",
 	"scripts": {
-		"prepare": "webpack --mode development",
-		"watch": "webpack --watch --mode development",
-		"dev": "webpack --watch --mode development",
-		"build": "webpack --mode production"
+		"prepare": "webpack",
+		"watch": "webpack --watch",
+		"dev": "webpack --watch",
+		"build": "webpack"
 	},
-	"keywords": [
-		"react",
-		"react-component",
-		"ui",
-		"ui-element",
-		"functional-ui",
-		"css"
-	],
+	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
 	"author": "Krisztian Puska",
 	"repository": {
 		"type": "git",
@@ -31,8 +24,7 @@
 		"classcat": "^3.0.1",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
-		"styled-jsx": "^2.2.5",
-		"webpack-cli": "^2.0.9"
+		"styled-jsx": "^2.2.5"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
@@ -52,6 +44,6 @@
 		"prettier": "^1.10.2",
 		"prettier-eslint": "^8.8.1",
 		"raw-loader": "^0.5.1",
-		"webpack": "^4.0.0"
+		"webpack": "^3.11.0"
 	}
 }
