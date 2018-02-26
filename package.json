@@ -1,6 +1,6 @@
 {
 	"name": "fractures-ui",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "React UI components with fractures",
 	"main": "dist/index.js",
 	"scripts": {
@@ -9,7 +9,14 @@
 		"dev": "webpack --watch",
 		"build": "webpack"
 	},
-	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
+	"keywords": [
+		"react",
+		"react-component",
+		"ui",
+		"ui-element",
+		"functional-ui",
+		"css"
+	],
 	"author": "Krisztian Puska",
 	"repository": {
 		"type": "git",
