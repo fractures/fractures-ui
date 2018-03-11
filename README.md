@@ -1,5 +1,7 @@
 # fractures UI
 
+![](https://travis-ci.org/fractures/fractures-ui.svg)
+
 React components built on top of [fractures](https://github.com/fractures/fractures).
 
 WIP
