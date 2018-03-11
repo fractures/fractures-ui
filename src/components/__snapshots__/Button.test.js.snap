@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Renders correctly 1`] = `
+<div
+  className="jsx-2073639235 inline-flex flex-ycenter relative"
+  onClick={[Function]}
+>
+  <input
+    className="jsx-2073639235 fr-btn fr-btn-primary fr-btn--radius"
+    type="button"
+    value="Primary"
+  />
+</div>
+`;
+
+exports[`Button Secondary Renders correctly 1`] = `
+<div
+  className="jsx-2073639235 inline-flex flex-ycenter relative"
+  onClick={[Function]}
+>
+  <input
+    className="jsx-2073639235 fr-btn fr-btn-secondary fr-btn--radius"
+    type="button"
+    value="Secondary"
+  />
+</div>
+`;

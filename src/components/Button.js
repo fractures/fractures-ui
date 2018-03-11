@@ -1,4 +1,5 @@
 import cc from "classcat"
+import IconLoading from "./shared/IconLoading"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -19,22 +20,6 @@ const defaultProps = {
 	type: "primary",
 	value: ""
 }
-
-const IconLoading = props => (
-	<svg xmlns="http://www.w3.org/2000/svg" className="fr-btn__loading">
-		<circle fill="none" strokeWidth={ 4 } stroke="var(--fr-300)" cx="12" cy="12" r="10" style={ { opacity: 0.25 } } />
-		<circle
-			fill="none"
-			strokeWidth={ 4 }
-			stroke={ props.color || "var(--fr-100)" }
-			strokeDasharray="32"
-			strokeLinecap="round"
-			cx="12"
-			cy="12"
-			r="10"
-		/>
-	</svg>
-)
 
 const Button = props => {
 	const buttonClasses = cc({
