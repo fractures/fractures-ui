@@ -192,15 +192,16 @@ const Button = props => {
 					z-index: 1;
 				}
 
-				.fr-btn.fr-btn--small:focus {
-					box-shadow: 0 0 0 0.125rem var(--fr-focus);
+				.fr-btn.fr-btn--small:focus,
+				.fr-btn.fr-btn--small:focus:hover {
+					box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.125rem var(--fr-focus);
 				}
 
 				.fr-btn:focus:not(.fr-btn--disabled):not(.fr-btn--loading):not(.fr-btn--small) {
 					box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 				}
 
-				.fr-btn.fr-btn-secondary:focus:not(.fr-btn--disabled):not(.fr-btn--loading) {
+				.fr-btn.fr-btn-secondary:focus:not(.fr-btn--disabled):not(.fr-btn--loading):not(.fr-btn--small) {
 					box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.1875rem var(--fr-focus);
 				}
 			`}</style>
