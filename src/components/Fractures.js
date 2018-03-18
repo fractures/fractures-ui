@@ -1,7 +1,7 @@
 import { themes } from "../config/themes"
 import Button from "./Button"
 import fractures from "fractures"
-import React, { Fragment } from "react"
+import React from "react"
 
 const Fractures = props => {
 	const isThemed = props.theme
@@ -22,12 +22,12 @@ const Fractures = props => {
 	)
 
 	return (
-		<Fragment>
+		<div>
 			<style jsx global>
 				{fractures}
 			</style>
 			{isThemed && theme ? themeRoot : null}
-		</Fragment>
+		</div>
 	)
 }
 
