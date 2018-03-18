@@ -8,7 +8,7 @@ const Fractures = props => {
 	const theme = (isThemed && themes.find(theme => props.theme === theme.name)) || null
 
 	const themeRoot = theme && (
-		<style jsx global>{`
+		<style jsx global key={ 1 }>{`
 			:root {
 				--fr-ground: ${ theme.colors.ground };
 				--fr-focus: ${ theme.colors.focus };
@@ -21,14 +21,12 @@ const Fractures = props => {
 		`}</style>
 	)
 
-	return (
-		<div>
-			<style jsx global>
-				{fractures}
-			</style>
-			{isThemed && theme ? themeRoot : null}
-		</div>
-	)
+	return [
+		<style jsx global key={ 0 }>
+			{fractures}
+		</style>,
+		isThemed && themeRoot
+	]
 }
 
 export default Fractures
