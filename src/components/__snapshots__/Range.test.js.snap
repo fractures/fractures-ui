@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Range Renders correctly 1`] = `
+<input
+  className="jsx-2978901729 fr-range w-100"
+  defaultValue={42}
+  onChange={[Function]}
+  type="range"
+/>
+`;

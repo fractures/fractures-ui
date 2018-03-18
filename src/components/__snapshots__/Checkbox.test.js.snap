@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Renders correctly 1`] = `
+<label
+  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked"
+>
+  <input
+    className="jsx-4272868653 h-0 w-0 none absolute"
+    defaultChecked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="jsx-4272868653 fr-checkbox__mark"
+  />
+  <span
+    className="jsx-1971015503 fr-label nowrap ellipsis"
+  >
+    Checkbox
+  </span>
+</label>
+`;
+
+exports[`Checkbox checked Renders correctly 1`] = `
+<label
+  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--checked"
+>
+  <input
+    className="jsx-4272868653 h-0 w-0 none absolute"
+    defaultChecked={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="jsx-4272868653 fr-checkbox__mark"
+  />
+  <span
+    className="jsx-1971015503 fr-label nowrap ellipsis"
+  >
+    Checked checkbox
+  </span>
+</label>
+`;
+
+exports[`Checkbox disabled Renders correctly 1`] = `
+<label
+  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked fr-checkbox--disabled"
+>
+  <input
+    className="jsx-4272868653 h-0 w-0 none absolute"
+    defaultChecked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="jsx-4272868653 fr-checkbox__mark"
+  />
+  <span
+    className="jsx-1971015503 fr-label nowrap ellipsis"
+  >
+    Disabled checkbox
+  </span>
+</label>
+`;

@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconLoading Renders correctly 1`] = `
+<svg
+  className="fr-btn__loading"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="12"
+    cy="12"
+    fill="none"
+    r="10"
+    stroke="var(--fr-300)"
+    strokeWidth={4}
+    style={
+      Object {
+        "opacity": 0.25,
+      }
+    }
+  />
+  <circle
+    cx="12"
+    cy="12"
+    fill="none"
+    r="10"
+    stroke="var(--fr-100)"
+    strokeDasharray="32"
+    strokeLinecap="round"
+    strokeWidth={4}
+  />
+</svg>
+`;
+
+exports[`IconLoading with color Renders correctly 1`] = `
+<svg
+  className="fr-btn__loading"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle
+    cx="12"
+    cy="12"
+    fill="none"
+    r="10"
+    stroke="var(--fr-300)"
+    strokeWidth={4}
+    style={
+      Object {
+        "opacity": 0.25,
+      }
+    }
+  />
+  <circle
+    cx="12"
+    cy="12"
+    fill="none"
+    r="10"
+    stroke="white"
+    strokeDasharray="32"
+    strokeLinecap="round"
+    strokeWidth={4}
+  />
+</svg>
+`;

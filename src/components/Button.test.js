@@ -1,7 +1,4 @@
-import { mount } from "enzyme"
 import Button from "./Button.js"
-import React from "react"
-import renderer from "react-test-renderer"
 
 const mockFn = jest.fn()
 

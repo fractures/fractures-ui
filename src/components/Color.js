@@ -6,7 +6,7 @@ const propTypes = {
 	name: PropTypes.string.isRequired
 }
 
-const Color = () => (
+const Color = props => (
 	<small className="fr-color grow-1 p-2 nowrap white" style={ { backgroundColor: props.hex } }>
 		<b>{props.name}</b>
 		<br />

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color Renders correctly 1`] = `
+<small
+  className="jsx-428535730 fr-color grow-1 p-2 nowrap white"
+  style={
+    Object {
+      "backgroundColor": "#eee",
+    }
+  }
+>
+  <b
+    className="jsx-428535730"
+  >
+    Light
+  </b>
+  <br
+    className="jsx-428535730"
+  />
+  <small
+    className="jsx-428535730"
+  >
+    #eee
+  </small>
+</small>
+`;
