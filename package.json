@@ -4,10 +4,10 @@
 	"description": "React UI components with fractures",
 	"main": "dist/index.js",
 	"scripts": {
-		"prepare": "webpack",
-		"watch": "webpack --watch",
-		"dev": "webpack --watch",
-		"build": "webpack",
+		"prepare": "webpack --mode production",
+		"watch": "webpack --watch --mode development",
+		"dev": "webpack --watch --mode development",
+		"build": "webpack --mode production",
 		"test": "NODE_ENV=test jest -u --verbose",
 		"test:coverage": "NODE_ENV=test jest --coverage"
 	},
@@ -51,6 +51,7 @@
 		"prettier-eslint": "^8.8.1",
 		"raw-loader": "^0.5.1",
 		"react-test-renderer": "^16.3.0",
-		"webpack": "^3.11.0"
+		"webpack": "^4.4.1",
+		"webpack-cli": "^2.0.13"
 	}
 }
