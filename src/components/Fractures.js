@@ -2,12 +2,21 @@ import { themes } from "../config/themes"
 import Button from "./Button"
 import fractures from "fractures"
 import React, { Fragment } from "react"
+import PropTypes from "prop-types"
+
+const propTypes = {
+	theme: PropTypes.oneOf(["blue", "black", "invert", "test"])
+}
+
+const defaultProps = {
+	theme: null
+}
 
 const Fractures = props => {
 	const isThemed = props.theme
 	const theme = (isThemed && themes.find(theme => props.theme === theme.name)) || null
 
-	const themeRoot = theme ? (
+	const themeRoot = theme && (
 		<style jsx global>{`
 			:root {
 				--fr-ground: ${ theme.colors.ground };
@@ -19,7 +28,7 @@ const Fractures = props => {
 				--fr-900: ${ theme.colors.shade900 };
 			}
 		`}</style>
-	) : null
+	)
 
 	return (
 		<Fragment>
@@ -30,5 +39,8 @@ const Fractures = props => {
 		</Fragment>
 	)
 }
+
+Fractures.propTypes = propTypes
+Fractures.defaultProps = defaultProps
 
 export default Fractures

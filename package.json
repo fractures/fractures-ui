@@ -9,7 +9,7 @@
 		"dev": "webpack --watch",
 		"build": "webpack",
 		"test": "NODE_ENV=test jest -u --verbose",
-		"coverage": "NODE_ENV=test jest --coverage"
+		"test:coverage": "NODE_ENV=test jest --coverage"
 	},
 	"keywords": ["react", "react-component", "ui", "ui-element", "functional-ui", "css"],
 	"author": "Krisztian Puska <pyx@pyx.space>",

@@ -6,6 +6,7 @@ import React from "react"
 const propTypes = {
 	action: PropTypes.func.isRequired,
 	isActive: PropTypes.bool,
+	isDisabled: PropTypes.bool,
 	isLoading: PropTypes.bool,
 	isRounded: PropTypes.bool,
 	type: PropTypes.oneOf(["primary", "secondary"]),
@@ -15,6 +16,7 @@ const propTypes = {
 const defaultProps = {
 	action: () => null,
 	isActive: false,
+	isDisabled: false,
 	isLoading: false,
 	isRounded: null,
 	type: "primary",
@@ -27,7 +29,7 @@ const Button = props => {
 		"fr-btn-primary": props.type === "primary",
 		"fr-btn-secondary": props.type === "secondary",
 		"fr-btn--small": props.small,
-		"fr-btn--disabled": props.disabled,
+		"fr-btn--disabled": props.isDisabled,
 		"fr-btn--loading": props.isLoading,
 		"fr-btn--active": props.isActive,
 		"fr-btn--radius": !props.isRounded,
@@ -37,7 +39,7 @@ const Button = props => {
 	return (
 		<div className="inline-flex flex-ycenter relative" onClick={ e => props.action(e) }>
 			<input className={ buttonClasses } type="button" value={ props.value } />
-			{props.isLoading && <IconLoading color={ props.type === "secondary" && "var(--fr-500)" } />}
+			{props.isLoading && <IconLoading color={ props.type === "secondary" ? "var(--fr-500)" : null } />}
 			<style jsx global>{`
 				.fr-btn {
 					display: inline-block;
