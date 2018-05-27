@@ -40,7 +40,7 @@
 		"line-comment-position": ["error", { "position": "above" }],
 		"lines-around-comment": ["error", { "beforeBlockComment": true, "beforeLineComment": true }],
 		"lines-around-directive": ["error", "always"],
-		"max-len": ["warn", { "code": 120 }],
+		"max-len": ["warn", { "code": 140 }],
 		"newline-after-var": ["error", "always"],
 		"newline-before-return": "error",
 		"newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 4 }],
