@@ -6531,8 +6531,8 @@ prettier-eslint@^8.8.1:
     typescript-eslint-parser "^11.0.0"
 
 prettier@^1.12.1, prettier@^1.13.3, prettier@^1.7.0:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.3.tgz#e74c09a7df6519d472ca6febaa37cf7addb48a20"
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.4.tgz#31bbae6990f13b1093187c731766a14036fa72e6"
 
 pretty-bytes@^4.0.2:
   version "4.0.2"
@@ -6752,6 +6752,10 @@ rc@^1.1.7:
 react-codemirror2@^4.2.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-4.3.0.tgz#e79aedca4da60d22402d2cd74f2885a3e5c009fd"
+
+react-css-component@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-css-component/-/react-css-component-1.0.2.tgz#4763946764dc88985ef70a438a03f004929d4ad4"
 
 react-dev-utils@^5.0.0:
   version "5.0.1"
