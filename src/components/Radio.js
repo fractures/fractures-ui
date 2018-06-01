@@ -27,7 +27,7 @@ const NakedRadio = props => {
 	})
 
 	return (
-		<label className={ radioClasses }>
+		<label className={ `${ props.className } ${ radioClasses }` }>
 			<input
 				type="radio"
 				name="radio"
