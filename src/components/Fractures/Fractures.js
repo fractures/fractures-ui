@@ -1,5 +1,5 @@
 import { injectGlobal } from "styled-components"
-import { themes } from "../config/themes"
+import { themes } from "../../config/themes"
 import fractures from "fractures"
 import PropTypes from "prop-types"
 import React, { Fragment } from "react"

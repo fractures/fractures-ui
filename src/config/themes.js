@@ -1,3 +1,5 @@
+// NOTE WIP
+
 const themes = [
 	{
 		name: "blue",

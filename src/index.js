@@ -1,11 +1,28 @@
-import Button from "./components/Button"
-import ButtonGroup from "./components/ButtonGroup"
-import Checkbox from "./components/Checkbox"
-import Container from "./components/Container"
-import Fractures from "./components/Fractures"
-import Input from "./components/Input"
-import Progress from "./components/Progress"
-import Radio from "./components/Radio"
-import Range from "./components/Range"
+import { Button, NakedButton } from "./components/Button/Button"
+import { Checkbox, NakedCheckbox } from "./components/Checkbox/Checkbox"
+import { Input, NakedInput } from "./components/Input/Input"
+import { Progress, NakedProgress } from "./components/Progress/Progress"
+import { Radio, NakedRadio } from "./components/Radio/Radio"
+import ButtonGroup from "./components/ButtonGroup/ButtonGroup"
+import Color from "./components/shared/Color/Color"
+import Container from "./components/Container/Container"
+import Fractures from "./components/Fractures/Fractures"
+import Range from "./components/Range/Range"
 
-export { Button, ButtonGroup, Checkbox, Container, Fractures, Input, Progress, Radio, Range }
+export {
+	Button,
+	ButtonGroup,
+	Checkbox,
+	Color,
+	Container,
+	Fractures,
+	Input,
+	NakedButton,
+	NakedCheckbox,
+	NakedInput,
+	NakedProgress,
+	NakedRadio,
+	Progress,
+	Radio,
+	Range
+}

@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Label from "./shared/Label"
+import Label from "../shared/Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -86,7 +86,10 @@ const Radio = styled(NakedRadio)`
 	}
 `
 
+NakedRadio.propTypes = propTypes
+NakedRadio.defaultProps = defaultProps
+
 Radio.propTypes = propTypes
 Radio.defaultProps = defaultProps
 
-export default Radio
+export { Radio, NakedRadio }

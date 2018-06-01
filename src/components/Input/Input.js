@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Label from "./shared/Label"
+import Label from "../shared/Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -97,7 +97,10 @@ const Input = styled(NakedInput)`
 	}
 `
 
+NakedInput.propTypes = propTypes
+NakedInput.defaultProps = defaultProps
+
 Input.propTypes = propTypes
 Input.defaultProps = defaultProps
 
-export default Input
+export { Input, NakedInput }

@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Label from "./shared/Label"
+import Label from "../shared/Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -83,7 +83,10 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 `
 
+NakedCheckbox.propTypes = propTypes
+NakedCheckbox.defaultProps = defaultProps
+
 Checkbox.propTypes = propTypes
 Checkbox.defaultProps = defaultProps
 
-export default Checkbox
+export { Checkbox, NakedCheckbox }

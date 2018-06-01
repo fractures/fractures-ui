@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Loading from "./shared/Loading"
+import Loading from "../shared/Loading/Loading"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -24,9 +24,9 @@ const defaultProps = {
 	value: ""
 }
 
-const ButtonElement = ({ className, value }) => <input className={ className } type="button" value={ value } />
+const NakedButton = ({ className, value }) => <input className={ className } type="button" value={ value } />
 
-const DefaultButton = styled(ButtonElement)`
+const DefaultButton = styled(NakedButton)`
 	display: inline-block;
 	padding: 0.25rem 1rem;
 
@@ -133,7 +133,10 @@ const Button = props => {
 	)
 }
 
+NakedButton.propTypes = propTypes
+NakedButton.defaultProps = defaultProps
+
 Button.propTypes = propTypes
 Button.defaultProps = defaultProps
 
-export default Button
+export { Button, NakedButton }

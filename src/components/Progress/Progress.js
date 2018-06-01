@@ -30,7 +30,10 @@ const Progress = styled(NakedProgress)`
 	}
 `
 
+NakedProgress.propTypes = propTypes
+NakedProgress.defaultProps = defaultProps
+
 Progress.propTypes = propTypes
 Progress.defaultProps = defaultProps
 
-export default Progress
+export { Progress, NakedProgress }
