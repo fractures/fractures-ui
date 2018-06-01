@@ -2,24 +2,18 @@
 
 exports[`Color Renders correctly 1`] = `
 <small
-  className="jsx-428535730 fr-color grow-1 p-2 nowrap white"
+  className="fr-color grow-1 p-2 nowrap white"
   style={
     Object {
       "backgroundColor": "#eee",
     }
   }
 >
-  <b
-    className="jsx-428535730"
-  >
+  <b>
     Light
   </b>
-  <br
-    className="jsx-428535730"
-  />
-  <small
-    className="jsx-428535730"
-  >
+  <br />
+  <small>
     #eee
   </small>
 </small>

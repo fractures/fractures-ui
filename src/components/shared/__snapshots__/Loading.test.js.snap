@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconLoading Renders correctly 1`] = `
+exports[`Loading Renders correctly 1`] = `
 <svg
-  className="fr-btn__loading"
+  className="sc-bdVaJa gkdltT"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -31,9 +31,9 @@ exports[`IconLoading Renders correctly 1`] = `
 </svg>
 `;
 
-exports[`IconLoading with color Renders correctly 1`] = `
+exports[`Loading with color Renders correctly 1`] = `
 <svg
-  className="fr-btn__loading"
+  className="sc-bdVaJa gkdltT"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle

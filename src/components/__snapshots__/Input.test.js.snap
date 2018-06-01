@@ -2,7 +2,7 @@
 
 exports[`Input Renders correctly 1`] = `
 <div
-  className="jsx-1573385002 flex flex-column"
+  className="sc-bwzfXH SiCSY flex flex-column"
 >
   <input
     className="fr-input fr-input--input px-1"

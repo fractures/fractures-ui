@@ -1,64 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox Renders correctly 1`] = `
-<label
-  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked"
+<div
+  className="sc-bwzfXH kWqCYm"
 >
-  <input
-    className="jsx-4272868653 h-0 w-0 none absolute"
-    defaultChecked={false}
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <span
-    className="jsx-4272868653 fr-checkbox__mark"
-  />
-  <span
-    className="jsx-1971015503 fr-label nowrap ellipsis"
+  <label
+    className="fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked"
   >
-    Checkbox
-  </span>
-</label>
+    <input
+      className="h-0 w-0 none"
+      defaultChecked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="fr-label nowrap ellipsis"
+    >
+      Checkbox
+    </span>
+  </label>
+</div>
 `;
 
 exports[`Checkbox checked Renders correctly 1`] = `
-<label
-  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--checked"
+<div
+  className="sc-bwzfXH kWqCYm"
 >
-  <input
-    className="jsx-4272868653 h-0 w-0 none absolute"
-    defaultChecked={true}
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <span
-    className="jsx-4272868653 fr-checkbox__mark"
-  />
-  <span
-    className="jsx-1971015503 fr-label nowrap ellipsis"
+  <label
+    className="fr-checkbox flex flex-gap-1 relative fr-checkbox--checked"
   >
-    Checked checkbox
-  </span>
-</label>
+    <input
+      className="h-0 w-0 none"
+      defaultChecked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="fr-label nowrap ellipsis"
+    >
+      Checked checkbox
+    </span>
+  </label>
+</div>
 `;
 
 exports[`Checkbox disabled Renders correctly 1`] = `
-<label
-  className="jsx-4272868653 fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked fr-checkbox--disabled"
+<div
+  className="sc-bwzfXH kWqCYm"
 >
-  <input
-    className="jsx-4272868653 h-0 w-0 none absolute"
-    defaultChecked={false}
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <span
-    className="jsx-4272868653 fr-checkbox__mark"
-  />
-  <span
-    className="jsx-1971015503 fr-label nowrap ellipsis"
+  <label
+    className="fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked fr-checkbox--disabled"
   >
-    Disabled checkbox
-  </span>
-</label>
+    <input
+      className="h-0 w-0 none"
+      defaultChecked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="fr-label nowrap ellipsis"
+    >
+      Disabled checkbox
+    </span>
+  </label>
+</div>
 `;

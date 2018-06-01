@@ -2,11 +2,11 @@
 
 exports[`Button Renders correctly 1`] = `
 <div
-  className="jsx-2073639235 inline-flex flex-ycenter relative"
+  className="inline-flex flex-ycenter relative"
   onClick={[Function]}
 >
   <input
-    className="jsx-2073639235 fr-btn fr-btn-primary fr-btn--radius"
+    className="sc-htpNat dMfPQm"
     type="button"
     value="Primary"
   />
@@ -15,11 +15,11 @@ exports[`Button Renders correctly 1`] = `
 
 exports[`Button Secondary Renders correctly 1`] = `
 <div
-  className="jsx-2073639235 inline-flex flex-ycenter relative"
+  className="inline-flex flex-ycenter relative"
   onClick={[Function]}
 >
   <input
-    className="jsx-2073639235 fr-btn fr-btn-secondary fr-btn--radius"
+    className="sc-bxivhb fHXVxn"
     type="button"
     value="Secondary"
   />

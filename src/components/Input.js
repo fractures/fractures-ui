@@ -1,7 +1,8 @@
 import cc from "classcat"
 import Label from "./shared/Label"
-import React from "react"
 import PropTypes from "prop-types"
+import React from "react"
+import styled from "styled-components"
 
 const propTypes = {
 	change: PropTypes.func.isRequired,
@@ -17,7 +18,7 @@ const defaultProps = {
 	value: ""
 }
 
-const Input = props => {
+const NakedInput = props => {
 	const isTextarea = props.type === "textarea"
 	const inputClasses = cc({
 		"fr-input": true,
@@ -47,53 +48,54 @@ const Input = props => {
 	)
 
 	return (
-		<div className="flex flex-column">
+		<div className={ `${ props.className } flex flex-column` }>
 			{props.label && (
 				<label>
 					<Label>{props.label}</Label>
 				</label>
 			)}
 			{isTextarea ? textarea : input}
-			<style jsx global>{`
-				.fr-input {
-					background-color: var(--fr-ground);
-					border: 1px solid var(--fr-500);
-					border-radius: 0.125rem;
-					color: var(--shade-6);
-					outline: none;
-					transition: box-shadow 100ms ease-in-out;
-
-					font-size: 1rem;
-				}
-
-				.fr-input--input {
-					line-height: 2.5rem;
-				}
-
-				.fr-input--textarea {
-					line-height: 1.5rem;
-					resize: vertical;
-				}
-
-				.fr-input:focus {
-					box-shadow: 0 0 0 0.1875rem var(--fr-focus);
-				}
-
-				.fr-input:active {
-					border-color: var(--fr-700);
-				}
-
-				.fr-input:placeholder {
-					color: var(--fr-300);
-				}
-
-				.fr-input::-webkit-input-placeholder {
-					color: var(--fr-300);
-				}
-			`}</style>
 		</div>
 	)
 }
+
+const Input = styled(NakedInput)`
+	.fr-input {
+		background-color: var(--fr-ground);
+		border: 1px solid var(--fr-500);
+		border-radius: 0.125rem;
+		color: var(--shade-6);
+		outline: none;
+		transition: box-shadow 100ms ease-in-out;
+		
+		font-size: 1rem;
+	}
+	
+	.fr-input--input {
+		line-height: 2.5rem;
+	}
+	
+	.fr-input--textarea {
+		line-height: 1.5rem;
+		resize: vertical;
+	}
+	
+	.fr-input:focus {
+		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
+	}
+	
+	.fr-input:active {
+		border-color: var(--fr-700);
+	}
+	
+	.fr-input:placeholder {
+		color: var(--fr-300);
+	}
+	
+	.fr-input::-webkit-input-placeholder {
+		color: var(--fr-300);
+	}
+`
 
 Input.propTypes = propTypes
 Input.defaultProps = defaultProps

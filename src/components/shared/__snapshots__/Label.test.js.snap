@@ -2,7 +2,7 @@
 
 exports[`Label Renders correctly 1`] = `
 <span
-  className="jsx-1971015503 fr-label nowrap ellipsis"
+  className="fr-label nowrap ellipsis"
 >
   Label
 </span>

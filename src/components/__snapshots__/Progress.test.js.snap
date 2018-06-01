@@ -2,7 +2,7 @@
 
 exports[`Progress Renders correctly 1`] = `
 <progress
-  className="jsx-4074517233 fr-progress radius-max w-100"
+  className="sc-bdVaJa cogThA radius-max w-100"
   max={100}
   value={31}
 />

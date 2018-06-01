@@ -2,20 +2,20 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="jsx-1573894469 fr-radio flex flex-gap-1 relative"
+  className="fr-radio flex flex-gap-1 relative"
 >
   <input
-    className="jsx-1573894469 h-0 w-0 none absolute"
+    className="h-0 w-0 none absolute"
     defaultChecked={false}
     name="radio"
     onChange={[Function]}
     type="radio"
   />
   <span
-    className="jsx-1573894469 fr-radio__checkmark radius-max"
+    className="fr-radio__checkmark radius-max"
   />
   <span
-    className="jsx-1971015503 fr-label nowrap ellipsis"
+    className="fr-label nowrap ellipsis"
   >
     
   </span>

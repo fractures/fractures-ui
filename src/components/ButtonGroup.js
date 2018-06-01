@@ -1,49 +1,44 @@
+// NOTE This is kind of a hack.
+
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 
 const propTypes = {
 	children: PropTypes.node.isRequired
 }
 
-const ButtonGroup = props => (
-	<div className="fr-button-group flex">
-		{props.children}
-		<style jsx global>{`
-			.fr-button-group .fr-btn--radius,
-			.fr-button-group .radius-max {
-				border-radius: 0;
-			}
+const ButtonGroup = styled.div`
+	display: flex;
+	
+	& > * > * {
+		border-radius: 0;
+	}
+	
+	& > *:not(:first-child) *:not(.radius-max) {
+		margin: 0 0 0 -1px;
+	}
 
-			.fr-button-group > div:not(:first-child) {
-				margin: 0 0 0 -1px;
-			}
+	& > *:first-child *:not(.radius-max) {
+		border-top-left-radius: 0.25rem;
+		border-bottom-left-radius: 0.25rem;
+	}
 
-			.fr-button-group .fr-btn:focus:not(.fr-btn--disabled):not(.fr-btn--loading) {
-				position: relative;
-			}
+	& > *:last-child *:not(.radius-max) {
+		border-top-right-radius: 0.25rem;
+		border-bottom-right-radius: 0.25rem;
+	}
+	
+	& > *:first-child .radius-max {
+		border-top-left-radius: 10rem;
+		border-bottom-left-radius: 10rem;
+	}
 
-			.fr-button-group > div:first-child .fr-btn--radius {
-				border-top-left-radius: 0.25rem;
-				border-bottom-left-radius: 0.25rem;
-			}
-
-			.fr-button-group > div:last-child .fr-btn--radius {
-				border-top-right-radius: 0.25rem;
-				border-bottom-right-radius: 0.25rem;
-			}
-
-			.fr-button-group > div:first-child .radius-max {
-				border-top-left-radius: 10rem;
-				border-bottom-left-radius: 10rem;
-			}
-
-			.fr-button-group > div:last-child .radius-max {
-				border-top-right-radius: 10rem;
-				border-bottom-right-radius: 10rem;
-			}
-		`}</style>
-	</div>
-)
+	& > *:last-child .radius-max {
+		border-top-right-radius: 10rem;
+		border-bottom-right-radius: 10rem;
+	}
+`
 
 ButtonGroup.propTypes = propTypes
 

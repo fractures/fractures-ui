@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
-import React, { Fragment } from "react"
+import React from "react"
+import styled from "styled-components"
 
 const propTypes = {
 	max: PropTypes.number,
@@ -11,28 +12,23 @@ const defaultProps = {
 	value: 0
 }
 
-const Progress = props => (
-	<Fragment>
-		<progress className="fr-progress radius-max w-100" max={ props.max } value={ props.value } />
-		<style jsx global>{`
-			.fr-progress {
-				height: 0.5rem;
+const NakedProgress = props => <progress className={ `${ props.className } radius-max w-100` } max={ props.max } value={ props.value } />
 
-				background-color: var(--fr-100);
-				border: 0;
-			}
+const Progress = styled(NakedProgress)`
+	height: 0.5rem;
 
-			.fr-progress::-webkit-progress-bar {
-				background-color: transparent;
-			}
+	background-color: var(--fr-100);
+	border: 0;
 
-			.fr-progress::-webkit-progress-value {
-				background-color: var(--fr-500);
-				border-radius: 1rem;
-			}
-		`}</style>
-	</Fragment>
-)
+	&::-webkit-progress-bar {
+		background-color: transparent;
+	}
+
+	&::-webkit-progress-value {
+		background-color: var(--fr-500);
+		border-radius: 1rem;
+	}
+`
 
 Progress.propTypes = propTypes
 Progress.defaultProps = defaultProps

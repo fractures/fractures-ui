@@ -5,7 +5,5 @@ describe("ButtonGroup", () => {
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
-		expect(tree).toMatchSnapshot()
-	})
+	it("Renders correctly", () => expect(tree).toMatchSnapshot())
 })

@@ -1,8 +1,8 @@
+import { injectGlobal } from "styled-components"
 import { themes } from "../config/themes"
-import Button from "./Button"
 import fractures from "fractures"
-import React, { Fragment } from "react"
 import PropTypes from "prop-types"
+import React, { Fragment } from "react"
 
 const propTypes = {
 	theme: PropTypes.oneOf(["blue", "black", "invert", "test"])
@@ -16,8 +16,9 @@ const Fractures = props => {
 	const isThemed = props.theme
 	const theme = (isThemed && themes.find(theme => props.theme === theme.name)) || null
 
-	const themeRoot = theme && (
-		<style jsx global>{`
+	const themeRoot =
+		theme &&
+		injectGlobal`
 			:root {
 				--fr-ground: ${ theme.colors.ground };
 				--fr-focus: ${ theme.colors.focus };
@@ -27,14 +28,13 @@ const Fractures = props => {
 				--fr-700: ${ theme.colors.shade700 };
 				--fr-900: ${ theme.colors.shade900 };
 			}
-		`}</style>
-	)
+		`
+
+	const injected = injectGlobal`${ fractures }`
 
 	return (
 		<Fragment>
-			<style jsx global>
-				{fractures}
-			</style>
+			{injected}
 			{isThemed && themeRoot}
 		</Fragment>
 	)

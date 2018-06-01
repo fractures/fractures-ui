@@ -1,5 +1,5 @@
 import cc from "classcat"
-import IconLoading from "./shared/IconLoading"
+import Loading from "./shared/Loading"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -28,7 +28,7 @@ const ButtonElement = ({ className, value }) => <input className={ className } t
 
 const DefaultButton = styled(ButtonElement)`
 	display: inline-block;
-	padding: ${ props => (props.small ? `0.125rem 0.5rem` : `0.25rem 1rem`) };
+	padding: 0.25rem 1rem;
 
 	border: 0;
 	border-radius: ${ props => (props.isRounded ? `2.5rem` : `0.25rem`) };
@@ -36,14 +36,31 @@ const DefaultButton = styled(ButtonElement)`
 	transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out, padding-left 180ms ease-in-out;
 
 	cursor: pointer;
-	font-size: ${ props => (props.small ? `0.75rem` : `0.875rem`) };
+	font-size: 0.875rem;
 	font-weight: 500;
-	line-height: ${ props => (props.small ? `1.5rem` : `2rem`) };
+	line-height: 2rem;
+	
+	&.isSmall {
+		padding: 0.125rem 0.5rem;
+		
+		font-size: 0.75rem;
+		line-height: 1.5rem;
+	}
+
+	&.isSmall:focus,
+	&.isSmall:focus:hover {
+		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.125rem var(--fr-focus);
+	}
+	
+	&:focus { z-index: 1; }
+	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
+		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
+	}
 
 	&.isLoading {
-		color: var(--fr-300);
-
 		padding-left: 2.5rem;
+		
+		color: var(--fr-300);
 
 		pointer-events: none;
 	}
@@ -53,13 +70,13 @@ const PrimaryButton = DefaultButton.extend`
 	background-color: var(--fr-500);
 	color: var(--fr-ground);
 
-	&:hover:not(.isLoading):not(.isActive) {
+	&:hover:not(.isLoading):not(.isActive):not(.isDisabled) {
 		background-color: var(--fr-700);
 	}
 
-	&.isActive,
-	&:active,
-	&:active:focus {
+	&.isActive:not(.isDisabled),
+	&:active:not(.isDisabled),
+	&:active:focus:not(.isDisabled) {
 		background-color: var(--fr-900);
 		color: var(--fr-100);
 	}
@@ -75,14 +92,14 @@ const SecondaryButton = DefaultButton.extend`
 	box-shadow: inset 0 0 0 1px var(--fr-300);
 	color: var(--fr-500);
 
-	&:hover:not(.isLoading):not(.isActive) {
+	&:hover:not(.isLoading):not(.isActive):not(.isDisabled) {
 		box-shadow: inset 0 0 0 1px var(--fr-500);
 		color: var(--fr-700);
 	}
 
-	&.isActive,
-	&:active,
-	&:active:focus {
+	&.isActive:not(.isDisabled),
+	&:active:not(.isDisabled),
+	&:active:focus:not(.isDisabled) {
 		background-color: var(--fr-100);
 		box-shadow: inset 0 0 0 1px var(--fr-500);
 		color: var(--fr-900);
@@ -92,21 +109,26 @@ const SecondaryButton = DefaultButton.extend`
 		box-shadow: inset 0 0 0 1px var(--fr-100);
 		color: var(--fr-300);
 	}
+	
+	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
+		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.1875rem var(--fr-focus);
+	}
 `
 
 const Button = props => {
 	const buttonClasses = cc({
 		"radius-max": props.isRounded,
+		isActive: props.isActive,
 		isDisabled: props.isDisabled,
 		isLoading: props.isLoading,
-		isActive: props.isActive
+		isSmall: props.small
 	})
 
 	return (
 		<div className="inline-flex flex-ycenter relative" onClick={ e => props.action(e) }>
 			{props.type === "primary" && <PrimaryButton { ...props } className={ buttonClasses } />}
 			{props.type === "secondary" && <SecondaryButton { ...props } className={ buttonClasses } />}
-			{props.isLoading && <IconLoading color={ props.type === "secondary" ? "var(--fr-500)" : null } />}
+			{props.isLoading && <Loading color={ props.type === "secondary" && "var(--fr-500)" } />}
 		</div>
 	)
 }
