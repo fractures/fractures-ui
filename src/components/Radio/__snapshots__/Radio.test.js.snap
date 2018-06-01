@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Renders correctly 1`] = `
+<label
+  className="sc-bwzfXH gumxXu fr-radio flex flex-gap-1 relative"
+>
+  <input
+    className="h-0 w-0 none absolute"
+    defaultChecked={false}
+    name="radio"
+    onChange={[Function]}
+    type="radio"
+  />
+  <span
+    className="fr-radio__checkmark radius-max"
+  />
+  <span
+    className="fr-label nowrap ellipsis"
+  >
+    
+  </span>
+</label>
+`;

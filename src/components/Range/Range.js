@@ -12,11 +12,11 @@ const defaultProps = {
 	value: 0
 }
 
-const NakedInput = props => (
+const NakedRange = props => (
 	<input type="range" className={ `${ props.className } w-100` } defaultValue={ props.value } onChange={ e => props.set(e.target.value) } />
 )
 
-const Range = styled(NakedInput)`
+const Range = styled(NakedRange)`
 	-webkit-appearance: none;
 
 	background-color: transparent;
@@ -53,7 +53,10 @@ const Range = styled(NakedInput)`
 	}
 `
 
+NakedRange.propTypes = propTypes
+NakedRange.defaultProps = defaultProps
+
 Range.propTypes = propTypes
 Range.defaultProps = defaultProps
 
-export default Range
+export { Range, NakedRange }
