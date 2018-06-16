@@ -1,12 +1,12 @@
-// import Fractures from "./Fractures.js"
+import Fractures from "./Fractures.js"
 
-xdescribe("Fractures", () => {
+describe("Fractures", () => {
 	const tree = renderer.create(<Fractures />).toJSON()
 
 	it("Renders correctly", () => expect(tree).toMatchSnapshot())
 })
 
-xdescribe("Fractures with theme", () => {
+describe("Fractures with theme", () => {
 	const tree = renderer.create(<Fractures theme="blue" />).toJSON()
 
 	it("Renders correctly", () => expect(tree).toMatchSnapshot())

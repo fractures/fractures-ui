@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fractures Renders correctly 1`] = `
+<style
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": Object {},
+    }
+  }
+/>
+`;
+
+exports[`Fractures with theme Renders correctly 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": Object {},
+      }
+    }
+  />,
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "
+		:root {
+				--fr-ground: #fff;
+				--fr-focus: rgba(52, 130, 218, 0.4);
+				--fr-100: #e8f2fd;
+				--fr-300: #76a7e7;
+				--fr-500: #3482da;
+				--fr-700: #2463a5;
+				--fr-900: #102a45;
+			}
+	",
+      }
+    }
+  />,
+]
+`;

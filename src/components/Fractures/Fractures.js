@@ -1,5 +1,4 @@
 import { themes } from "../../config/themes"
-import { UniversalStyle as Style } from "react-css-component"
 import fractures from "fractures"
 import PropTypes from "prop-types"
 import React, { Fragment } from "react"
@@ -11,6 +10,7 @@ const propTypes = {
 const defaultProps = {
 	theme: null
 }
+
 const Fractures = props => {
 	const theme = themes.find(theme => props.theme === theme.name)
 	const themeCSS =
@@ -29,8 +29,8 @@ const Fractures = props => {
 
 	return (
 		<Fragment>
-			<Style css={ fractures } />
-			{theme && themeCSS && <Style css={ themeCSS } />}
+			<style dangerouslySetInnerHTML={ { __html: fractures } } />
+			{theme && themeCSS && <style dangerouslySetInnerHTML={ { __html: themeCSS } } />}
 		</Fragment>
 	)
 }
