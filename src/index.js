@@ -1,6 +1,7 @@
 import { Button, NakedButton } from "./components/Button/Button"
 import { Checkbox, NakedCheckbox } from "./components/Checkbox/Checkbox"
 import { Input, NakedInput } from "./components/Input/Input"
+import { Label, NakedLabel } from "./components/shared/Label/Label"
 import { Progress, NakedProgress } from "./components/Progress/Progress"
 import { Radio, NakedRadio } from "./components/Radio/Radio"
 import { Range, NakedRange } from "./components/Range/Range"
@@ -17,9 +18,11 @@ export {
 	Container,
 	Fractures,
 	Input,
+	Label,
 	NakedButton,
 	NakedCheckbox,
 	NakedInput,
+	NakedLabel,
 	NakedProgress,
 	NakedRadio,
 	NakedRange,
