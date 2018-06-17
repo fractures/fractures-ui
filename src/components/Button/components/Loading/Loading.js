@@ -46,7 +46,7 @@ const Loading = styled(NakedLoading)`
 	width: 1.5rem;
 
 	animation: ${ showIconLoading } 180ms ease-in-out;
-	
+
 	circle {
 		animation: ${ rotateIconLoading } 480ms linear forwards infinite;
 	}

@@ -6,7 +6,7 @@ exports[`Button Renders correctly 1`] = `
   onClick={[Function]}
 >
   <input
-    className="sc-htpNat dMfPQm"
+    className="sc-htpNat fKdXhZ"
     type="button"
     value="Primary"
   />
@@ -19,7 +19,7 @@ exports[`Button Secondary Renders correctly 1`] = `
   onClick={[Function]}
 >
   <input
-    className="sc-bxivhb fHXVxn"
+    className="sc-bxivhb cRsiwW"
     type="button"
     value="Secondary"
   />

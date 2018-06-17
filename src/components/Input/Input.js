@@ -1,11 +1,12 @@
 import cc from "classcat"
-import Label from "../shared/Label/Label"
+import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
 	change: PropTypes.func.isRequired,
+	label: PropTypes.string,
 	placeholder: PropTypes.string,
 	type: PropTypes.string,
 	value: PropTypes.string
@@ -67,31 +68,31 @@ const Input = styled(NakedInput)`
 		color: var(--shade-6);
 		outline: none;
 		transition: box-shadow 100ms ease-in-out;
-		
+
 		font-size: 1rem;
 	}
-	
+
 	.fr-input--input {
 		line-height: 2.5rem;
 	}
-	
+
 	.fr-input--textarea {
 		line-height: 1.5rem;
 		resize: vertical;
 	}
-	
+
 	.fr-input:focus {
 		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 	}
-	
+
 	.fr-input:active {
 		border-color: var(--fr-700);
 	}
-	
+
 	.fr-input:placeholder {
 		color: var(--fr-300);
 	}
-	
+
 	.fr-input::-webkit-input-placeholder {
 		color: var(--fr-300);
 	}

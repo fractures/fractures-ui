@@ -2,7 +2,7 @@
 
 exports[`Loading Renders correctly 1`] = `
 <svg
-  className="sc-bdVaJa gkdltT"
+  className="sc-bdVaJa lhiXWF"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
@@ -33,7 +33,7 @@ exports[`Loading Renders correctly 1`] = `
 
 exports[`Loading with color Renders correctly 1`] = `
 <svg
-  className="sc-bdVaJa gkdltT"
+  className="sc-bdVaJa lhiXWF"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle

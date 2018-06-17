@@ -2,7 +2,7 @@
 
 exports[`Checkbox Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH kWqCYm"
+  className="sc-bwzfXH bXBXEz"
 >
   <label
     className="fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked"
@@ -27,7 +27,7 @@ exports[`Checkbox Renders correctly 1`] = `
 
 exports[`Checkbox checked Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH kWqCYm"
+  className="sc-bwzfXH bXBXEz"
 >
   <label
     className="fr-checkbox flex flex-gap-1 relative fr-checkbox--checked"
@@ -52,7 +52,7 @@ exports[`Checkbox checked Renders correctly 1`] = `
 
 exports[`Checkbox disabled Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH kWqCYm"
+  className="sc-bwzfXH bXBXEz"
 >
   <label
     className="fr-checkbox flex flex-gap-1 relative fr-checkbox--unchecked fr-checkbox--disabled"

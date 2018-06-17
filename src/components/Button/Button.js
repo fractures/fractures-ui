@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Loading from "../shared/Loading/Loading"
+import Loading from "./components/Loading/Loading"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -39,10 +39,10 @@ const DefaultButton = styled(NakedButton)`
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 2rem;
-	
+
 	&.isSmall {
 		padding: 0.125rem 0.5rem;
-		
+
 		font-size: 0.75rem;
 		line-height: 1.5rem;
 	}
@@ -51,15 +51,17 @@ const DefaultButton = styled(NakedButton)`
 	&.isSmall:focus:hover {
 		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.125rem var(--fr-focus);
 	}
-	
-	&:focus { z-index: 1; }
+
+	&:focus {
+		z-index: 1;
+	}
 	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
 		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 	}
 
 	&.isLoading {
 		padding-left: 2.5rem;
-		
+
 		color: var(--fr-300);
 
 		pointer-events: none;
@@ -109,7 +111,7 @@ const SecondaryButton = DefaultButton.extend`
 		box-shadow: inset 0 0 0 1px var(--fr-100);
 		color: var(--fr-300);
 	}
-	
+
 	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
 		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.1875rem var(--fr-focus);
 	}

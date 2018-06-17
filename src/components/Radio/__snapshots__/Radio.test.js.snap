@@ -2,7 +2,7 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH gumxXu fr-radio flex flex-gap-1 relative"
+  className="sc-bwzfXH gxdvyy fr-radio flex flex-gap-1 relative"
 >
   <input
     className="h-0 w-0 none absolute"

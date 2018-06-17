@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Label from "../shared/Label/Label"
+import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -40,8 +40,8 @@ const NakedCheckbox = props => {
 const Checkbox = styled(NakedCheckbox)`
 	cursor: pointer;
 	user-select: none;
-	
-	&.fr-checkbox--disabled {
+
+	& .fr-checkbox--disabled {
 		opacity: 0.5;
 		pointer-events: none;
 	}
@@ -50,7 +50,7 @@ const Checkbox = styled(NakedCheckbox)`
 		height: 1.75rem;
 		overflow: hidden;
 		width: 1.75rem;
-		
+
 		background-color: var(--fr-ground);
 		border-radius: 0.125rem;
 		border: 2px solid var(--fr-500);
@@ -61,11 +61,11 @@ const Checkbox = styled(NakedCheckbox)`
 		left: 0.625rem;
 		top: 0.25rem;
 		position: absolute;
-		
+
 		height: 1rem;
 		opacity: 0;
 		width: 0.5rem;
-		
+
 		border: solid var(--fr-500);
 		border-width: 0 0.1875rem 0.1875rem 0;
 		transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);

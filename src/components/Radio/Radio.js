@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Label from "../shared/Label/Label"
+import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -44,7 +44,7 @@ const NakedRadio = props => {
 const Radio = styled(NakedRadio)`
 	cursor: pointer;
 	user-select: none;
-	
+
 	&.fr-radio--disabled {
 		opacity: 0.5;
 		pointer-events: none;
