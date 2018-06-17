@@ -3,10 +3,13 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
-	children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired
+	children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+	className: PropTypes.string
 }
 
-const NakedLabel = ({ children }) => <span className="flex flex-ycenter fr-label nowrap ellipsis">{children}</span>
+const NakedLabel = ({ children, className }) => (
+	<span className={ `${ className } flex flex-ycenter fr-label nowrap ellipsis` }>{children}</span>
+)
 
 const Label = styled(NakedLabel)`
 	color: var(--fr-900);

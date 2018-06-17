@@ -132,7 +132,7 @@ const Button = props => {
 		<div className="inline-flex flex-ycenter relative" onClick={ e => props.action(e) }>
 			{props.type === "primary" && <PrimaryButton { ...props } className={ buttonClasses } />}
 			{props.type === "secondary" && <SecondaryButton { ...props } className={ buttonClasses } />}
-			{props.isLoading && <Loading color={ props.type === "secondary" && "var(--fr-500)" } />}
+			{props.isLoading && <Loading color={ props.type === "secondary" ? "var(--fr-500)" : null } />}
 		</div>
 	)
 }
