@@ -6,6 +6,7 @@ import styled from "styled-components"
 
 const propTypes = {
 	check: PropTypes.func.isRequired,
+	className: PropTypes.string,
 	isChecked: PropTypes.bool,
 	isDisabled: PropTypes.bool,
 	label: PropTypes.string.isRequired

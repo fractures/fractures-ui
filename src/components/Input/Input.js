@@ -5,6 +5,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
+	className: PropTypes.string,
 	change: PropTypes.func.isRequired,
 	label: PropTypes.string,
 	placeholder: PropTypes.string,

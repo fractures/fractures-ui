@@ -1,5 +1,5 @@
 {
-	"extends": ["prettier"],
+	"extends": ["prettier", "plugin:react/recommended"],
 	"plugins": ["react", "prettier"],
 	"parserOptions": {
 		"ecmaVersion": 7,
@@ -11,10 +11,8 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"react/react-in-jsx-scope": false,
-		"react/jsx-uses-vars": [2],
-		"react/jsx-pascal-case": [2],
 		"react/jsx-curly-spacing": [2, "always"],
+		"react/jsx-pascal-case": [2],
 		"array-bracket-spacing": ["error", "never"],
 		"arrow-spacing": ["error", { "before": true, "after": true }],
 		"block-spacing": ["error"],

@@ -5,6 +5,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
+	className: PropTypes.string,
 	isDisabled: PropTypes.bool,
 	label: PropTypes.string,
 	set: PropTypes.func.isRequired,

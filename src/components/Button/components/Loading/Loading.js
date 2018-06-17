@@ -3,6 +3,7 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 
 const propTypes = {
+	className: PropTypes.string,
 	color: PropTypes.string
 }
 
@@ -51,6 +52,9 @@ const Loading = styled(NakedLoading)`
 		animation: ${ rotateIconLoading } 480ms linear forwards infinite;
 	}
 `
+
+NakedLoading.propTypes = propTypes
+NakedLoading.defaultProps = defaultProps
 
 Loading.propTypes = propTypes
 Loading.defaultProps = defaultProps

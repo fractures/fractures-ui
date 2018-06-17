@@ -1,7 +1,4 @@
-// NOTE This is kind of a hack.
-
 import PropTypes from "prop-types"
-import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
@@ -10,11 +7,11 @@ const propTypes = {
 
 const ButtonGroup = styled.div`
 	display: flex;
-	
+
 	& > * > * {
 		border-radius: 0;
 	}
-	
+
 	& > *:not(:first-child) *:not(.radius-max) {
 		margin: 0 0 0 -1px;
 	}
@@ -28,7 +25,7 @@ const ButtonGroup = styled.div`
 		border-top-right-radius: 0.25rem;
 		border-bottom-right-radius: 0.25rem;
 	}
-	
+
 	& > *:first-child .radius-max {
 		border-top-left-radius: 10rem;
 		border-bottom-left-radius: 10rem;

@@ -6,10 +6,12 @@ import styled from "styled-components"
 
 const propTypes = {
 	action: PropTypes.func.isRequired,
+	className: PropTypes.string,
 	isActive: PropTypes.bool,
 	isDisabled: PropTypes.bool,
 	isLoading: PropTypes.bool,
 	isRounded: PropTypes.bool,
+	small: PropTypes.bool,
 	type: PropTypes.oneOf(["primary", "secondary"]),
 	value: PropTypes.string.isRequired
 }

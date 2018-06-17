@@ -16,6 +16,8 @@ const Label = styled(NakedLabel)`
 	line-height: 1.75rem;
 `
 
+NakedLabel.propTypes = propTypes
+
 Label.propTypes = propTypes
 
 export default Label

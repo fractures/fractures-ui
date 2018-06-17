@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
+	className: PropTypes.string,
 	set: PropTypes.func.isRequired,
 	value: PropTypes.number
 }
@@ -12,9 +13,15 @@ const defaultProps = {
 	value: 0
 }
 
-const NakedRange = props => (
-	<input type="range" className={ `${ props.className } w-100` } defaultValue={ props.value } onChange={ e => props.set(e.target.value) } />
-)
+const NakedRange = props =>
+
+	// prettier-ignore
+	<input
+		className={ `${ props.className } w-100` }
+		defaultValue={ props.value }
+		onChange={ e => props.set(e.target.value) }
+		type="range"
+	/>
 
 const Range = styled(NakedRange)`
 	-webkit-appearance: none;

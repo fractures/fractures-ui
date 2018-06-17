@@ -16,8 +16,10 @@ const NakedColor = props => (
 )
 
 const Color = styled(NakedColor)`
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); 
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 `
+
+NakedColor.propTypes = propTypes
 
 Color.propTypes = propTypes
 

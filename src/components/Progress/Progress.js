@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
+	className: PropTypes.string,
 	max: PropTypes.number,
 	value: PropTypes.number.isRequired
 }
