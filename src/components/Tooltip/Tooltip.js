@@ -40,7 +40,7 @@ const Tooltip = styled(NakedTooltip)`
 
 		background-color: var(--fr-900);
 		border-radius: 0.125rem;
-		color: white;
+		color: var(--fr-100);
 		content: attr(data-tooltip);
 
 		font-size: 0.875rem;
