@@ -143,7 +143,7 @@ const Toggle = styled(NakedCheckbox)`
 	}
 
 	& input:checked ~ .fr-checkbox__mark {
-		background-color: var(--fr-700);
+		background-color: var(--fr-900);
 	}
 `
 
