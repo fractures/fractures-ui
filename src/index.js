@@ -7,6 +7,7 @@ import { Range, NakedRange } from "./components/Range/Range"
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup"
 import Color from "./components/Color/Color"
 import Container from "./components/Container/Container"
+import Loading from "./components/Loading/Loading"
 import Fractures from "./components/Fractures/Fractures"
 import Label from "./components/Label/Label"
 import Tooltip from "./components/Tooltip/Tooltip"
@@ -20,6 +21,7 @@ export {
 	Fractures,
 	Input,
 	Label,
+	Loading,
 	NakedButton,
 	NakedCheckbox,
 	NakedInput,

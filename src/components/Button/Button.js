@@ -1,5 +1,5 @@
 import cc from "classcat"
-import Loading from "./components/Loading/Loading"
+import Loading from "../Loading/Loading"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
