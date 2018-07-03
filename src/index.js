@@ -9,6 +9,7 @@ import Color from "./components/Color/Color"
 import Container from "./components/Container/Container"
 import Fractures from "./components/Fractures/Fractures"
 import Label from "./components/Label/Label"
+import Tooltip from "./components/Tooltip/Tooltip"
 
 export {
 	Button,
@@ -26,6 +27,7 @@ export {
 	NakedRadio,
 	NakedRange,
 	Progress,
+	Tooltip,
 	Radio,
 	Range
 }

@@ -20,7 +20,11 @@
 		"functional-ui",
 		"css"
 	],
-	"author": "Krisztian Puska <pyx@pyx.space>",
+	"author": {
+		"name": "Krisztian Puska",
+		"email": "pyx@pyx.space",
+		"url": "https://pyx.space"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/fractures/fractures-ui"
