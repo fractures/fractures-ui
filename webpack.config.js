@@ -1,5 +1,4 @@
 const path = require("path")
-const webpack = require("webpack")
 
 module.exports = {
 	entry: "./src/index.js",
@@ -10,10 +9,7 @@ module.exports = {
 		globalObject: "this"
 	},
 	module: {
-		rules: [
-			{ test: /\.(js)$/, use: "babel-loader", exclude: [/node_modules/] },
-			{ test: /\.css$/, loader: "raw-loader" }
-		]
+		rules: [{ test: /\.(js)$/, use: "babel-loader", exclude: [/node_modules/] }, { test: /\.css$/, loader: "raw-loader" }]
 	},
 	externals: {
 		react: {

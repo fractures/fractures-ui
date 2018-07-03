@@ -68,6 +68,10 @@ const DefaultButton = styled(NakedButton)`
 
 		pointer-events: none;
 	}
+
+	&.isLoading.isSmall {
+		padding-left: 1.75rem;
+	}
 `
 
 const PrimaryButton = DefaultButton.extend`
@@ -119,6 +123,11 @@ const SecondaryButton = DefaultButton.extend`
 	}
 `
 
+const LoadingPositioned = Loading.extend`
+	position: absolute;
+	left: ${ props => (props.isSmall ? `0.375rem` : `0.5rem`) };
+`
+
 const Button = props => {
 	const buttonClasses = cc({
 		"radius-max": props.isRounded,
@@ -132,7 +141,13 @@ const Button = props => {
 		<div className="inline-flex flex-ycenter relative" onClick={ e => props.action(e) }>
 			{props.type === "primary" && <PrimaryButton { ...props } className={ buttonClasses } />}
 			{props.type === "secondary" && <SecondaryButton { ...props } className={ buttonClasses } />}
-			{props.isLoading && <Loading color={ props.type === "secondary" ? "var(--fr-500)" : null } />}
+			{props.isLoading && (
+				<LoadingPositioned
+					color={ props.type === "secondary" ? "var(--fr-500)" : null }
+					size={ props.small ? 10 : 20 }
+					isSmall={ props.small }
+				/>
+			)}
 		</div>
 	)
 }
