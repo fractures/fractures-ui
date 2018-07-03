@@ -2,7 +2,8 @@
 
 exports[`Container Renders correctly 1`] = `
 <div
-  className="sc-bdVaJa jEHjXt"
+  className="sc-bdVaJa gsJYAK"
+  width={1060}
 >
   <div />
 </div>

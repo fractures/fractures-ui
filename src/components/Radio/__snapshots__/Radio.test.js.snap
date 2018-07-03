@@ -15,7 +15,7 @@ exports[`Radio Renders correctly 1`] = `
     className="fr-radio__checkmark radius-max"
   />
   <span
-    className="flex flex-ycenter fr-label nowrap ellipsis"
+    className="sc-bdVaJa fmjvAr flex flex-ycenter fr-label nowrap ellipsis"
   >
     
   </span>
