@@ -1,11 +1,14 @@
 import { Cartesian } from "@compositor/kit"
-import { Checkbox } from "../src/components/Checkbox/Checkbox"
+import { Checkbox, Toggle } from "../src/components/Checkbox/Checkbox"
 import Fractures from "./Fractures"
 import React from "react"
 
 const CheckboxExample = () => (
 	<Fractures>
-		<Cartesian component={ Checkbox } label="Checkbox" isChecked={ [false, true] } isDisabled={ [false, true] } />
+		<div className="p-2">
+			<Cartesian component={ Checkbox } label={ [null, "Checkbox"] } isChecked={ [false, true] } isDisabled={ [false, true] } />
+			<Cartesian component={ Toggle } label={ [null, "Toggle"] } isChecked={ [false, true] } isDisabled={ [false, true] } />
+		</div>
 	</Fractures>
 )
 

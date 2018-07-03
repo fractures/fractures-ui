@@ -1,5 +1,5 @@
 import { Button, NakedButton } from "./components/Button/Button"
-import { Checkbox, NakedCheckbox } from "./components/Checkbox/Checkbox"
+import { Checkbox, NakedCheckbox, Toggle } from "./components/Checkbox/Checkbox"
 import { Input, NakedInput } from "./components/Input/Input"
 import { Progress, NakedProgress } from "./components/Progress/Progress"
 import { Radio, NakedRadio } from "./components/Radio/Radio"
@@ -27,7 +27,8 @@ export {
 	NakedRadio,
 	NakedRange,
 	Progress,
-	Tooltip,
 	Radio,
-	Range
+	Range,
+	Toggle,
+	Tooltip
 }

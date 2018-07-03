@@ -84,10 +84,76 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 `
 
+const Toggle = styled(NakedCheckbox)`
+	cursor: pointer;
+	user-select: none;
+
+	& .fr-checkbox--disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	& .fr-checkbox__mark {
+		height: 1.5rem;
+		overflow: hidden;
+		width: 3rem;
+
+		background-color: var(--fr-500);
+		border-radius: 3rem;
+	}
+
+	& .fr-checkbox__mark:after {
+		left: 0.25rem;
+		top: 0.25rem;
+		position: absolute;
+
+		height: 1rem;
+		width: 1rem;
+
+		background-color: white;
+		border-radius: 100%;
+		transition: all 120ms ease-in-out;
+		content: " ";
+	}
+
+	& .fr-checkbox__mark:before {
+		left: 0;
+		top: 0;
+		position: absolute;
+
+		padding: 0 0.5rem;
+		width: 3rem;
+
+		color: white;
+
+		content: "Off";
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+		text-align: right;
+	}
+
+	& input:checked ~ .fr-checkbox__mark:after {
+		left: 1.75rem;
+	}
+
+	& input:checked ~ .fr-checkbox__mark:before {
+		content: "On";
+		text-align: left;
+	}
+
+	& input:checked ~ .fr-checkbox__mark {
+		background-color: var(--fr-700);
+	}
+`
+
 NakedCheckbox.propTypes = propTypes
 NakedCheckbox.defaultProps = defaultProps
 
 Checkbox.propTypes = propTypes
 Checkbox.defaultProps = defaultProps
 
-export { Checkbox, NakedCheckbox }
+Toggle.propTypes = propTypes
+Toggle.defaultProps = defaultProps
+
+export { Checkbox, NakedCheckbox, Toggle }
