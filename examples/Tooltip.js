@@ -1,10 +1,11 @@
 import { Button } from "../src/components/Button/Button"
-import Fractures from "./Fractures"
-import React from "react"
+import Fractures from "../src/components/Fractures/Fractures"
+import React, { Fragment } from "react"
 import Tooltip from "../src/components/Tooltip/Tooltip"
 
 const TooltipExample = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<div className="m-2">
 			<Tooltip text="Helo">Label text</Tooltip>
 			<Tooltip text="This button submit forms.">
@@ -21,7 +22,7 @@ const TooltipExample = () => (
 				<Button value="Lorem ipsum" />
 			</Tooltip>
 		</div>
-	</Fractures>
+	</Fragment>
 )
 
 export default TooltipExample

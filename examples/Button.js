@@ -1,10 +1,11 @@
-import { Button } from "../src/components/Button/Button"
+import Button from "../src/components/Button/Button"
 import { Cartesian } from "@compositor/kit"
-import Fractures from "./Fractures"
-import React from "react"
+import Fractures from "../src/components/Fractures/Fractures"
+import React, { Fragment } from "react"
 
 const ButtonExample = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<Cartesian
 			component={ Button }
 			isActive={ [false, true] }
@@ -15,7 +16,7 @@ const ButtonExample = () => (
 			value={ "Button" }
 			type={ ["primary", "secondary"] }
 		/>
-	</Fractures>
+	</Fragment>
 )
 
 export default ButtonExample

@@ -1,10 +1,11 @@
 import { Button } from "../src/components/Button/Button"
 import ButtonGroup from "../src/components/ButtonGroup/ButtonGroup"
-import Fractures from "./Fractures"
-import React from "react"
+import Fractures from "../src/components/Fractures/Fractures"
+import React, { Fragment } from "react"
 
 const ExampleButtonGroup = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<ButtonGroup>
 			<Button type="primary" isActive={ true } value="Option" />
 			<Button type="primary" value="Secondary" />
@@ -19,7 +20,7 @@ const ExampleButtonGroup = () => (
 			<Button type="secondary" small={ true } value="Tenth" />
 			<Button type="secondary" small={ true } value="Third" />
 		</ButtonGroup>
-	</Fractures>
+	</Fragment>
 )
 
 export default ExampleButtonGroup

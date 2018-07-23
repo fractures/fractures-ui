@@ -1,12 +1,13 @@
 import { Cartesian } from "@compositor/kit"
 import { Progress } from "../src/components/Progress/Progress"
-import Fractures from "./Fractures"
-import React from "react"
+import Fractures from "../src/components/Fractures/Fractures"
+import React, { Fragment } from "react"
 
 const ProgressExample = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<Cartesian component={ Progress } max={ [75, 100] } value={ [0, 50, 100] } />
-	</Fractures>
+	</Fragment>
 )
 
 export default ProgressExample

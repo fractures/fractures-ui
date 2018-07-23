@@ -1,7 +1,6 @@
 import { themes } from "../../config/themes"
-import fractures from "fractures"
 import PropTypes from "prop-types"
-import React, { Fragment } from "react"
+import React from "react"
 
 const propTypes = {
 	theme: PropTypes.oneOf(["blue", "black", "invert", "test"])
@@ -27,12 +26,7 @@ const Fractures = props => {
 			}
 	`
 
-	return (
-		<Fragment>
-			<style dangerouslySetInnerHTML={ { __html: fractures } } />
-			{theme && themeCSS && <style dangerouslySetInnerHTML={ { __html: themeCSS } } />}
-		</Fragment>
-	)
+	return theme ? <style dangerouslySetInnerHTML={ { __html: themeCSS } } /> : null
 }
 
 Fractures.propTypes = propTypes

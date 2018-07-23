@@ -1,11 +1,12 @@
-import Fractures from "./Fractures"
+import Fractures from "../src/components/Fractures/Fractures"
 import Label from "../src/components/Label/Label"
-import React from "react"
+import React, { Fragment } from "react"
 
 const LabelExample = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<Label>Label text</Label>
-	</Fractures>
+	</Fragment>
 )
 
 export default LabelExample

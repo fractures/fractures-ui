@@ -1,12 +1,13 @@
 import { Cartesian } from "@compositor/kit"
 import { Range } from "../src/components/Range/Range"
-import Fractures from "./Fractures"
-import React from "react"
+import Fractures from "../src/components/Fractures/Fractures"
+import React, { Fragment } from "react"
 
 const RangeExample = () => (
-	<Fractures>
+	<Fragment>
+		<Fractures theme="blue" />
 		<Cartesian component={ Range } value={ [0, 25, 100] } />
-	</Fractures>
+	</Fragment>
 )
 
 export default RangeExample

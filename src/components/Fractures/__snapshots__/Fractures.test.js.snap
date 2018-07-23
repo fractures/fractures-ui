@@ -1,28 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fractures Renders correctly 1`] = `
+exports[`Fractures Renders correctly 1`] = `null`;
+
+exports[`Fractures with theme Renders correctly 1`] = `
 <style
   dangerouslySetInnerHTML={
     Object {
-      "__html": Object {},
-    }
-  }
-/>
-`;
-
-exports[`Fractures with theme Renders correctly 1`] = `
-Array [
-  <style
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": Object {},
-      }
-    }
-  />,
-  <style
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "
+      "__html": "
 		:root {
 				--fr-ground: #fff;
 				--fr-focus: rgba(52, 130, 218, 0.4);
@@ -33,8 +17,7 @@ Array [
 				--fr-900: #102a45;
 			}
 	",
-      }
     }
-  />,
-]
+  }
+/>
 `;

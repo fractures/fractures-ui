@@ -1,4 +1,6 @@
-import { Button, NakedButton } from "./components/Button/Button"
+import Button from "./components/Button/Button"
+import NakedButton from "./components/Button/components/NakedButton"
+
 import { Checkbox, NakedCheckbox, Toggle } from "./components/Checkbox/Checkbox"
 import { Input, NakedInput } from "./components/Input/Input"
 import { Progress, NakedProgress } from "./components/Progress/Progress"

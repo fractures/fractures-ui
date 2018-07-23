@@ -2,14 +2,14 @@
 
 exports[`Loading Renders correctly 1`] = `
 <svg
-  className="sc-bdVaJa lhiXWF"
+  className="sc-bdVaJa chMBRY"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
-    cx="12"
-    cy="12"
+    cx={12}
+    cy={12}
     fill="none"
-    r="10"
+    r={10}
     stroke="var(--fr-300)"
     strokeWidth={4}
     style={
@@ -19,12 +19,12 @@ exports[`Loading Renders correctly 1`] = `
     }
   />
   <circle
-    cx="12"
-    cy="12"
+    cx={12}
+    cy={12}
     fill="none"
-    r="10"
+    r={10}
     stroke="var(--fr-100)"
-    strokeDasharray="32"
+    strokeDasharray={32}
     strokeLinecap="round"
     strokeWidth={4}
   />
@@ -33,14 +33,14 @@ exports[`Loading Renders correctly 1`] = `
 
 exports[`Loading with color Renders correctly 1`] = `
 <svg
-  className="sc-bdVaJa lhiXWF"
+  className="sc-bdVaJa chMBRY"
   xmlns="http://www.w3.org/2000/svg"
 >
   <circle
-    cx="12"
-    cy="12"
+    cx={12}
+    cy={12}
     fill="none"
-    r="10"
+    r={10}
     stroke="var(--fr-300)"
     strokeWidth={4}
     style={
@@ -50,12 +50,12 @@ exports[`Loading with color Renders correctly 1`] = `
     }
   />
   <circle
-    cx="12"
-    cy="12"
+    cx={12}
+    cy={12}
     fill="none"
-    r="10"
+    r={10}
     stroke="white"
-    strokeDasharray="32"
+    strokeDasharray={32}
     strokeLinecap="round"
     strokeWidth={4}
   />

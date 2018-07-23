@@ -2,11 +2,17 @@
 
 exports[`Button Renders correctly 1`] = `
 <div
-  className="inline-flex flex-ycenter relative"
   onClick={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-flex",
+      "position": "relative",
+    }
+  }
 >
   <input
-    className="sc-htpNat fKdXhZ"
+    className="sc-bxivhb dGNTrq"
     type="button"
     value="Primary"
   />
@@ -15,11 +21,17 @@ exports[`Button Renders correctly 1`] = `
 
 exports[`Button Secondary Renders correctly 1`] = `
 <div
-  className="inline-flex flex-ycenter relative"
   onClick={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-flex",
+      "position": "relative",
+    }
+  }
 >
   <input
-    className="sc-bxivhb cRsiwW"
+    className="sc-ifAKCX cNkiAD"
     type="button"
     value="Secondary"
   />
