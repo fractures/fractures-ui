@@ -1,4 +1,4 @@
-import { Button } from "../src/components/Button/Button"
+import Button from "../src/components/Button/Button"
 import ButtonGroup from "../src/components/ButtonGroup/ButtonGroup"
 import Fractures from "../src/components/Fractures/Fractures"
 import React, { Fragment } from "react"
