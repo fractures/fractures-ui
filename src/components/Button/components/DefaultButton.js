@@ -1,6 +1,9 @@
 import NakedButton from "./NakedButton"
-import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
+
+const propTypes = { isRounded: PropTypes.bool }
+const defaultProps = { isRounded: false }
 
 const DefaultButton = styled(NakedButton)`
 	padding: 0.25rem 1rem;
@@ -8,7 +11,7 @@ const DefaultButton = styled(NakedButton)`
 	border: 0;
 	border-radius: ${ props => (props.isRounded ? `2.5rem` : `0.25rem`) };
 	outline: none;
-	transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out, padding-left 180ms ease-in-out;
+	transition: background-color 120ms ease-in-out, box-shadow 120ms ease-in-out, padding-left 180ms ease-in-out;
 
 	cursor: pointer;
 	font-size: 0.875rem;
@@ -30,6 +33,7 @@ const DefaultButton = styled(NakedButton)`
 	&:focus {
 		z-index: 1;
 	}
+
 	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
 		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 	}
@@ -46,5 +50,8 @@ const DefaultButton = styled(NakedButton)`
 		padding-left: 1.75rem;
 	}
 `
+
+DefaultButton.propTypes = propTypes
+DefaultButton.defaultProps = defaultProps
 
 export default DefaultButton

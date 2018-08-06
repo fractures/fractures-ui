@@ -1,5 +1,4 @@
 import DefaultButton from "./DefaultButton"
-import React from "react"
 
 const ButtonPrimary = DefaultButton.extend`
 	background-color: var(--fr-500);
