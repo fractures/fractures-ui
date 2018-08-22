@@ -1,5 +1,6 @@
 import Button from "./components/Button/Button"
 import NakedButton from "./components/Button/components/NakedButton"
+import ButtonPrimary from "./components/Button/components/ButtonPrimary"
 
 import { Checkbox, NakedCheckbox, Toggle } from "./components/Checkbox/Checkbox"
 import { Input, NakedInput } from "./components/Input/Input"
@@ -16,6 +17,7 @@ import Tooltip from "./components/Tooltip/Tooltip"
 
 export {
 	Button,
+	ButtonPrimary,
 	ButtonGroup,
 	Checkbox,
 	Color,
