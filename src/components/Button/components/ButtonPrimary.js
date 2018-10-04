@@ -1,6 +1,7 @@
 import DefaultButton from "./DefaultButton"
+import styled from "styled-components"
 
-const ButtonPrimary = DefaultButton.extend`
+const ButtonPrimary = styled(DefaultButton)`
 	background-color: var(--fr-500);
 	color: var(--fr-ground);
 

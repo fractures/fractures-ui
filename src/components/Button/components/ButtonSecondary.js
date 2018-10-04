@@ -1,6 +1,7 @@
 import DefaultButton from "./DefaultButton"
+import styled from "styled-components"
 
-const ButtonSecondary = DefaultButton.extend`
+const ButtonSecondary = styled(DefaultButton)`
 	background-color: var(--fr-ground);
 	box-shadow: inset 0 0 0 1px var(--fr-300);
 	color: var(--fr-500);
