@@ -10,6 +10,7 @@ const propTypes = {
 const NakedLabel = ({ children, className }) => <span className={ className }>{children}</span>
 
 const Label = styled(NakedLabel)`
+	align-items: center;
 	display: flex;
 	white-space: nowrap;
 
