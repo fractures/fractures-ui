@@ -64,6 +64,7 @@ const Toggle = styled(NakedCheckbox)`
 	}
 
 	.fr-toggle__mark {
+		box-sizing: border-box;
 		height: 1.5rem;
 		margin-right: 0.5rem;
 		overflow: hidden;
