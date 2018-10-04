@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react"
+import React, { Component } from "react"
 import {
 	Button,
 	ButtonGroup,
@@ -38,8 +38,6 @@ class Index extends Component {
 			theme: themes[0],
 			isLoading: false
 		}
-
-		this.toggleLoading = this.toggleLoading.bind(this)
 	}
 
 	toggleLoading() {
@@ -54,20 +52,26 @@ class Index extends Component {
 		return (
 			<div style={ { backgroundColor: this.state.theme.colors.ground } }>
 				<Fractures theme={ this.state.theme.name } />
-				<nav style={ { position: "sticky", top: 0, zIndex: 1, width: "100%" } }>
+				<nav style={ { backgroundColor: this.state.theme.colors.shade100 } }>
 					<ButtonGroup>
 						{themes.map((theme, key) => (
 							<Button
 								key={ key }
 								type="secondary"
 								value={ theme.name }
-								isRounded={ true }
 								isSmall={ true }
 								action={ () => this.setTheme(theme) }
 								isActive={ theme.name === this.state.theme.name }
 							/>
 						))}
 					</ButtonGroup>
+					<Button
+						type="secondary"
+						value={ this.state.isLoading ? "Loading on" : "Loading off" }
+						isSmall={ true }
+						action={ () => this.toggleLoading() }
+						isActive={ this.state.isLoading }
+					/>
 				</nav>
 				<Container style={ { padding: "2rem 0" } }>
 					<Box title="Color">
@@ -83,16 +87,16 @@ class Index extends Component {
 							<Button type="primary" value="Active" isActive={ true } />
 							<Button type="primary" value="Disabled" isDisabled={ true } />
 							<Button type="primary" value="Rounded" isRounded={ true } />
-							<Button type="primary" value="Small" small={ true } />
-							<Button type="primary" value="Small Rounded" small={ true } isRounded={ true } />
+							<Button type="primary" value="Small" isSmall={ true } />
+							<Button type="primary" value="Small Rounded" isSmall={ true } isRounded={ true } />
 						</Line>
 						<Line isRow>
 							<Button type="secondary" value="Default" />
 							<Button type="secondary" value="Active" isActive={ true } />
 							<Button type="secondary" value="Disabled" isDisabled={ true } />
 							<Button type="secondary" value="Rounded" isRounded={ true } />
-							<Button type="secondary" value="Small" small={ true } />
-							<Button type="secondary" value="Small Rounded" small={ true } isRounded={ true } />
+							<Button type="secondary" value="Small" isSmall={ true } />
+							<Button type="secondary" value="Small Rounded" isSmall={ true } isRounded={ true } />
 						</Line>
 						<Line isRow>
 							<Button type="primary" value="Activate" isLoading={ this.state.isLoading } action={ e => setValue(e) } />

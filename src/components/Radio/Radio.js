@@ -44,6 +44,7 @@ const NakedRadio = props => {
 const Radio = styled(NakedRadio)`
 	position: relative;
 
+	box-sizing: border-box;
 	display: flex;
 
 	cursor: pointer;
@@ -67,6 +68,7 @@ const Radio = styled(NakedRadio)`
 	}
 
 	.fr-radio__checkmark {
+		box-sizing: inherit;
 		height: 1.5rem;
 		margin-right: 0.5rem;
 		width: 1.5rem;
@@ -85,8 +87,8 @@ const Radio = styled(NakedRadio)`
 		height: 0.875rem;
 		width: 0.875rem;
 
-		border-radius: 100%;
 		background: var(--fr-500);
+		border-radius: 100%;
 		transform: scale(0);
 		transition: all 100ms ease-in-out;
 
