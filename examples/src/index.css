@@ -1,5 +1,13 @@
 body {
+	margin: 0;
+	padding: 0;
+
 	font-family: sans-serif;
+}
+
+nav {
+	box-sizing: border-box;
+	padding: 1rem;
 }
 
 .flex {

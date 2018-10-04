@@ -8,15 +8,36 @@ const propTypes = {
 }
 
 const NakedColor = props => (
-	<small className="fr-color grow-1 p-2 nowrap white" style={ { backgroundColor: props.hex } }>
-		<b>{props.name}</b>
-		<br />
+	<div className={ props.className }>
+		<div className="fr-color__box" style={ { backgroundColor: props.hex } } />
+		<b className="fr-color__name">{props.name}</b>
 		<small>{props.hex}</small>
-	</small>
+	</div>
 )
 
 const Color = styled(NakedColor)`
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	padding: 0.75rem;
+
+	font-size: 0.9125rem;
+
+	color: var(--fr-500);
+
+	.fr-color__box {
+		height: 2rem;
+		margin-bottom: 0.5rem;
+		width: 6rem;
+
+		border-radius: 0.125rem;
+	}
+
+	.fr-color__name {
+		line-height: 1.5;
+	}
+
+	b,
+	small {
+		display: block;
+	}
 `
 
 NakedColor.propTypes = propTypes
