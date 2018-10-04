@@ -10,7 +10,7 @@ const defaultProps = {
 	value: ""
 }
 
-const NakedButton = ({ className, value }) => <input className={ className } type="button" value={ value } />
+const NakedButton = ({ className, value }) => <input className={ className } type="button" role="button" value={ value } />
 
 NakedButton.propTypes = propTypes
 NakedButton.defaultProps = defaultProps

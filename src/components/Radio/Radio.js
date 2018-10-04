@@ -28,7 +28,13 @@ const NakedRadio = props => {
 
 	return (
 		<label className={ `${ props.className } ${ radioClasses }` }>
-			<input type="radio" name="radio" onChange={ () => props.set(props.value) } defaultChecked={ props.state === props.value } />
+			<input
+				aria-checked={ props.state === props.value }
+				type="radio"
+				name="radio"
+				onChange={ () => props.set(props.value) }
+				defaultChecked={ props.state === props.value }
+			/>
 			<span className="fr-radio__checkmark" />
 			<Label>{props.label}</Label>
 		</label>
