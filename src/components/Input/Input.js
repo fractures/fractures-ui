@@ -50,7 +50,7 @@ const NakedInput = props => {
 	)
 
 	return (
-		<div className={ `${ props.className } flex flex-column` }>
+		<div className={ props.className }>
 			{props.label && (
 				<label>
 					<Label>{props.label}</Label>
@@ -62,6 +62,9 @@ const NakedInput = props => {
 }
 
 const Input = styled(NakedInput)`
+	display: flex;
+	flex-direction: column;
+
 	.fr-input {
 		background-color: var(--fr-ground);
 		border: 1px solid var(--fr-500);

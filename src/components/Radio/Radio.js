@@ -23,26 +23,23 @@ const defaultProps = {
 
 const NakedRadio = props => {
 	const radioClasses = cc({
-		"fr-radio flex flex-gap-1 relative": true,
 		"fr-radio--disabled": props.isDisabled
 	})
 
 	return (
 		<label className={ `${ props.className } ${ radioClasses }` }>
-			<input
-				type="radio"
-				name="radio"
-				className="h-0 w-0 none absolute"
-				onChange={ () => props.set(props.value) }
-				defaultChecked={ props.state === props.value }
-			/>
-			<span className="fr-radio__checkmark radius-max" />
+			<input type="radio" name="radio" onChange={ () => props.set(props.value) } defaultChecked={ props.state === props.value } />
+			<span className="fr-radio__checkmark" />
 			<Label>{props.label}</Label>
 		</label>
 	)
 }
 
 const Radio = styled(NakedRadio)`
+	position: relative;
+
+	display: flex;
+
 	cursor: pointer;
 	user-select: none;
 
@@ -51,19 +48,29 @@ const Radio = styled(NakedRadio)`
 		pointer-events: none;
 	}
 
-	& input:checked ~ .fr-radio__checkmark {
+	input {
+		display: none;
+		height: 0;
+		width: 0;
+
+		visibility: hidden;
+	}
+
+	input:checked ~ .fr-radio__checkmark {
 		background-color: var(--fr-ground);
 	}
 
-	& .fr-radio__checkmark {
+	.fr-radio__checkmark {
 		height: 1.5rem;
+		margin-right: 0.5rem;
 		width: 1.5rem;
 
 		background-color: var(--fr-ground);
 		border: 2px solid var(--fr-500);
+		border-radius: 100%;
 	}
 
-	& .fr-radio__checkmark:after {
+	.fr-radio__checkmark:after {
 		position: absolute;
 		top: 0.3125rem;
 		left: 0.3125rem;
@@ -80,7 +87,7 @@ const Radio = styled(NakedRadio)`
 		content: "";
 	}
 
-	& input:checked ~ .fr-radio__checkmark:after {
+	input:checked ~ .fr-radio__checkmark:after {
 		opacity: 1;
 
 		transform: scale(1);
@@ -93,4 +100,4 @@ NakedRadio.defaultProps = defaultProps
 Radio.propTypes = propTypes
 Radio.defaultProps = defaultProps
 
-export { Radio, NakedRadio }
+export default Radio

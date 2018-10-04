@@ -17,7 +17,7 @@ const NakedRange = props =>
 
 	// prettier-ignore
 	<input
-		className={ `${ props.className } w-100` }
+		className={ props.className }
 		defaultValue={ props.value }
 		onChange={ e => props.set(e.target.value) }
 		type="range"
@@ -25,6 +25,8 @@ const NakedRange = props =>
 
 const Range = styled(NakedRange)`
 	-webkit-appearance: none;
+
+	width: 100%;
 
 	background-color: transparent;
 
