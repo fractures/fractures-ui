@@ -1,17 +1,26 @@
-import { Checkbox, Toggle } from "../src/components/Checkbox/Checkbox"
 import { Input } from "../src/components/Input/Input"
 import { Progress } from "../src/components/Progress/Progress"
 import { Radio } from "../src/components/Radio/Radio"
 import { Range } from "../src/components/Range/Range"
 import Button from "../src/components/Button/Button"
 import ButtonGroup from "../src/components/ButtonGroup/ButtonGroup"
+import Checkbox from "../src/components/Checkbox/Checkbox"
 import Color from "../src/components/Color/Color"
 import Container from "../src/components/Container/Container"
 import Fractures from "../src/components/Fractures/Fractures"
 import Label from "../src/components/Label/Label"
 import Loading from "../src/components/Loading/Loading"
 import React from "react"
+import Toggle from "../src/components/Toggle/Toggle"
 import Tooltip from "../src/components/Tooltip/Tooltip"
+
+const toggleCheckbox = e => {
+	console.log("Checkbox toggled.", e)
+}
+
+const setValue = e => {
+	console.log("Radio set.", e)
+}
 
 const Index = () => (
 	<Container className="py-4">
@@ -64,7 +73,7 @@ const Index = () => (
 		<div className="my-4">
 			<h4 className="my-2">Checkbox</h4>
 			<div className="flex flex-gap-1 flex-column my-1">
-				<Checkbox label="Checkbox, hmm" isChecked={ true } check={ () => this.toggleCheckbox() } />
+				<Checkbox label="Checkbox, hmm" isChecked={ true } check={ () => toggleCheckbox() } />
 				<Checkbox label="This is disabled, checked" isChecked={ true } isDisabled={ true } />
 				<Checkbox label="This is disabled, unchecked" isChecked={ false } isDisabled={ true } />
 				<Toggle label="This is a toggle" isChecked={ false } isDisabled={ false } />
@@ -73,15 +82,15 @@ const Index = () => (
 		<div className="my-4">
 			<h4 className="my-2">Radio</h4>
 			<div className="flex flex-gap-1 flex-column my-1">
-				<Radio label="Val 1" value={ 0 } state={ true } set={ e => this.setRadio(e) } />
-				<Radio label="Val 2" value={ 1 } state={ true } set={ e => this.setRadio(e) } />
+				<Radio label="Val 1" value={ 0 } state={ true } set={ e => setValue(e) } />
+				<Radio label="Val 2" value={ 1 } state={ true } set={ e => setValue(e) } />
 				<Radio label="Disabled" value={ 4 } state={ true } isDisabled={ true } />
 			</div>
 		</div>
 		<div className="my-4">
 			<h4 className="my-2">Range</h4>
 			<div className="flex flex-gap-1 flex-column my-1">
-				<Range value={ 40 } set={ e => this.setRange(e) } />
+				<Range value={ 40 } set={ e => setValue(e) } />
 			</div>
 		</div>
 		<div className="my-4">

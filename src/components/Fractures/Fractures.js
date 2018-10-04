@@ -16,14 +16,23 @@ const Fractures = props => {
 		theme &&
 		`
 		:root {
-				--fr-ground: ${ theme.colors.ground };
-				--fr-focus: ${ theme.colors.focus };
-				--fr-100: ${ theme.colors.shade100 };
-				--fr-300: ${ theme.colors.shade300 };
-				--fr-500: ${ theme.colors.shade500 };
-				--fr-700: ${ theme.colors.shade700 };
-				--fr-900: ${ theme.colors.shade900 };
-			}
+			--fr-ground: ${ theme.colors.ground };
+			--fr-focus: ${ theme.colors.focus };
+			--fr-100: ${ theme.colors.shade100 };
+			--fr-300: ${ theme.colors.shade300 };
+			--fr-500: ${ theme.colors.shade500 };
+			--fr-700: ${ theme.colors.shade700 };
+			--fr-900: ${ theme.colors.shade900 };
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		*:before,
+		*:after { box-sizing: inherit; }
 	`
 
 	return theme ? <style dangerouslySetInnerHTML={ { __html: themeCSS } } /> : null

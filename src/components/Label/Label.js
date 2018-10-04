@@ -7,16 +7,18 @@ const propTypes = {
 	className: PropTypes.string
 }
 
-const NakedLabel = ({ children, className }) => (
-	<span className={ `${ className } flex flex-ycenter fr-label nowrap ellipsis` }>{children}</span>
-)
+const NakedLabel = ({ children, className }) => <span className={ className }>{children}</span>
 
 const Label = styled(NakedLabel)`
+	display: flex;
+	white-space: nowrap;
+
 	color: var(--fr-900);
 
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 1.75rem;
+	text-overflow: ellipsis;
 `
 
 NakedLabel.propTypes = propTypes
