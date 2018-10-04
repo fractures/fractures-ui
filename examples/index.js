@@ -81,12 +81,20 @@ const Index = () => (
 				<Button type="primary" value="Disabled" isDisabled={ true } />
 			</ButtonGroup>
 			<ButtonGroup>
+				<Button type="primary" value="First" isSmall={ true } />
+				<Button type="primary" value="Active" isSmall={ true } isActive={ true } />
+			</ButtonGroup>
+			<ButtonGroup>
 				<Button type="secondary" value="Active" isActive={ true } />
 				<Button type="secondary" value="Second" />
 			</ButtonGroup>
 			<ButtonGroup>
 				<Button type="secondary" value="First" isRounded={ true } />
 				<Button type="secondary" value="Active" isActive={ true } isRounded={ true } />
+			</ButtonGroup>
+			<ButtonGroup>
+				<Button type="secondary" value="First" isRounded={ true } isSmall={ true } />
+				<Button type="secondary" value="Active" isActive={ true } isSmall={ true } isRounded={ true } />
 			</ButtonGroup>
 		</Box>
 		<Box title="Checkbox">
