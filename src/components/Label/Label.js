@@ -18,7 +18,7 @@ const Label = styled(NakedLabel)`
 
 	font-size: 0.875rem;
 	font-weight: 500;
-	line-height: 1.75rem;
+	line-height: 1.5rem;
 	text-overflow: ellipsis;
 `
 
