@@ -2,7 +2,7 @@
 
 exports[`Toggle Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH zalzc"
+  className="sc-bwzfXH czgnW"
 >
   <label
     className="fr-toggle fr-toggle--unchecked"
@@ -16,7 +16,7 @@ exports[`Toggle Renders correctly 1`] = `
       className="fr-toggle__mark"
     />
     <span
-      className="sc-bdVaJa lbzamX"
+      className="sc-bdVaJa erEhky"
     >
       Toggle
     </span>

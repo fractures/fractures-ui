@@ -12,7 +12,8 @@ exports[`Button Renders correctly 1`] = `
   }
 >
   <input
-    className="sc-bwzfXH iyBxrD"
+    className="sc-bwzfXH jgDkZo sc-bdVaJa dqCPZy"
+    role="button"
     type="button"
     value="Primary"
   />
@@ -31,7 +32,8 @@ exports[`Button Secondary Renders correctly 1`] = `
   }
 >
   <input
-    className="sc-htpNat lluWzr"
+    className="sc-htpNat fcsfBF sc-bdVaJa dqCPZy"
+    role="button"
     type="button"
     value="Secondary"
   />

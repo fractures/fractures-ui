@@ -2,9 +2,10 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH eakdlx "
+  className="sc-bwzfXH cWsoPb "
 >
   <input
+    aria-checked={false}
     defaultChecked={false}
     name="radio"
     onChange={[Function]}
@@ -14,7 +15,7 @@ exports[`Radio Renders correctly 1`] = `
     className="fr-radio__checkmark"
   />
   <span
-    className="sc-bdVaJa lbzamX"
+    className="sc-bdVaJa erEhky"
   >
     
   </span>

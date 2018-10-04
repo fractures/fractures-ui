@@ -1,20 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Color Renders correctly 1`] = `
-<small
-  className="fr-color grow-1 p-2 nowrap white"
-  style={
-    Object {
-      "backgroundColor": "#eee",
-    }
-  }
+<div
+  className="sc-bdVaJa gHAgcb"
 >
-  <b>
+  <div
+    className="fr-color__box"
+    style={
+      Object {
+        "backgroundColor": "#eee",
+      }
+    }
+  />
+  <b
+    className="fr-color__name"
+  >
     Light
   </b>
-  <br />
   <small>
     #eee
   </small>
-</small>
+</div>
 `;
