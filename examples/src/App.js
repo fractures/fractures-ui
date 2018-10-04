@@ -1,4 +1,3 @@
-import styled, { css } from "styled-components"
 import React, { Component } from "react"
 import {
 	Button,
@@ -15,30 +14,13 @@ import {
 	Range,
 	Toggle,
 	Tooltip
-} from "../src"
+} from "fractures-ui"
 
 const setValue = e => {
 	console.log("setValue", e)
 }
 
-const Line = styled.div`
-	display: flex;
-	flex-direction: column;
-
-	${ props =>
-		props.direction &&
-		css`
-			flex-direction: row;
-
-			& > *:not(:last-child) {
-				margin-right: 0.5rem;
-			}
-		` };
-
-	& > *:not(:last-child) {
-		margin-bottom: 0.5rem;
-	}
-`
+const Line = props => <div className={ props.isRow ? `flex line--row` : `flex line--column` }>{props.children}</div>
 
 const Box = props => (
 	<div style={ { padding: "1rem 0" } }>
@@ -67,7 +49,7 @@ class Index extends Component {
 			<Container style={ { padding: "2rem 0" } }>
 				<Fractures theme="blue" />
 				<Box title="Button">
-					<Line direction="row">
+					<Line isRow>
 						<Button type="primary" value="Default" action={ () => this.toggleLoading() } />
 						<Button type="primary" value="Active" isActive={ true } />
 						<Button type="primary" value="Disabled" isDisabled={ true } />
@@ -75,7 +57,7 @@ class Index extends Component {
 						<Button type="primary" value="Small" small={ true } />
 						<Button type="primary" value="Small Rounded" small={ true } isRounded={ true } />
 					</Line>
-					<Line direction="row">
+					<Line isRow>
 						<Button type="secondary" value="Default" />
 						<Button type="secondary" value="Active" isActive={ true } />
 						<Button type="secondary" value="Disabled" isDisabled={ true } />
@@ -83,7 +65,7 @@ class Index extends Component {
 						<Button type="secondary" value="Small" small={ true } />
 						<Button type="secondary" value="Small Rounded" small={ true } isRounded={ true } />
 					</Line>
-					<Line direction="row">
+					<Line isRow>
 						<Button type="primary" value="Activate" isLoading={ this.state.isLoading } action={ e => setValue(e) } />
 						<Button type="secondary" value="Activate" isLoading={ !this.state.isLoading } action={ e => setValue(e) } />
 						<Button type="primary" value="Activate" isRounded={ true } isLoading={ false } action={ e => setValue(e) } />
@@ -91,27 +73,37 @@ class Index extends Component {
 					</Line>
 				</Box>
 				<Box title="ButtonGroup">
-					<ButtonGroup>
-						<Button type="primary" value="Active" isActive={ true } />
-						<Button type="primary" value="Second" />
-						<Button type="primary" value="Disabled" isDisabled={ true } />
-					</ButtonGroup>
-					<ButtonGroup>
-						<Button type="primary" value="First" isSmall={ true } />
-						<Button type="primary" value="Active" isSmall={ true } isActive={ true } />
-					</ButtonGroup>
-					<ButtonGroup>
-						<Button type="secondary" value="Active" isActive={ true } />
-						<Button type="secondary" value="Second" />
-					</ButtonGroup>
-					<ButtonGroup>
-						<Button type="secondary" value="First" isRounded={ true } />
-						<Button type="secondary" value="Active" isActive={ true } isRounded={ true } />
-					</ButtonGroup>
-					<ButtonGroup>
-						<Button type="secondary" value="First" isRounded={ true } isSmall={ true } />
-						<Button type="secondary" value="Active" isActive={ true } isSmall={ true } isRounded={ true } />
-					</ButtonGroup>
+					<Line isRow>
+						<ButtonGroup>
+							<Button type="primary" value="Active" isActive={ true } />
+							<Button type="primary" value="Second" />
+							<Button type="primary" value="Disabled" isDisabled={ true } />
+						</ButtonGroup>
+					</Line>
+					<Line isRow>
+						<ButtonGroup>
+							<Button type="primary" value="First" isSmall={ true } />
+							<Button type="primary" value="Active" isSmall={ true } isActive={ true } />
+						</ButtonGroup>
+					</Line>
+					<Line isRow>
+						<ButtonGroup>
+							<Button type="secondary" value="Active" isActive={ true } />
+							<Button type="secondary" value="Second" />
+						</ButtonGroup>
+					</Line>
+					<Line isRow>
+						<ButtonGroup>
+							<Button type="secondary" value="First" isRounded={ true } />
+							<Button type="secondary" value="Active" isActive={ true } isRounded={ true } />
+						</ButtonGroup>
+					</Line>
+					<Line isRow>
+						<ButtonGroup>
+							<Button type="secondary" value="First" isRounded={ true } isSmall={ true } />
+							<Button type="secondary" value="Active" isActive={ true } isSmall={ true } isRounded={ true } />
+						</ButtonGroup>
+					</Line>
 				</Box>
 				<Box title="Checkbox">
 					<Checkbox label="Checkbox, hmm" isChecked={ true } check={ e => setValue(e) } />

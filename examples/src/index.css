@@ -1,0 +1,19 @@
+.flex {
+	display: flex;
+}
+
+.line--column {
+	flex-direction: column;
+}
+
+.line--column > *:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+
+.line--row {
+	flex-direction: row;
+}
+
+.line--row > *:not(:last-child) {
+	margin-right: 0.5rem;
+}
