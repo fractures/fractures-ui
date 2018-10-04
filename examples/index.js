@@ -1,19 +1,21 @@
 import styled, { css } from "styled-components"
-import { Input } from "../src/components/Input/Input"
-import { Progress } from "../src/components/Progress/Progress"
-import Radio from "../src/components/Radio/Radio"
-import { Range } from "../src/components/Range/Range"
-import Button from "../src/components/Button/Button"
-import ButtonGroup from "../src/components/ButtonGroup/ButtonGroup"
-import Checkbox from "../src/components/Checkbox/Checkbox"
-import Color from "../src/components/Color/Color"
-import Container from "../src/components/Container/Container"
-import Fractures from "../src/components/Fractures/Fractures"
-import Label from "../src/components/Label/Label"
-import Loading from "../src/components/Loading/Loading"
 import React from "react"
-import Toggle from "../src/components/Toggle/Toggle"
-import Tooltip from "../src/components/Tooltip/Tooltip"
+import {
+	Button,
+	ButtonGroup,
+	Checkbox,
+	Color,
+	Container,
+	Fractures,
+	Input,
+	Label,
+	Loading,
+	Progress,
+	Radio,
+	Range,
+	Toggle,
+	Tooltip
+} from "../src"
 
 const setValue = e => {
 	console.log("setValue", e)

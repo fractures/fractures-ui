@@ -2,7 +2,7 @@
 
 exports[`Label Renders correctly 1`] = `
 <span
-  className="sc-bdVaJa fmjvAr flex flex-ycenter fr-label nowrap ellipsis"
+  className="sc-bdVaJa lbzamX"
 >
   Label
 </span>

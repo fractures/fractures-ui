@@ -1,4 +1,4 @@
-import { Radio } from "./Radio.js"
+import Radio from "./Radio.js"
 
 const mockFn = jest.fn()
 

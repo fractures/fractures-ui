@@ -39,6 +39,8 @@ const NakedCheckbox = props => {
 }
 
 const Toggle = styled(NakedCheckbox)`
+	box-sizing: border-box;
+
 	cursor: pointer;
 	user-select: none;
 
@@ -76,6 +78,7 @@ const Toggle = styled(NakedCheckbox)`
 		top: 0.25rem;
 		position: absolute;
 
+		box-sizing: inherit;
 		height: 1rem;
 		width: 1rem;
 
@@ -90,6 +93,7 @@ const Toggle = styled(NakedCheckbox)`
 		top: 0;
 		position: absolute;
 
+		box-sizing: inherit;
 		padding: 0 0.5rem;
 		width: 3rem;
 

@@ -1,4 +1,4 @@
-import { Range } from "./Range.js"
+import Range from "./Range.js"
 
 const mockFn = jest.fn()
 

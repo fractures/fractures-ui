@@ -39,4 +39,4 @@ NakedProgress.defaultProps = defaultProps
 Progress.propTypes = propTypes
 Progress.defaultProps = defaultProps
 
-export { Progress, NakedProgress }
+export default Progress

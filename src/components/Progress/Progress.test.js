@@ -1,4 +1,4 @@
-import { Progress } from "./Progress.js"
+import Progress from "./Progress.js"
 
 describe("Progress", () => {
 	const componentRender = <Progress value={ 31 } />

@@ -24,8 +24,8 @@ const NakedInput = props => {
 	const isTextarea = props.type === "textarea"
 	const inputClasses = cc({
 		"fr-input": true,
-		"fr-input--input px-1": props.type !== "textarea",
-		"fr-input--textarea p-1": props.type === "textarea",
+		"fr-input--input": props.type !== "textarea",
+		"fr-input--textarea": props.type === "textarea",
 		"fr-btn-primary": props.type === "primary"
 	})
 
@@ -62,10 +62,13 @@ const NakedInput = props => {
 }
 
 const Input = styled(NakedInput)`
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 
 	.fr-input {
+		padding: 0 0.5rem;
+
 		background-color: var(--fr-ground);
 		border: 1px solid var(--fr-500);
 		border-radius: 0.125rem;
@@ -81,6 +84,8 @@ const Input = styled(NakedInput)`
 	}
 
 	.fr-input--textarea {
+		padding: 0.5rem;
+
 		line-height: 1.5rem;
 		resize: vertical;
 	}
@@ -108,4 +113,4 @@ NakedInput.defaultProps = defaultProps
 Input.propTypes = propTypes
 Input.defaultProps = defaultProps
 
-export { Input, NakedInput }
+export default Input

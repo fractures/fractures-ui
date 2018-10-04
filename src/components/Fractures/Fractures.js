@@ -24,15 +24,6 @@ const Fractures = props => {
 			--fr-700: ${ theme.colors.shade700 };
 			--fr-900: ${ theme.colors.shade900 };
 		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		*:before,
-		*:after { box-sizing: inherit; }
 	`
 
 	return theme ? <style dangerouslySetInnerHTML={ { __html: themeCSS } } /> : null

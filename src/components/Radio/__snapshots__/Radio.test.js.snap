@@ -2,20 +2,19 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH gxdvyy fr-radio flex flex-gap-1 relative"
+  className="sc-bwzfXH eakdlx "
 >
   <input
-    className="h-0 w-0 none absolute"
     defaultChecked={false}
     name="radio"
     onChange={[Function]}
     type="radio"
   />
   <span
-    className="fr-radio__checkmark radius-max"
+    className="fr-radio__checkmark"
   />
   <span
-    className="sc-bdVaJa fmjvAr flex flex-ycenter fr-label nowrap ellipsis"
+    className="sc-bdVaJa lbzamX"
   >
     
   </span>

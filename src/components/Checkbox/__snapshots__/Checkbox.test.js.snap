@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Renders correctly 1`] = `
+<div
+  className="sc-bwzfXH bdPPPu"
+>
+  <label
+    className="fr-checkbox fr-checkbox--unchecked"
+  >
+    <input
+      defaultChecked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="sc-bdVaJa lbzamX"
+    >
+      Checkbox
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Checkbox checked Renders correctly 1`] = `
+<div
+  className="sc-bwzfXH bdPPPu"
+>
+  <label
+    className="fr-checkbox fr-checkbox--checked"
+  >
+    <input
+      defaultChecked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="sc-bdVaJa lbzamX"
+    >
+      Checked checkbox
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Checkbox disabled Renders correctly 1`] = `
+<div
+  className="sc-bwzfXH bdPPPu"
+>
+  <label
+    className="fr-checkbox fr-checkbox--unchecked fr-checkbox--disabled"
+  >
+    <input
+      defaultChecked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-checkbox__mark"
+    />
+    <span
+      className="sc-bdVaJa lbzamX"
+    >
+      Disabled checkbox
+    </span>
+  </label>
+</div>
+`;

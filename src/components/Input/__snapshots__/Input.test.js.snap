@@ -2,10 +2,10 @@
 
 exports[`Input Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH bbPFfu flex flex-column"
+  className="sc-bwzfXH bBxKid"
 >
   <input
-    className="fr-input fr-input--input px-1"
+    className="fr-input fr-input--input"
     defaultValue=""
     onChange={[Function]}
     placeholder=""

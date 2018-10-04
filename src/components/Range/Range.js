@@ -68,4 +68,4 @@ NakedRange.defaultProps = defaultProps
 Range.propTypes = propTypes
 Range.defaultProps = defaultProps
 
-export { Range, NakedRange }
+export default Range

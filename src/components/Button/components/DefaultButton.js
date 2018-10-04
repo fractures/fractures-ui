@@ -1,9 +1,6 @@
+import { propTypes, defaultProps } from "../Button.proptypes"
 import NakedButton from "./NakedButton"
-import PropTypes from "prop-types"
 import styled from "styled-components"
-
-const propTypes = { isRounded: PropTypes.bool }
-const defaultProps = { isRounded: false }
 
 const DefaultButton = styled(NakedButton)`
 	padding: 0.25rem 1rem;

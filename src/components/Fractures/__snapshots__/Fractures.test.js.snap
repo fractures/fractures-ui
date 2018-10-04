@@ -8,14 +8,14 @@ exports[`Fractures with theme Renders correctly 1`] = `
     Object {
       "__html": "
 		:root {
-				--fr-ground: #fff;
-				--fr-focus: rgba(52, 130, 218, 0.4);
-				--fr-100: #e8f2fd;
-				--fr-300: #76a7e7;
-				--fr-500: #3482da;
-				--fr-700: #2463a5;
-				--fr-900: #102a45;
-			}
+			--fr-ground: #fff;
+			--fr-focus: rgba(52, 130, 218, 0.4);
+			--fr-100: #e8f2fd;
+			--fr-300: #76a7e7;
+			--fr-500: #3482da;
+			--fr-700: #2463a5;
+			--fr-900: #102a45;
+		}
 	",
     }
   }

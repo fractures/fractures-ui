@@ -39,6 +39,8 @@ const NakedCheckbox = props => {
 }
 
 const Checkbox = styled(NakedCheckbox)`
+	box-sizing: border-box;
+
 	cursor: pointer;
 	user-select: none;
 
@@ -75,6 +77,7 @@ const Checkbox = styled(NakedCheckbox)`
 		top: 0.25rem;
 		position: absolute;
 
+		box-sizing: inherit;
 		height: 1rem;
 		opacity: 0;
 		width: 0.5rem;

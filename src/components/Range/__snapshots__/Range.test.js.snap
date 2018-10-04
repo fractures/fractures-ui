@@ -2,7 +2,7 @@
 
 exports[`Range Renders correctly 1`] = `
 <input
-  className="sc-bdVaJa cyiJnB w-100"
+  className="sc-bdVaJa gGWSaR"
   defaultValue={42}
   onChange={[Function]}
   type="range"

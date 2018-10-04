@@ -1,24 +1,25 @@
 import Button from "./components/Button/Button"
-import NakedButton from "./components/Button/components/NakedButton"
-import ButtonPrimary from "./components/Button/components/ButtonPrimary"
-
-import { Checkbox, NakedCheckbox, Toggle } from "./components/Checkbox/Checkbox"
-import { Input, NakedInput } from "./components/Input/Input"
-import { Progress, NakedProgress } from "./components/Progress/Progress"
-import { Radio, NakedRadio } from "./components/Radio/Radio"
-import { Range, NakedRange } from "./components/Range/Range"
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup"
+import ButtonPrimary from "./components/Button/components/ButtonPrimary"
+import ButtonSecondary from "./components/Button/components/ButtonSecondary"
+import Checkbox from "./components/Checkbox/Checkbox"
 import Color from "./components/Color/Color"
 import Container from "./components/Container/Container"
-import Loading from "./components/Loading/Loading"
 import Fractures from "./components/Fractures/Fractures"
+import Input from "./components/Input/Input"
 import Label from "./components/Label/Label"
+import Loading from "./components/Loading/Loading"
+import Progress from "./components/Progress/Progress"
+import Radio from "./components/Radio/Radio"
+import Range from "./components/Range/Range"
+import Toggle from "./components/Toggle/Toggle"
 import Tooltip from "./components/Tooltip/Tooltip"
 
 export {
 	Button,
-	ButtonPrimary,
 	ButtonGroup,
+	ButtonPrimary,
+	ButtonSecondary,
 	Checkbox,
 	Color,
 	Container,
@@ -26,12 +27,6 @@ export {
 	Input,
 	Label,
 	Loading,
-	NakedButton,
-	NakedCheckbox,
-	NakedInput,
-	NakedProgress,
-	NakedRadio,
-	NakedRange,
 	Progress,
 	Radio,
 	Range,

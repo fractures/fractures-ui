@@ -1,4 +1,4 @@
-import { Checkbox } from "./Checkbox.js"
+import Checkbox from "./Checkbox.js"
 
 const mockFn = jest.fn()
 

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle Renders correctly 1`] = `
+<div
+  className="sc-bwzfXH zalzc"
+>
+  <label
+    className="fr-toggle fr-toggle--unchecked"
+  >
+    <input
+      defaultChecked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="fr-toggle__mark"
+    />
+    <span
+      className="sc-bdVaJa lbzamX"
+    >
+      Toggle
+    </span>
+  </label>
+</div>
+`;
