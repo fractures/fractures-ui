@@ -63,7 +63,7 @@ const Loading = styled(NakedLoading)`
 	height: ${ props => props.size + 4 }px;
 	width: ${ props => props.size + 4 }px;
 
-	animation: ${ showIconLoading } 180ms ease-in-out;
+	animation: ${ showIconLoading } 100ms ease-in-out;
 
 	circle {
 		animation: ${ props => (props.size === 20 ? rotateIconLoading64 : rotateIconLoading32) } 480ms linear forwards infinite;

@@ -84,7 +84,7 @@ const Toggle = styled(NakedCheckbox)`
 
 		background-color: white;
 		border-radius: 100%;
-		transition: all 120ms ease-in-out;
+		transition: all 100ms ease-in-out;
 		content: " ";
 	}
 

@@ -8,7 +8,7 @@ const DefaultButton = styled(NakedButton)`
 	border: 0;
 	border-radius: ${ props => (props.isRounded ? `2.5rem` : `0.25rem`) };
 	outline: none;
-	transition: background-color 120ms ease-in-out, box-shadow 120ms ease-in-out, padding-left 180ms ease-in-out;
+	transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out, padding-left 100ms ease-in-out;
 
 	cursor: pointer;
 	font-size: 0.875rem;

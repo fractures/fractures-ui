@@ -82,7 +82,7 @@ const Radio = styled(NakedRadio)`
 		border-radius: 100%;
 		background: var(--fr-500);
 		transform: scale(0);
-		transition: all 120ms ease-in-out;
+		transition: all 100ms ease-in-out;
 
 		content: "";
 	}
