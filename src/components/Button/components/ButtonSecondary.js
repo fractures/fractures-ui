@@ -27,6 +27,10 @@ const ButtonSecondary = styled(DefaultButton)`
 	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
 		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.1875rem var(--fr-focus);
 	}
+
+	&.isSmall:focus:not(.isDisabled):not(.isLoading) {
+		box-shadow: inset 0 0 0 1px var(--fr-500), 0 0 0 0.125rem var(--fr-focus);
+	}
 `
 
 export default ButtonSecondary

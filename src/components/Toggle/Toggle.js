@@ -19,7 +19,7 @@ const defaultProps = {
 	label: ""
 }
 
-const NakedCheckbox = props => {
+const NakedToggle = props => {
 	const checkboxClasses = cc({
 		"fr-toggle": true,
 		"fr-toggle--checked": props.isChecked,
@@ -38,11 +38,14 @@ const NakedCheckbox = props => {
 	)
 }
 
-const Toggle = styled(NakedCheckbox)`
+const Toggle = styled(NakedToggle)`
 	box-sizing: border-box;
 
-	cursor: pointer;
 	user-select: none;
+
+	label {
+		cursor: pointer;
+	}
 
 	input {
 		display: none;
@@ -121,8 +124,8 @@ const Toggle = styled(NakedCheckbox)`
 	}
 `
 
-NakedCheckbox.propTypes = propTypes
-NakedCheckbox.defaultProps = defaultProps
+NakedToggle.propTypes = propTypes
+NakedToggle.defaultProps = defaultProps
 
 Toggle.propTypes = propTypes
 Toggle.defaultProps = defaultProps
