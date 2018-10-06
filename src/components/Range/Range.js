@@ -4,31 +4,62 @@ import styled from "styled-components"
 
 const propTypes = {
 	className: PropTypes.string,
+	max: PropTypes.number,
+	min: PropTypes.number,
 	set: PropTypes.func.isRequired,
 	value: PropTypes.number
 }
 
 const defaultProps = {
+	min: 0,
+	max: 100,
 	set: () => null,
 	value: 0
 }
 
-const NakedRange = props =>
-
-	// prettier-ignore
+const NakedRange = props => (
 	<input
 		className={ props.className }
 		defaultValue={ props.value }
 		onChange={ e => props.set(e.target.value) }
 		type="range"
+		min={ props.min }
+		max={ props.max }
 	/>
+)
 
-const Range = styled(NakedRange)`
-	-webkit-appearance: none;
-
+const NakedRangeWrap = styled(NakedRange)`
 	width: 100%;
 
-	background-color: transparent;
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+
+		display: block;
+		height: 2rem;
+		max-width: 2rem;
+		width: 2rem;
+
+		background-color: var(--fr-100);
+		color: var(--fr-500);
+
+		line-height: 2rem;
+		text-align: center;
+	}
+
+	&:after {
+		right: 0;
+		left: auto;
+
+		content: attr(max);
+	}
+
+	&:before {
+		left: -0.25rem;
+
+		content: attr(min);
+	}
 
 	&:focus {
 		outline: none;
@@ -45,20 +76,47 @@ const Range = styled(NakedRange)`
 	}
 
 	&::-webkit-slider-thumb {
-		height: 1.125rem;
-		width: 1.125rem;
+		position: relative;
+		z-index: 1;
+
+		height: 1.5rem;
+		width: 1.5rem;
+		-webkit-appearance: none;
 
 		border-radius: 1rem;
 		border: 0;
 
 		background: var(--fr-500);
 		cursor: pointer;
-		transform: translateY(-0.375rem);
-		-webkit-appearance: none;
+		transform: translateY(-0.5rem);
 	}
 
 	&:focus::-webkit-slider-thumb {
 		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
+	}
+`
+
+const NakedRangeContainer = props => (
+	<div className={ props.className }>
+		<div className="fr-range__value" style={ { marginLeft: `${ props.value }%` } }>
+			{props.value}
+		</div>
+		<NakedRangeWrap { ...props } />
+	</div>
+)
+
+const Range = styled(NakedRangeContainer)`
+	position: relative;
+
+	-webkit-appearance: none;
+	width: 100%;
+
+	background-color: transparent;
+
+	.fr-range__value {
+		width: 3rem;
+
+		background: red;
 	}
 `
 

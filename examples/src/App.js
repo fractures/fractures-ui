@@ -36,8 +36,13 @@ class Index extends Component {
 
 		this.state = {
 			theme: themes[0],
-			isLoading: false
+			isLoading: false,
+			valueRange: 40
 		}
+	}
+
+	setRange(e) {
+		this.setState({ valueRange: parseInt(e) })
 	}
 
 	toggleLoading() {
@@ -154,7 +159,11 @@ class Index extends Component {
 						<Radio label="Disabled" value={ 4 } state={ true } isDisabled={ true } />
 					</Box>
 					<Box title="Range">
-						<Range value={ 40 } set={ e => setValue(e) } />
+						<Line>
+							<Range value={ this.state.valueRange } set={ e => this.setRange(e) } />
+							<Range value={ 31 } />
+							<Range value={ 230 } min={ 210 } max={ 340 } />
+						</Line>
 					</Box>
 					<Box title="Progress">
 						<Progress value={ 22 } />
