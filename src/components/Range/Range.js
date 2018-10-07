@@ -9,6 +9,7 @@ const propTypes = {
 	max: PropTypes.number.isRequired,
 	min: PropTypes.number.isRequired,
 	set: PropTypes.func.isRequired,
+	step: PropTypes.number,
 	value: PropTypes.number
 }
 
@@ -17,6 +18,7 @@ const defaultProps = {
 	max: 100,
 	min: 0,
 	set: () => null,
+	step: null,
 	value: 0
 }
 
@@ -32,6 +34,7 @@ const NakedRange = props => {
 			defaultValue={ props.value }
 			onChange={ e => props.set(e.target.value) }
 			type="range"
+			step={ props.step }
 			min={ props.min }
 			max={ props.max }
 		/>
