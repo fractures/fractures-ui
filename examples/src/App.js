@@ -163,6 +163,7 @@ class Index extends Component {
 							<Range value={ 31 } min={ 0 } max={ 100 } />
 							<Range isVerbose value={ this.state.valueRange } set={ e => this.setRange(e) } min={ 110 } max={ 340 } />
 							<Range value={ 52 } min={ 0 } max={ 100 } />
+							<Range value={ 5 } min={ 0 } max={ 100 } step={ 5 } />
 						</Line>
 					</Box>
 					<Box title="Progress">
