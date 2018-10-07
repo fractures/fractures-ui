@@ -21,7 +21,8 @@ const NakedLoading = ({ className, color, size }) => {
 	return (
 		<svg className={ className } xmlns="http://www.w3.org/2000/svg">
 			{/* prettier-ignore */}
-			<circle fill="none"
+			<circle
+				fill="none"
 				strokeWidth={ 4 }
 				stroke="var(--fr-300)"
 				cx={ cSize }

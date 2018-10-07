@@ -20,7 +20,7 @@ const Button = props => {
 		<div style={ { position: "relative", display: "inline-flex", alignItems: "center" } } onClick={ e => props.action(e) }>
 			{props.type === "primary" && <ButtonPrimary { ...props } className={ buttonClasses } />}
 			{props.type === "secondary" && <ButtonSecondary { ...props } className={ buttonClasses } />}
-			{props.isLoading && <LoadingIcon color={ LoadingColor } size={ props.isSmall ? 10 : 20 } isSmall={ props.isSmall } />}
+			{props.isLoading && <LoadingIcon color={ LoadingColor } size={ props.isSmall ? 10 : 20 } />}
 		</div>
 	)
 }

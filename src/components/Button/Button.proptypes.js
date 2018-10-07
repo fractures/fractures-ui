@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 
 const propTypes = {
-	action: PropTypes.func.isRequired,
+	action: PropTypes.func,
 	className: PropTypes.string,
 	isActive: PropTypes.bool,
 	isDisabled: PropTypes.bool,
@@ -18,6 +18,7 @@ const defaultProps = {
 	isDisabled: false,
 	isLoading: false,
 	isRounded: null,
+	isSmall: false,
 	type: "primary",
 	value: ""
 }

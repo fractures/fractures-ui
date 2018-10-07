@@ -86,7 +86,7 @@ class Index extends Component {
 							))}
 						</Line>
 					</Box>
-					<Box title="Button">
+					<Box title="Button Primary">
 						<Line isRow>
 							<Button type="primary" value="Default" action={ () => this.toggleLoading() } />
 							<Button type="primary" value="Active" isActive={ true } />
@@ -94,7 +94,15 @@ class Index extends Component {
 							<Button type="primary" value="Rounded" isRounded={ true } />
 							<Button type="primary" value="Small" isSmall={ true } />
 							<Button type="primary" value="Small Rounded" isSmall={ true } isRounded={ true } />
+							<Button type="primary" value="Small Rounded" isSmall={ true } isRounded={ true } isLoading={ !this.state.isLoading } />
 						</Line>
+						<Line isRow>
+							<Button type="primary" value="Activate" isLoading={ !this.state.isLoading } action={ e => setValue(e) } />
+							<Button type="primary" value="Activate" isRounded={ true } action={ e => setValue(e) } isLoading={ !this.state.isLoading } />
+						</Line>
+					</Box>
+
+					<Box title="Button Secondary">
 						<Line isRow>
 							<Button type="secondary" value="Default" />
 							<Button type="secondary" value="Active" isActive={ true } />
@@ -102,12 +110,12 @@ class Index extends Component {
 							<Button type="secondary" value="Rounded" isRounded={ true } />
 							<Button type="secondary" value="Small" isSmall={ true } />
 							<Button type="secondary" value="Small Rounded" isSmall={ true } isRounded={ true } />
+							<Button type="secondary" value="Small Rounded" isSmall={ true } isRounded={ true } isLoading={ !this.state.isLoading } />
 						</Line>
 						<Line isRow>
-							<Button type="primary" value="Activate" isLoading={ this.state.isLoading } action={ e => setValue(e) } />
 							<Button type="secondary" value="Activate" isLoading={ !this.state.isLoading } action={ e => setValue(e) } />
-							<Button type="primary" value="Activate" isRounded={ true } isLoading={ false } action={ e => setValue(e) } />
 							<Button type="secondary" value="Activate" isRounded={ true } isLoading={ false } action={ e => setValue(e) } />
+							<Button type="secondary" value="Activate" isRounded={ true } action={ e => setValue(e) } isLoading={ !this.state.isLoading } />
 						</Line>
 					</Box>
 					<Box title="ButtonGroup">
