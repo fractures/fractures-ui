@@ -37,7 +37,7 @@ class Index extends Component {
 		this.state = {
 			theme: themes[0],
 			isLoading: false,
-			valueRange: 40
+			valueRange: 140
 		}
 	}
 
@@ -160,9 +160,9 @@ class Index extends Component {
 					</Box>
 					<Box title="Range">
 						<Line>
-							<Range value={ this.state.valueRange } set={ e => this.setRange(e) } />
-							<Range value={ 31 } />
-							<Range value={ 230 } min={ 210 } max={ 340 } />
+							<Range value={ 31 } min={ 0 } max={ 100 } />
+							<Range isVerbose value={ this.state.valueRange } set={ e => this.setRange(e) } min={ 110 } max={ 340 } />
+							<Range value={ 52 } min={ 0 } max={ 100 } />
 						</Line>
 					</Box>
 					<Box title="Progress">

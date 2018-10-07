@@ -1,62 +1,78 @@
+import cc from "classcat"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
 	className: PropTypes.string,
-	max: PropTypes.number,
-	min: PropTypes.number,
+	isVerbose: PropTypes.bool,
+	max: PropTypes.number.isRequired,
+	min: PropTypes.number.isRequired,
 	set: PropTypes.func.isRequired,
 	value: PropTypes.number
 }
 
 const defaultProps = {
-	min: 0,
+	isVerbose: false,
 	max: 100,
+	min: 0,
 	set: () => null,
 	value: 0
 }
 
-const NakedRange = props => (
-	<input
-		className={ props.className }
-		defaultValue={ props.value }
-		onChange={ e => props.set(e.target.value) }
-		type="range"
-		min={ props.min }
-		max={ props.max }
-	/>
-)
+const NakedRange = props => {
+	const nakedClasses = cc({
+		"fr-range": true,
+		"fr-range--verbose": props.isVerbose
+	})
+
+	return (
+		<input
+			className={ `${ props.className } ${ nakedClasses }` }
+			defaultValue={ props.value }
+			onChange={ e => props.set(e.target.value) }
+			type="range"
+			min={ props.min }
+			max={ props.max }
+		/>
+	)
+}
 
 const NakedRangeWrap = styled(NakedRange)`
+	position: relative;
+
+	display: flex;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 
-	&:before,
-	&:after {
-		position: absolute;
-		top: 0;
-
+	&.fr-range--verbose:before,
+	&.fr-range--verbose:after {
 		display: block;
-		height: 2rem;
-		max-width: 2rem;
-		width: 2rem;
+		height: 1.5rem;
+		padding: 0 0.5rem;
 
 		background-color: var(--fr-100);
+		border-radius: 1rem;
 		color: var(--fr-500);
 
-		line-height: 2rem;
+		font-size: 0.75rem;
+		line-height: 1.5rem;
 		text-align: center;
 	}
 
-	&:after {
+	&.fr-range--verbose:after {
 		right: 0;
-		left: auto;
+
+		margin-left: 0.5rem;
 
 		content: attr(max);
 	}
 
-	&:before {
-		left: -0.25rem;
+	&.fr-range--verbose:before {
+		left: 0;
+
+		margin-right: 0.5rem;
 
 		content: attr(min);
 	}
@@ -79,8 +95,8 @@ const NakedRangeWrap = styled(NakedRange)`
 		position: relative;
 		z-index: 1;
 
-		height: 1.5rem;
-		width: 1.5rem;
+		height: 1rem;
+		width: 1rem;
 		-webkit-appearance: none;
 
 		border-radius: 1rem;
@@ -88,7 +104,7 @@ const NakedRangeWrap = styled(NakedRange)`
 
 		background: var(--fr-500);
 		cursor: pointer;
-		transform: translateY(-0.5rem);
+		transform: translateY(calc(-0.5rem + 0.25rem));
 	}
 
 	&:focus::-webkit-slider-thumb {
@@ -98,25 +114,34 @@ const NakedRangeWrap = styled(NakedRange)`
 
 const NakedRangeContainer = props => (
 	<div className={ props.className }>
-		<div className="fr-range__value" style={ { marginLeft: `${ props.value }%` } }>
-			{props.value}
-		</div>
 		<NakedRangeWrap { ...props } />
+		{props.isVerbose && <div className="fr-range__value">{props.value}</div>}
 	</div>
 )
 
 const Range = styled(NakedRangeContainer)`
 	position: relative;
 
-	-webkit-appearance: none;
+	display: flex;
 	width: 100%;
 
 	background-color: transparent;
+	-webkit-appearance: none;
 
 	.fr-range__value {
-		width: 3rem;
+		display: block;
+		height: 1.5rem;
+		padding: 0 0.5rem;
+		margin-left: 0.5rem;
 
-		background: red;
+		background-color: var(--fr-500);
+		border-radius: 1rem;
+		color: var(--fr-ground);
+
+		font-size: 0.75rem;
+		font-weight: bold;
+		line-height: 1.5rem;
+		text-align: center;
 	}
 `
 
