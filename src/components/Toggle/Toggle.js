@@ -86,7 +86,7 @@ const Toggle = styled(NakedToggle)`
 		height: 1rem;
 		width: 1rem;
 
-		background-color: white;
+		background-color: var(--fr-ground);
 		border-radius: 100%;
 		transition: all 100ms ease-in-out;
 		content: " ";
@@ -101,7 +101,7 @@ const Toggle = styled(NakedToggle)`
 		padding: 0 0.5rem;
 		width: 3rem;
 
-		color: white;
+		color: var(--fr-ground);
 
 		content: "Off";
 		font-size: 0.75rem;
