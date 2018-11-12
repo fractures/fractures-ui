@@ -15,7 +15,7 @@ import {
 	Toggle,
 	Tooltip,
 	themes
-} from "fractures-ui"
+} from "@fractures/ui"
 
 const setValue = e => {
 	console.log("setValue", e)
