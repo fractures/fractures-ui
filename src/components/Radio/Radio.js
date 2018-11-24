@@ -1,4 +1,4 @@
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
@@ -22,7 +22,7 @@ const defaultProps = {
 }
 
 const NakedRadio = props => {
-	const radioClasses = cc({
+	const radioClasses = classNames({
 		"fr-radio--disabled": props.isDisabled
 	})
 

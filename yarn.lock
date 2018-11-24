@@ -648,6 +648,11 @@
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@let-codes/eslint-config/-/eslint-config-0.1.7.tgz#4b27c6297e8dc21e298ba27c09ec09ffd46caf7a"
 
+"@sindresorhus/class-names@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/class-names/-/class-names-1.0.0.tgz#c21cddc5f5d7d676210eddcba7a6940dbb3b0c21"
+  integrity sha512-no3wbYl/zqrgkMrUHGpy+0OiYbjOJruySiPH5c0hg7/XuCH50PzJ1aSyMNqooXRuJFK3DLecWmgW8q3MnHOGYw==
+
 "@types/node@*":
   version "10.3.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.4.tgz#c74e8aec19e555df44609b8057311052a2c84d9e"
@@ -1580,10 +1585,6 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
-
-classcat@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/classcat/-/classcat-3.2.3.tgz#5e060c7a08598131084f4c60d9793de0c0112e4a"
 
 cli-cursor@^2.1.0:
   version "2.1.0"

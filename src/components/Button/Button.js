@@ -1,12 +1,12 @@
 import { propTypes, defaultProps } from "./Button.proptypes"
 import ButtonPrimary from "./components/ButtonPrimary"
 import ButtonSecondary from "./components/ButtonSecondary"
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import LoadingIcon from "./components/LoadingIcon"
 import React from "react"
 
 const Button = props => {
-	const buttonClasses = cc({
+	const buttonClasses = classNames({
 		isActive: props.isActive,
 		isDisabled: props.isDisabled,
 		isLoading: props.isLoading,

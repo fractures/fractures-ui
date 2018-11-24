@@ -1,4 +1,4 @@
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
@@ -20,8 +20,7 @@ const defaultProps = {
 }
 
 const NakedToggle = props => {
-	const checkboxClasses = cc({
-		"fr-toggle": true,
+	const checkboxClasses = classNames("fr-toggle", {
 		"fr-toggle--checked": props.isChecked,
 		"fr-toggle--unchecked": !props.isChecked,
 		"fr-toggle--disabled": props.isDisabled

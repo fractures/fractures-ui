@@ -1,4 +1,4 @@
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -23,8 +23,7 @@ const defaultProps = {
 }
 
 const NakedRange = props => {
-	const nakedClasses = cc({
-		"fr-range": true,
+	const nakedClasses = classNames("fr-range", {
 		"fr-range--verbose": props.isVerbose
 	})
 

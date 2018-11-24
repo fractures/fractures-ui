@@ -1,4 +1,4 @@
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
@@ -22,8 +22,7 @@ const defaultProps = {
 
 const NakedInput = props => {
 	const isTextarea = props.type === "textarea"
-	const inputClasses = cc({
-		"fr-input": true,
+	const inputClasses = classNames("fr-input", {
 		"fr-input--input": props.type !== "textarea",
 		"fr-input--textarea": props.type === "textarea",
 		"fr-btn-primary": props.type === "primary"

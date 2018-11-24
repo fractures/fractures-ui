@@ -1,4 +1,4 @@
-import cc from "classcat"
+import classNames from "@sindresorhus/class-names"
 import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
@@ -20,8 +20,7 @@ const defaultProps = {
 }
 
 const NakedCheckbox = props => {
-	const checkboxClasses = cc({
-		"fr-checkbox": true,
+	const checkboxClasses = classNames("fr-checkbox", {
 		"fr-checkbox--checked": props.isChecked,
 		"fr-checkbox--unchecked": !props.isChecked,
 		"fr-checkbox--disabled": props.isDisabled
