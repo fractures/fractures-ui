@@ -2,7 +2,7 @@
 
 exports[`Toggle Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH czgnW"
+  className="sc-bwzfXH eJuPQC"
 >
   <label
     className="fr-toggle fr-toggle--unchecked"
