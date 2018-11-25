@@ -2,23 +2,36 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-bdVaJa gHAgcb"
+  className="sc-bdVaJa fDvUHx"
 >
   <div
-    className="fr-color__box"
+    className="fr-color__box fr-color__box--invert"
     style={
       Object {
         "backgroundColor": "#eee",
       }
     }
-  />
-  <b
-    className="fr-color__name"
   >
-    Light
-  </b>
-  <small>
-    #eee
-  </small>
+    <small>
+      <b>
+        F
+      </b>
+      <span>
+        1.16
+      </span>
+    </small>
+  </div>
+  <aside>
+    <b
+      className="fr-color__name"
+    >
+      Light
+    </b>
+    <small>
+      #eee
+      , 
+      rgba(238, 238, 238)
+    </small>
+  </aside>
 </div>
 `;
