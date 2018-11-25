@@ -1,4 +1,4 @@
-import { themes } from "../../config/themes"
+import themes from "../../config/themes"
 import PropTypes from "prop-types"
 import React from "react"
 

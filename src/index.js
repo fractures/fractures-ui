@@ -15,7 +15,7 @@ import Range from "./components/Range/Range"
 import Toggle from "./components/Toggle/Toggle"
 import Tooltip from "./components/Tooltip/Tooltip"
 
-import { themes } from "./config/themes"
+import themes from "./config/themes"
 
 export {
 	Button,
