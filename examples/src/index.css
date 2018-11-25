@@ -2,6 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 
+	color: var(--fr-900);
+
 	font-family: sans-serif;
 }
 
@@ -36,6 +38,7 @@ nav > *:not(:last-child) {
 
 .line--row {
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .line--row > *:not(:last-child) {

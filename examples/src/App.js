@@ -80,9 +80,15 @@ class Index extends Component {
 				</nav>
 				<Container style={ { padding: "2rem 0" } }>
 					<Box title="Color">
-						<Line isRow>
+						<Line>
 							{Object.keys(this.state.theme.colors).map((color, key) => (
-								<Color key={ key } hex={ this.state.theme.colors[color] } name={ color } />
+								<Color
+									key={ key }
+									hex={ this.state.theme.colors[color] }
+									background={ this.state.theme.colors["ground"] }
+									name={ color }
+									isVerbose={ true }
+								/>
 							))}
 						</Line>
 					</Box>
