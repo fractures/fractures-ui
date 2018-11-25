@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
-		"@fractures/ui": "^0.4.3",
+		"@fractures/ui": "^0.4.6",
 		"react": "^16.6.3",
 		"react-dom": "^16.6.3",
 		"react-scripts": "2.1.1"
@@ -12,13 +12,11 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"now-build": "react-scripts build && mv build dist"
 	},
 	"eslintConfig": {
 		"extends": "@let"
-	},
-	"now": {
-		"alias": "ui.fractures.space"
 	},
 	"devDependencies": {
 		"@let/eslint-config": "^0.1.7"

@@ -826,14 +826,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@fractures/ui@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@fractures/ui/-/ui-0.4.3.tgz#80e1c1d405b43b2ee5a8b2218ada97c386d25980"
-  integrity sha512-vJ4pIgUDqaltsTRjIZwd1YAX0qK0BcfYB6hPXPigW01hhrr8JOxDj6d0YjiTXmufTVhRbXFwrfAdwcyoDZo7PA==
+"@fractures/ui@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@fractures/ui/-/ui-0.4.4.tgz#6705604deb30d96eae8477c535fd759f30f92cf7"
+  integrity sha512-OMLuoLM5e5VeLCKgiCMGJpwcXTlpvvJhxC+/OR00gB6hEPQcBrQGjXQ++I4S88aoEmf5k1bv3Mv0Vd3wBkqh7Q==
   dependencies:
     "@sindresorhus/class-names" "^1.0.0"
     chroma-js "^1.4.0"
-    install "^0.12.2"
     react "^16.6.3"
     react-dom "^16.6.3"
 
@@ -4611,11 +4610,6 @@ inquirer@6.2.0, inquirer@^6.1.0:
     string-width "^2.1.0"
     strip-ansi "^4.0.0"
     through "^2.3.6"
-
-install@^0.12.2:
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/install/-/install-0.12.2.tgz#ea10e9b2cbb5b0484f25080b24b5b34429d9f564"
-  integrity sha512-+7thTb4Rpvs9mnlhHKGZFJbGOO6kyMgy+gg0sgM5vFzIFK0wrCYXqdlaM71Bi289DTuPHf61puMFsaZBcwDIrg==
 
 internal-ip@^3.0.1:
   version "3.0.1"
