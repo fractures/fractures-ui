@@ -3,5 +3,5 @@
 	"name": "fractures-ui",
 	"alias": "ui.fractures.space",
 	"builds": [{ "src": "package.json", "use": "@now/static-build" }],
-	"routes": [{ "src": ".*", "dest": "/index.html" }]
+	"routes": [{ "src": "^/static/(.*)", "dest": "/static/$1" }, { "src": ".*", "dest": "/index.html" }]
 }

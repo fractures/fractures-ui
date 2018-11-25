@@ -4,9 +4,9 @@
 	"description": "Reusable React UI components",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "parcel build ./src/index.js",
+		"build": "parcel build ./src/index.js --detailed-report",
 		"dev": "parcel watch ./src/index.js",
-		"prepare": "parcel ./src/index.js",
+		"prepare": "parcel build ./src/index.js --detailed-report",
 		"test": "NODE_ENV=test jest -u --verbose"
 	},
 	"keywords": [
