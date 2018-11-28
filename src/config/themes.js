@@ -10,10 +10,11 @@ const themes = [
 			shade500: "#3482da",
 			shade700: "#2463a5",
 			shade900: "#102a45",
-			focus: "rgba(52, 130, 218, 0.4)",
+			focus: "rgba(52, 130, 218, 0.25)",
 			red: "#f94b56",
 			yellow: "#ffd058",
-			green: "#82c971"
+			green: "#82c971",
+			blue: "#76a7e7"
 		}
 	},
 	{
@@ -25,10 +26,11 @@ const themes = [
 			shade500: "#666666",
 			shade700: "#484848",
 			shade900: "#111",
-			focus: "rgba(102, 102, 102, 0.5)",
+			focus: "rgba(102, 102, 102, 0.25)",
 			red: "#f94b56",
 			yellow: "#ffd058",
-			green: "#82c971"
+			green: "#82c971",
+			blue: "#76a7e7"
 		}
 	},
 	{
@@ -40,10 +42,11 @@ const themes = [
 			shade500: "#888888",
 			shade700: "#a9a9a9",
 			shade900: "#eee",
-			focus: "rgba(136, 136, 136, 0.5)",
+			focus: "rgba(136, 136, 136, 0.4)",
 			red: "#f94b56",
 			yellow: "#ffd058",
-			green: "#82c971"
+			green: "#82c971",
+			blue: "#76a7e7"
 		}
 	},
 	{
@@ -55,10 +58,11 @@ const themes = [
 			shade500: "#437684",
 			shade700: "#3c5564",
 			shade900: "#1d1d1f",
-			focus: "rgba(67, 118, 132, 0.5)",
+			focus: "rgba(67, 118, 132, 0.4)",
 			red: "#f94b56",
 			yellow: "#ffd058",
-			green: "#82c971"
+			green: "#82c971",
+			blue: "#76a7e7"
 		}
 	}
 ]

@@ -28,6 +28,7 @@ const Fractures = props => {
 			--fr-color-red: ${ theme.colors.red };
 			--fr-color-green: ${ theme.colors.green };
 			--fr-color-yellow: ${ theme.colors.yellow };
+			--fr-color-blue: ${ theme.colors.blue };
 
 			--fr-font-mono: "Roboto Mono", monospace;
 		}

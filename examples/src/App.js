@@ -35,7 +35,7 @@ const Line = props => <div className={ props.isRow ? `flex line--row` : `flex li
 
 const Box = props => (
 	<div style={ { padding: "1rem 0" } }>
-		<h2 style={ { marginBottom: "1rem" } }>{props.title}</h2>
+		<H2 style={ { marginBottom: "1rem" } }>{props.title}</H2>
 		<Line>{props.children}</Line>
 	</div>
 )
@@ -206,9 +206,11 @@ class Index extends Component {
 					<Box title="Label">
 						<Line isRow>
 							<Label label="Default" />
-							<Label color="green" label="Nominal" />
-							<Label color="yellow" label="Warning" />
-							<Label color="red" label="Danger" />
+							<Label color="primary" label="Primary" />
+							<Label color="green" label="Green" />
+							<Label color="yellow" label="Yellow" />
+							<Label color="red" label="Red" />
+							<Label color="blue" label="Blue" />
 						</Line>
 					</Box>
 					<Box title="Loading">
@@ -233,7 +235,7 @@ class Index extends Component {
 							<Button value="Lorem ipsum" />
 						</Tooltip>
 					</Box>
-					<Box title="Label">
+					<Box title="Type">
 						<Line>
 							<H0>Deep blue.</H0>
 							<H1>All their equipment and instruments are alive.</H1>

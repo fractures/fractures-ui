@@ -7,8 +7,11 @@ const propTypes = {
 }
 
 const P = styled.p`
+	margin-bottom: 0;
+	margin-top: 0;
+
 	font-size: 1rem;
-	line-height: 1.375rem;
+	line-height: 1.5rem;
 
 	& > a {
 		font-weight: 700;
@@ -16,7 +19,7 @@ const P = styled.p`
 	}
 
 	& > cite {
-		background-color: var(--color-yellow);
+		background-color: var(--fr-color-yellow);
 	}
 `
 

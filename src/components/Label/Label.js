@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
-	color: PropTypes.string,
+	color: PropTypes.oneOf([null, "primary", "green", "red", "yellow", "blue"]),
 	label: PropTypes.string.isRequired
 }
 
@@ -15,10 +15,15 @@ const defaultProps = {
 
 const NakedLabel = props => {
 	const labelClass = classNames(props.className, {
+		"fr-label--default": !props.color,
 		[`fr-label--${ props.color }`]: props.color
 	})
 
-	return <div className={ labelClass }>{props.label}</div>
+	return (
+		<div className={ labelClass }>
+			<span>{props.label}</span>
+		</div>
+	)
 }
 
 const Label = styled(NakedLabel)`
@@ -28,8 +33,6 @@ const Label = styled(NakedLabel)`
 	height: 1.5rem;
 	padding: 0 0.5rem;
 
-	background-color: var(--fr-300);
-	color: var(--fr-700);
 	border-radius: 0.125rem;
 	clip-path: polygon(100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 0);
 
@@ -51,19 +54,41 @@ const Label = styled(NakedLabel)`
 		content: " ";
 	}
 
+	&.fr-label--default {
+		background-color: var(--fr-100);
+		color: var(--fr-700);
+	}
+
+	&.fr-label--primary {
+		background-color: var(--fr-300);
+		color: var(--fr-900);
+	}
+
+	&.fr-label--green span,
+	&.fr-label--red span,
+	&.fr-label--yellow span,
+	&.fr-label--blue span {
+		mix-blend-mode: multiply;
+	}
+
 	&.fr-label--green {
 		background-color: var(--fr-color-green);
-		color: var(--fr-ground);
+		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.fr-label--red {
 		background-color: var(--fr-color-red);
-		color: var(--fr-ground);
+		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.fr-label--yellow {
 		background-color: var(--fr-color-yellow);
-		color: var(--fr-ground);
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	&.fr-label--blue {
+		background-color: var(--fr-color-blue);
+		color: rgba(0, 0, 0, 0.9);
 	}
 `
 

@@ -1,6 +1,9 @@
 import * as wcag from "wcag-contrast"
 import chroma from "chroma-js"
 import Label from "../Label/Label"
+import Small from "../Type/Small"
+import Code from "../Type/Code"
+import P from "../Type/P"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
@@ -43,7 +46,7 @@ const colorScore = contrastValue => {
 const normalizeColor = color => {
 	const normalizedColor = chroma(color).rgb()
 
-	return `rgba(${ normalizedColor[0] }, ${ normalizedColor[1] }, ${ normalizedColor[2] })`
+	return `R: ${ normalizedColor[0] } G: ${ normalizedColor[1] } B: ${ normalizedColor[2] }`
 }
 
 const NakedColor = props => {
@@ -55,17 +58,22 @@ const NakedColor = props => {
 		<div className={ props.className }>
 			<div className="fr-color__box" style={ { backgroundColor: props.hex } } />
 			<div className="fr-color__meta" style={ { color: props.hex } }>
-				<b>{calcScore}</b>
-				<small>{calcValue}</small>
+				<P>
+					<b>{calcScore}</b>
+				</P>
+				<Small>{calcValue}</Small>
 			</div>
 			<aside>
-				<b>
-					{props.name}
-					{isInvert && <Label color="red" label="Contrast failed against backgrouns." />}
-				</b>
-				<small>
-					{props.hex}, {normalizeColor(props.hex)}
-				</small>
+				<header>
+					<P>{props.name}</P>
+					{isInvert && <Label label="Low contrast" />}
+				</header>
+				<div>
+					<Code isSmall={ true }>
+						{props.hex} &mdash;{` `}
+						{normalizeColor(props.hex)}
+					</Code>
+				</div>
 			</aside>
 		</div>
 	)
@@ -96,10 +104,22 @@ const Color = styled(NakedColor)`
 		width: 6rem;
 	}
 
-	aside {
-		flex-direction: column;
+	aside div {
+		align-items: center;
 		display: flex;
-		justify-content: center;
+	}
+
+	aside div small {
+		margin-right: 0.5rem;
+	}
+
+	aside header {
+		display: flex;
+		align-items: center;
+	}
+
+	aside header p {
+		margin-right: 0.5rem;
 	}
 
 	b,
