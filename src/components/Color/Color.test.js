@@ -1,7 +1,7 @@
 import Color from "./Color.js"
 
 describe("Color", () => {
-	const componentRender = <Color hex="#eee" name="Light" />
+	const componentRender = <Color background="#fff" hex="#eee" name="Light" />
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 

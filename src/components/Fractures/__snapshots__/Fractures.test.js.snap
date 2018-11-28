@@ -9,7 +9,7 @@ exports[`Fractures with theme Renders correctly 1`] = `
       "__html": "
 		:root {
 			--fr-ground: #fff;
-			--fr-focus: rgba(52, 130, 218, 0.4);
+			--fr-focus: rgba(52, 130, 218, 0.25);
 			--fr-100: #e8f2fd;
 			--fr-300: #76a7e7;
 			--fr-500: #3482da;
@@ -19,6 +19,7 @@ exports[`Fractures with theme Renders correctly 1`] = `
 			--fr-color-red: #f94b56;
 			--fr-color-green: #82c971;
 			--fr-color-yellow: #ffd058;
+			--fr-color-blue: #76a7e7;
 
 			--fr-font-mono: \\"Roboto Mono\\", monospace;
 		}

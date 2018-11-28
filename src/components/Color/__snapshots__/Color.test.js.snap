@@ -2,7 +2,7 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH IsQbB"
+  className="sc-ifAKCX ieNlBV"
 >
   <div
     className="fr-color__box"
@@ -20,27 +20,44 @@ exports[`Color Renders correctly 1`] = `
       }
     }
   >
-    <b>
-      F
-    </b>
-    <small>
+    <p
+      className="sc-bxivhb cfzrAM"
+    >
+      <b>
+        F
+      </b>
+    </p>
+    <small
+      className="sc-bwzfXH hFESPj"
+    >
       1.16
     </small>
   </div>
   <aside>
-    <b>
-      Light
-      <div
-        className="sc-bdVaJa jxixlb fr-label--red"
+    <header>
+      <p
+        className="sc-bxivhb cfzrAM"
       >
-        Contrast failed against backgrouns.
+        Light
+      </p>
+      <div
+        className="sc-bdVaJa hBHdgd fr-label--default"
+      >
+        <span>
+          Low contrast
+        </span>
       </div>
-    </b>
-    <small>
-      #eee
-      , 
-      rgba(238, 238, 238)
-    </small>
+    </header>
+    <div>
+      <code
+        className="sc-htpNat cjHBxU"
+      >
+        #eee
+         —
+         
+        R: 238 G: 238 B: 238
+      </code>
+    </div>
   </aside>
 </div>
 `;
