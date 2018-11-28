@@ -193,6 +193,13 @@ class Index extends Component {
 						<Input change={ e => setValue(e) } label="Date type" type="date" />
 						<Input change={ e => setValue(e) } label="Textarea type" type="textarea" />
 					</Box>
+					<Box title="Label">
+						<Line isRow>
+							<Label color="green" label="Nominal" />
+							<Label color="yellow" label="Warning" />
+							<Label color="red" label="Danger" />
+						</Line>
+					</Box>
 					<Box title="Loading">
 						<Loading color="white" size={ 10 } />
 						<Loading color="white" size={ 20 } />
@@ -214,9 +221,6 @@ class Index extends Component {
 						<Tooltip text="Helo">
 							<Button value="Lorem ipsum" />
 						</Tooltip>
-					</Box>
-					<Box title="Label">
-						<Label>Label text</Label>
 					</Box>
 				</Container>
 			</div>

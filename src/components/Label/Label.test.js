@@ -1,7 +1,7 @@
-import Label from "./Label.js"
+import Label from "./Label"
 
 describe("Label", () => {
-	const tree = renderer.create(<Label>Label</Label>).toJSON()
+	const tree = renderer.create(<Label label="Green default" />).toJSON()
 
-	it("Renders correctly", () => expect(tree).toMatchSnapshot())
+	it("Matches snapshot", () => expect(tree).toMatchSnapshot())
 })

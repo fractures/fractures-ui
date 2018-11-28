@@ -1,6 +1,5 @@
 import * as wcag from "wcag-contrast"
 import chroma from "chroma-js"
-import classNames from "@sindresorhus/class-names"
 import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
@@ -51,22 +50,22 @@ const NakedColor = props => {
 	const calcValue = colorValue(props.hex, props.background)
 	const calcScore = colorScore(calcValue)
 	const isInvert = calcScore === "F"
-	const metaClasses = classNames("fr-color__meta", {
-		"fr-color__meta--invert": isInvert
-	})
 
 	return (
 		<div className={ props.className }>
 			<div className="fr-color__box" style={ { backgroundColor: props.hex } } />
-			<div className={ metaClasses } style={ { color: props.hex } }>
+			<div className="fr-color__meta" style={ { color: props.hex } }>
 				<b>{calcScore}</b>
 				<small>{calcValue}</small>
 			</div>
 			<aside>
-				<b>{props.name}</b>
-				<Label>
+				<b>
+					{props.name}
+					{isInvert && <Label color="red" label="Contrast failed against backgrouns." />}
+				</b>
+				<small>
 					{props.hex}, {normalizeColor(props.hex)}
-				</Label>
+				</small>
 			</aside>
 		</div>
 	)
@@ -81,9 +80,9 @@ const Color = styled(NakedColor)`
 	font-size: 0.9125rem;
 
 	.fr-color__box {
-		height: 3.5rem;
-		min-width: 3.5rem;
-		width: 3.5rem;
+		height: 3rem;
+		min-width: 3rem;
+		width: 3rem;
 
 		border-radius: 100%;
 	}
@@ -95,10 +94,6 @@ const Color = styled(NakedColor)`
 		margin-left: 1rem;
 		margin-right: 1rem;
 		width: 6rem;
-	}
-
-	.fr-color__meta--invert {
-		color: var(--fr-900) !important;
 	}
 
 	aside {

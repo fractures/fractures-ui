@@ -23,6 +23,10 @@ const Fractures = props => {
 			--fr-500: ${ theme.colors.shade500 };
 			--fr-700: ${ theme.colors.shade700 };
 			--fr-900: ${ theme.colors.shade900 };
+
+			--fr-color-red: ${ theme.colors.red };
+			--fr-color-green: ${ theme.colors.green };
+			--fr-color-yellow: ${ theme.colors.yellow };
 		}
 	`
 

@@ -32,7 +32,7 @@ export {
 	Progress,
 	Radio,
 	Range,
+	themes,
 	Toggle,
-	Tooltip,
-	themes
+	Tooltip
 }
