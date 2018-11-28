@@ -10,6 +10,7 @@ const defaultProps = {
 	theme: null
 }
 
+// TODO @pyx Configuration should be explicit and more transparent; this is WIP.
 const Fractures = props => {
 	const theme = themes.find(theme => props.theme === theme.name)
 	const themeCSS =
@@ -27,6 +28,8 @@ const Fractures = props => {
 			--fr-color-red: ${ theme.colors.red };
 			--fr-color-green: ${ theme.colors.green };
 			--fr-color-yellow: ${ theme.colors.yellow };
+
+			--fr-font-mono: "Roboto Mono", monospace;
 		}
 	`
 

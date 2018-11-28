@@ -3,18 +3,28 @@ import {
 	Button,
 	ButtonGroup,
 	Checkbox,
+	Code,
 	Color,
 	Container,
 	Fractures,
+	H0,
+	H1,
+	H2,
+	H3,
+	H4,
+	H5,
+	HR,
 	Input,
 	Label,
 	Loading,
+	P,
 	Progress,
 	Radio,
 	Range,
+	Small,
+	themes,
 	Toggle,
-	Tooltip,
-	themes
+	Tooltip
 } from "@fractures/ui"
 
 const setValue = e => {
@@ -222,6 +232,37 @@ class Index extends Component {
 						<Tooltip text="Helo">
 							<Button value="Lorem ipsum" />
 						</Tooltip>
+					</Box>
+					<Box title="Label">
+						<Line>
+							<H0>Deep blue.</H0>
+							<H1>All their equipment and instruments are alive.</H1>
+							<H2>I watched the storm, so beautiful yet terrific.</H2>
+							<H3>A shining crescent far beneath the flying vessel.</H3>
+							<H4>It was going to be a lonely trip back.</H4>
+							<H5>Silver mist suffused the deck of the ship.</H5>
+							<HR className="py-2" />
+							{/* prettier-ignore */}
+							<P>
+								Apparently we had reached a great height in the atmosphere, for the sky was a dead black,
+								and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the
+								sea to the level of the spectator on a hillside, the sable cloud beneath was dished out,
+								and the car seemed to float in the middle of an immense dark sphere, whose upper half was
+								strewn with silver. Looking down into the dark gulf below, I could see a ruddy light
+								streaming through a rift in the clouds.
+							</P>
+							<Small>Small</Small>
+							{/* prettier-ignore */}
+							<P>
+								On gaining the summit we found ourselves at the brim of a spacious hollow or basin, which
+								in past ages must have been the crater of the volcanic peak. <b>The grassy slopes of the basin</b>
+								were laid out in flower gardens and terraces of <cite>coloured</cite> marbles, shaded with sombre
+								trees, and ornamented with sculpture. In the bottom lay an oval sheet of water a mile long or more,
+								<em>and from the midst of it</em>, towards the near end, a beautiful islet, crowned by a magnificent
+								temple, rose like a <a href="#">mirage to the view</a>, and seemed to float on its glassy bosom.
+							</P>
+							<Code>React.CreateElement()</Code>
+						</Line>
 					</Box>
 				</Container>
 			</div>
