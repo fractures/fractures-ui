@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Small Matches snapshot 1`] = `
+<small
+  className="sc-bdVaJa iLNvYn"
+>
+  Lorem ipsum
+</small>
+`;

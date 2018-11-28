@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H2 Matches snapshot 1`] = `
+<h2
+  className="sc-bdVaJa huXeuD"
+>
+  Extra header
+</h2>
+`;

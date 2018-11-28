@@ -2,30 +2,39 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-bdVaJa fDvUHx"
+  className="sc-bwzfXH IsQbB"
 >
   <div
-    className="fr-color__box fr-color__box--invert"
+    className="fr-color__box"
     style={
       Object {
         "backgroundColor": "#eee",
       }
     }
+  />
+  <div
+    className="fr-color__meta"
+    style={
+      Object {
+        "color": "#eee",
+      }
+    }
   >
+    <b>
+      F
+    </b>
     <small>
-      <b>
-        F
-      </b>
-      <span>
-        1.16
-      </span>
+      1.16
     </small>
   </div>
   <aside>
-    <b
-      className="fr-color__name"
-    >
+    <b>
       Light
+      <div
+        className="sc-bdVaJa jxixlb fr-label--red"
+      >
+        Contrast failed against backgrouns.
+      </div>
     </b>
     <small>
       #eee
