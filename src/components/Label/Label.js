@@ -9,7 +9,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	color: "green",
+	color: null,
 	label: ""
 }
 
@@ -28,6 +28,8 @@ const Label = styled(NakedLabel)`
 	height: 1.5rem;
 	padding: 0 0.5rem;
 
+	background-color: var(--fr-300);
+	color: var(--fr-700);
 	border-radius: 0.125rem;
 	clip-path: polygon(100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 0);
 

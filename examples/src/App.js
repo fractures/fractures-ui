@@ -195,6 +195,7 @@ class Index extends Component {
 					</Box>
 					<Box title="Label">
 						<Line isRow>
+							<Label label="Default" />
 							<Label color="green" label="Nominal" />
 							<Label color="yellow" label="Warning" />
 							<Label color="red" label="Danger" />
