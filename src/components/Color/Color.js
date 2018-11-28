@@ -1,11 +1,10 @@
+import * as wcag from "wcag-contrast"
+import chroma from "chroma-js"
 import classNames from "@sindresorhus/class-names"
+import Label from "../Label/Label"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-
-// TODO @pyx Remove these deps
-const wcag = require("wcag-contrast")
-const chroma = require("chroma-js")
 
 const propTypes = {
 	background: PropTypes.string.isRequired,
@@ -52,23 +51,22 @@ const NakedColor = props => {
 	const calcValue = colorValue(props.hex, props.background)
 	const calcScore = colorScore(calcValue)
 	const isInvert = calcScore === "F"
-	const colorClasses = classNames("fr-color__box", {
-		"fr-color__box--invert": isInvert
+	const metaClasses = classNames("fr-color__meta", {
+		"fr-color__meta--invert": isInvert
 	})
 
 	return (
 		<div className={ props.className }>
-			<div className={ colorClasses } style={ { backgroundColor: props.hex } }>
-				<small>
-					<b>{calcScore}</b>
-					<span>{calcValue}</span>
-				</small>
+			<div className="fr-color__box" style={ { backgroundColor: props.hex } } />
+			<div className={ metaClasses } style={ { color: props.hex } }>
+				<b>{calcScore}</b>
+				<small>{calcValue}</small>
 			</div>
 			<aside>
-				<b className="fr-color__name">{props.name}</b>
-				<small>
+				<b>{props.name}</b>
+				<Label>
 					{props.hex}, {normalizeColor(props.hex)}
-				</small>
+				</Label>
 			</aside>
 		</div>
 	)
@@ -83,22 +81,30 @@ const Color = styled(NakedColor)`
 	font-size: 0.9125rem;
 
 	.fr-color__box {
-		align-items: center;
+		height: 3.5rem;
+		min-width: 3.5rem;
+		width: 3.5rem;
+
+		border-radius: 100%;
+	}
+
+	.fr-color__meta {
 		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 1rem;
 		margin-right: 1rem;
-		padding: 0.75rem;
-		width: 6.5rem;
-
-		border-radius: 0.125rem;
-		color: var(--fr-ground);
+		width: 6rem;
 	}
 
-	.fr-color__box--invert {
-		color: var(--fr-900);
+	.fr-color__meta--invert {
+		color: var(--fr-900) !important;
 	}
 
-	.fr-color__name {
-		line-height: 1.5;
+	aside {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
 	}
 
 	b,
