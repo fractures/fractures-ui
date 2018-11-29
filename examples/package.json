@@ -11,7 +11,9 @@
 	},
 	"dependencies": {
 		"@fractures/ui": "^0.4.12",
+		"parse-prop-types": "^0.3.0",
 		"react": "^16.6.3",
+		"react-docgen": "^3.0.0-rc.2",
 		"react-dom": "^16.6.3",
 		"react-scripts": "2.1.1"
 	},

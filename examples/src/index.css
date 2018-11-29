@@ -44,3 +44,32 @@ nav > *:not(:last-child) {
 .line--row > *:not(:last-child) {
 	margin-right: 0.5rem;
 }
+
+table {
+	width: 100%;
+
+	border-collapse: collapse;
+
+	text-align: left;
+	word-break: initial;
+}
+
+table tr,
+table tr th,
+table tr td {
+	border: 1px solid #ccc;
+}
+
+table thead tr {
+	font-weight: bold;
+}
+
+table tr th {
+	padding: 0.25rem 0.5rem;
+
+	font-weight: bold;
+}
+
+table tr td {
+	padding: 0.25rem 0.5rem;
+}

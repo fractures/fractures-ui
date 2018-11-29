@@ -27,18 +27,60 @@ import {
 	Tooltip
 } from "@fractures/ui"
 
+import parsePropTypes from "parse-prop-types"
+
 const setValue = e => {
 	console.log("setValue", e)
 }
 
+const Table = ({ props }) => {
+	if(!props) return null
+
+	const propsArray = Object.entries(props)
+
+	return (
+		<div style={ { marginTop: "1.5rem" } }>
+			<table>
+				<thead>
+					<tr>
+						<td>
+							<P>Name</P>
+						</td>
+						<td>
+							<P>Type</P>
+						</td>
+						<td>
+							<P>Required</P>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					{propsArray.map((prop, key) => (
+						<tr key={ key }>
+							<td>
+								<P>{prop[0]}</P>
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+	)
+}
+
 const Line = props => <div className={ props.isRow ? `flex line--row` : `flex line--column` }>{props.children}</div>
 
-const Box = props => (
-	<div style={ { padding: "1rem 0" } }>
-		<H2 style={ { marginBottom: "1rem" } }>{props.title}</H2>
-		<Line>{props.children}</Line>
-	</div>
-)
+const Box = props => {
+	const propsTable = props.component ? parsePropTypes(props.component) : null
+
+	return (
+		<div style={ { padding: "1rem 0" } }>
+			<H2 style={ { marginBottom: "1rem" } }>{props.title}</H2>
+			<Line>{props.children}</Line>
+			<Table props={ propsTable } />
+		</div>
+	)
+}
 
 class Index extends Component {
 	constructor(props) {
@@ -89,7 +131,7 @@ class Index extends Component {
 					/>
 				</nav>
 				<Container style={ { padding: "2rem 0" } }>
-					<Box title="Color">
+					<Box title="Color" component={ Color }>
 						<Line>
 							{Object.keys(this.state.theme.colors).map((color, key) => (
 								<Color
@@ -102,7 +144,7 @@ class Index extends Component {
 							))}
 						</Line>
 					</Box>
-					<Box title="Button Primary">
+					<Box title="Button Primary" component={ Button }>
 						<Line isRow>
 							<Button type="primary" value="Default" action={ () => this.toggleLoading() } />
 							<Button type="primary" value="Active" isActive={ true } />
@@ -118,7 +160,7 @@ class Index extends Component {
 						</Line>
 					</Box>
 
-					<Box title="Button Secondary">
+					<Box title="Button Secondary" component={ Button }>
 						<Line isRow>
 							<Button type="secondary" value="Default" />
 							<Button type="secondary" value="Active" isActive={ true } />
@@ -134,7 +176,7 @@ class Index extends Component {
 							<Button type="secondary" value="Activate" isRounded={ true } action={ e => setValue(e) } isLoading={ !this.state.isLoading } />
 						</Line>
 					</Box>
-					<Box title="ButtonGroup">
+					<Box title="ButtonGroup" component={ ButtonGroup }>
 						<Line isRow>
 							<ButtonGroup>
 								<Button type="primary" value="Active" isActive={ true } />
@@ -167,7 +209,7 @@ class Index extends Component {
 							</ButtonGroup>
 						</Line>
 					</Box>
-					<Box title="Checkbox">
+					<Box title="Checkbox" component={ Checkbox }>
 						<Checkbox label="Checkbox, hmm" isChecked={ true } check={ e => setValue(e) } />
 						<Checkbox label="This is disabled, checked" isChecked={ true } isDisabled={ true } />
 						<Checkbox label="This is disabled, unchecked" isChecked={ false } isDisabled={ true } />
