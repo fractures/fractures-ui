@@ -64,6 +64,22 @@ const themes = [
 			green: "#82c971",
 			blue: "#76a7e7"
 		}
+	},
+	{
+		name: "secret",
+		colors: {
+			ground: "#fff",
+			shade100: "#f5f5f8",
+			shade300: "#c3c5d3",
+			shade500: "#5a68e8",
+			shade700: "#414885",
+			shade900: "#26262b",
+			focus: "rgba(90, 104, 232, 0.25)",
+			red: "#f94b56",
+			yellow: "#ffd058",
+			green: "#82c971",
+			blue: "#5a68e8"
+		}
 	}
 ]
 
