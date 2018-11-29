@@ -2,11 +2,18 @@
 
 ![](https://travis-ci.org/fractures/fractures-ui.svg)
 
-[WIP] A UI experiment built with styled-components.
+Reusable React Components, built with styled-components.
+
+Goals
+
+- Minimum viable design
+- Functional prototypes
+- Accessible UI
+
+This is a WIP
 
 - Things are broken
 - Things will break
-- No documentation
 
 Usage
 
@@ -17,8 +24,3 @@ import { Button } from "@fractures/ui"
 
 <Button type="primary" value="Primary button" />
 ```
-
-Goals
-
-- Minimum viable design
-- Functional prototypes

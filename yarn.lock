@@ -697,10 +697,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.3.tgz#6310a047f12d21a1036fb031317219892440416f"
   integrity sha512-4zAPlpDEh2VwXswwr/t8xGNDGg8RQiPxtxZ3qQEXyQsBV39ptTdESCjuBvGze1nLMVrxmTIKmnO/nAV8Tqjjzg==
 
-"@let-codes/eslint-config@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@let-codes/eslint-config/-/eslint-config-0.1.7.tgz#4b27c6297e8dc21e298ba27c09ec09ffd46caf7a"
-  integrity sha512-XFz7yqNj9B3Vl602i1zPlRDCN1yu5+iQQLdG8nDQ9V2/OAsGhSSEZU5iCVnLBX7umJgAgDWMZziQ+UvqphJF7w==
+"@let/eslint-config@^0.1.7":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@let/eslint-config/-/eslint-config-0.1.9.tgz#0abeeb5eee97cccf84439cbd8f09bd9e7105f1a7"
+  integrity sha512-7nPmqAD4ept4rK76PHe/v1c84QhZfQCtjVH2aigvKP/gAsvjNHnb4ndp9eYUC33NNAqyXiztdocxDvh6EXMezQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
