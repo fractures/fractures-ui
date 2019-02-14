@@ -5,7 +5,7 @@ exports[`Toggle Renders correctly 1`] = `
   className="sc-bwzfXH hqzIbj"
 >
   <label
-    className="fr-toggle fr-toggle--unchecked"
+    className="hl-toggle hl-toggle--unchecked"
   >
     <input
       defaultChecked={false}
@@ -13,7 +13,7 @@ exports[`Toggle Renders correctly 1`] = `
       type="checkbox"
     />
     <span
-      className="fr-toggle__mark"
+      className="hl-toggle__mark"
     />
     <span
       className="sc-bdVaJa erEhky"

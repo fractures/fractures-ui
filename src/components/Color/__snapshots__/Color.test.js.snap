@@ -5,7 +5,7 @@ exports[`Color Renders correctly 1`] = `
   className="sc-ifAKCX gAbdiW"
 >
   <div
-    className="fr-color__box"
+    className="hl-color__box"
     style={
       Object {
         "backgroundColor": "#eee",
@@ -13,7 +13,7 @@ exports[`Color Renders correctly 1`] = `
     }
   />
   <div
-    className="fr-color__meta"
+    className="hl-color__meta"
     style={
       Object {
         "color": "#eee",
@@ -41,7 +41,7 @@ exports[`Color Renders correctly 1`] = `
         Light
       </p>
       <div
-        className="sc-bdVaJa fUxHLW fr-label--default"
+        className="sc-bdVaJa fUxHLW hl-label--default"
       >
         <span>
           Low contrast

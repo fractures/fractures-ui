@@ -10,7 +10,7 @@ const HR = styled.hr`
 	margin-top: 0;
 
 	border: 0;
-	border-bottom: 1px solid var(--fr-300);
+	border-bottom: 1px solid var(--hl-300);
 `
 
 HR.propTypes = propTypes

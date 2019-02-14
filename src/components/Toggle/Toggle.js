@@ -20,17 +20,17 @@ const defaultProps = {
 }
 
 const NakedToggle = props => {
-	const checkboxClasses = classNames("fr-toggle", {
-		"fr-toggle--checked": props.isChecked,
-		"fr-toggle--unchecked": !props.isChecked,
-		"fr-toggle--disabled": props.isDisabled
+	const checkboxClasses = classNames("hl-toggle", {
+		"hl-toggle--checked": props.isChecked,
+		"hl-toggle--unchecked": !props.isChecked,
+		"hl-toggle--disabled": props.isDisabled
 	})
 
 	return (
 		<div className={ props.className }>
 			<label className={ checkboxClasses }>
 				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ () => props.check() } />
-				<span className="fr-toggle__mark" />
+				<span className="hl-toggle__mark" />
 				<Label>{props.label}</Label>
 			</label>
 		</div>
@@ -72,7 +72,7 @@ const Toggle = styled(NakedToggle)`
 		overflow: hidden;
 		width: 3rem;
 
-		background-color: var(--fr-500);
+		background-color: var(--hl-500);
 		border-radius: 3rem;
 	}
 
@@ -85,7 +85,7 @@ const Toggle = styled(NakedToggle)`
 		height: 1rem;
 		width: 1rem;
 
-		background-color: var(--fr-ground);
+		background-color: var(--hl-ground);
 		border-radius: 100%;
 		transition: all 100ms ease-in-out;
 		content: " ";
@@ -100,7 +100,7 @@ const Toggle = styled(NakedToggle)`
 		padding: 0 0.5rem;
 		width: 3rem;
 
-		color: var(--fr-ground);
+		color: var(--hl-ground);
 
 		content: "Off";
 		font-size: 0.75rem;
@@ -119,7 +119,7 @@ const Toggle = styled(NakedToggle)`
 	}
 
 	input:checked ~ .hl-toggle__mark {
-		background-color: var(--fr-900);
+		background-color: var(--hl-900);
 	}
 `
 

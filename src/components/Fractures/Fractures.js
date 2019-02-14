@@ -17,20 +17,20 @@ const Fractures = props => {
 		theme &&
 		`
 		:root {
-			--fr-ground: ${ theme.colors.ground };
-			--fr-focus: ${ theme.colors.focus };
-			--fr-100: ${ theme.colors.shade100 };
-			--fr-300: ${ theme.colors.shade300 };
-			--fr-500: ${ theme.colors.shade500 };
-			--fr-700: ${ theme.colors.shade700 };
-			--fr-900: ${ theme.colors.shade900 };
+			--hl-ground: ${ theme.colors.ground };
+			--hl-focus: ${ theme.colors.focus };
+			--hl-100: ${ theme.colors.shade100 };
+			--hl-300: ${ theme.colors.shade300 };
+			--hl-500: ${ theme.colors.shade500 };
+			--hl-700: ${ theme.colors.shade700 };
+			--hl-900: ${ theme.colors.shade900 };
 
-			--fr-color-red: ${ theme.colors.red };
-			--fr-color-green: ${ theme.colors.green };
-			--fr-color-yellow: ${ theme.colors.yellow };
-			--fr-color-blue: ${ theme.colors.blue };
+			--hl-color-red: ${ theme.colors.red };
+			--hl-color-green: ${ theme.colors.green };
+			--hl-color-yellow: ${ theme.colors.yellow };
+			--hl-color-blue: ${ theme.colors.blue };
 
-			--fr-font-mono: "Roboto Mono", monospace;
+			--hl-font-mono: "Roboto Mono", monospace;
 		}
 	`
 

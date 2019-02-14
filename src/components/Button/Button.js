@@ -14,7 +14,7 @@ const Button = props => {
 		isSmall: props.isSmall
 	})
 
-	const LoadingColor = props.type === "secondary" ? "var(--fr-500)" : null
+	const LoadingColor = props.type === "secondary" ? "var(--hl-500)" : null
 
 	return (
 		<div style={ { position: "relative", display: "inline-flex", alignItems: "center" } } onClick={ e => props.action(e) }>

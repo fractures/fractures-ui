@@ -23,7 +23,7 @@ const defaultProps = {
 
 const NakedRadio = props => {
 	const radioClasses = classNames({
-		"fr-radio--disabled": props.isDisabled
+		"hl-radio--disabled": props.isDisabled
 	})
 
 	return (
@@ -35,7 +35,7 @@ const NakedRadio = props => {
 				onChange={ () => props.set(props.value) }
 				defaultChecked={ props.state === props.value }
 			/>
-			<span className="fr-radio__checkmark" />
+			<span className="hl-radio__checkmark" />
 			<Label>{props.label}</Label>
 		</label>
 	)
@@ -64,7 +64,7 @@ const Radio = styled(NakedRadio)`
 	}
 
 	input:checked ~ .hl-radio__checkmark {
-		background-color: var(--fr-ground);
+		background-color: var(--hl-ground);
 	}
 
 	.hl-radio__checkmark {
@@ -73,8 +73,8 @@ const Radio = styled(NakedRadio)`
 		margin-right: 0.5rem;
 		width: 1.5rem;
 
-		background-color: var(--fr-ground);
-		border: 2px solid var(--fr-500);
+		background-color: var(--hl-ground);
+		border: 2px solid var(--hl-500);
 		border-radius: 100%;
 	}
 
@@ -87,7 +87,7 @@ const Radio = styled(NakedRadio)`
 		height: 0.875rem;
 		width: 0.875rem;
 
-		background: var(--fr-500);
+		background: var(--hl-500);
 		border-radius: 100%;
 		transform: scale(0);
 		transition: all 100ms ease-in-out;

@@ -56,8 +56,8 @@ const NakedColor = props => {
 
 	return (
 		<div className={ props.className }>
-			<div className="fr-color__box" style={ { backgroundColor: props.hex } } />
-			<div className="fr-color__meta" style={ { color: props.hex } }>
+			<div className="hl-color__box" style={ { backgroundColor: props.hex } } />
+			<div className="hl-color__meta" style={ { color: props.hex } }>
 				<P>
 					<b>{calcScore}</b>
 				</P>
@@ -83,7 +83,7 @@ const Color = styled(NakedColor)`
 	display: flex;
 	flex-wrap: wrap;
 
-	color: var(--fr-900);
+	color: var(--hl-900);
 
 	font-size: 0.9125rem;
 

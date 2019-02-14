@@ -5,7 +5,7 @@ exports[`Input Renders correctly 1`] = `
   className="sc-bwzfXH fGQUIV"
 >
   <input
-    className="fr-input fr-input--input"
+    className="hl-input hl-input--input"
     defaultValue=""
     onChange={[Function]}
     placeholder=""

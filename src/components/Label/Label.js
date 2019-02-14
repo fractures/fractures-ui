@@ -15,8 +15,8 @@ const defaultProps = {
 
 const NakedLabel = props => {
 	const labelClass = classNames(props.className, {
-		"fr-label--default": !props.color,
-		[`fr-label--${ props.color }`]: props.color
+		"hl-label--default": !props.color,
+		[`hl-label--${ props.color }`]: props.color
 	})
 
 	return (
@@ -55,13 +55,13 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--default {
-		background-color: var(--fr-100);
-		color: var(--fr-700);
+		background-color: var(--hl-100);
+		color: var(--hl-700);
 	}
 
 	&.hl-label--primary {
-		background-color: var(--fr-300);
-		color: var(--fr-900);
+		background-color: var(--hl-300);
+		color: var(--hl-900);
 	}
 
 	&.hl-label--green span,
@@ -72,22 +72,22 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--green {
-		background-color: var(--fr-color-green);
+		background-color: var(--hl-color-green);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--red {
-		background-color: var(--fr-color-red);
+		background-color: var(--hl-color-red);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--yellow {
-		background-color: var(--fr-color-yellow);
+		background-color: var(--hl-color-yellow);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--blue {
-		background-color: var(--fr-color-blue);
+		background-color: var(--hl-color-blue);
 		color: rgba(0, 0, 0, 0.9);
 	}
 `

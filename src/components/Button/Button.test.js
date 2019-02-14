@@ -31,6 +31,6 @@ describe("Button Secondary", () => {
 	})
 
 	xit("Secondary button gets secondary class", () => {
-		expect(app.find(".hl-btn").hasClass("fr-btn-secondary")).toEqual(true)
+		expect(app.find(".hl-btn").hasClass("hl-btn-secondary")).toEqual(true)
 	})
 })

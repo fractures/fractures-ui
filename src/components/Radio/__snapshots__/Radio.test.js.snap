@@ -12,7 +12,7 @@ exports[`Radio Renders correctly 1`] = `
     type="radio"
   />
   <span
-    className="fr-radio__checkmark"
+    className="hl-radio__checkmark"
   />
   <span
     className="sc-bdVaJa erEhky"

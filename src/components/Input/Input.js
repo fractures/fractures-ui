@@ -22,10 +22,10 @@ const defaultProps = {
 
 const NakedInput = props => {
 	const isTextarea = props.type === "textarea"
-	const inputClasses = classNames("fr-input", {
-		"fr-input--input": props.type !== "textarea",
-		"fr-input--textarea": props.type === "textarea",
-		"fr-btn-primary": props.type === "primary"
+	const inputClasses = classNames("hl-input", {
+		"hl-input--input": props.type !== "textarea",
+		"hl-input--textarea": props.type === "textarea",
+		"hl-btn-primary": props.type === "primary"
 	})
 
 	const input = (
@@ -68,8 +68,8 @@ const Input = styled(NakedInput)`
 	.hl-input {
 		padding: 0 0.5rem;
 
-		background-color: var(--fr-ground);
-		border: 1px solid var(--fr-500);
+		background-color: var(--hl-ground);
+		border: 1px solid var(--hl-500);
 		border-radius: 0.125rem;
 		color: var(--shade-6);
 		outline: none;
@@ -90,19 +90,19 @@ const Input = styled(NakedInput)`
 	}
 
 	.hl-input:focus {
-		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
+		box-shadow: 0 0 0 0.1875rem var(--hl-focus);
 	}
 
 	.hl-input:active {
-		border-color: var(--fr-700);
+		border-color: var(--hl-700);
 	}
 
 	.hl-input:placeholder {
-		color: var(--fr-300);
+		color: var(--hl-300);
 	}
 
 	.hl-input::-webkit-input-placeholder {
-		color: var(--fr-300);
+		color: var(--hl-300);
 	}
 `
 

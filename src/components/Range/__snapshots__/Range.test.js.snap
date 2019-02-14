@@ -5,7 +5,7 @@ exports[`Range Renders correctly 1`] = `
   className="sc-bwzfXH AHMGE"
 >
   <input
-    className="sc-bwzfXH AHMGE sc-bdVaJa hNhBIV fr-range"
+    className="sc-bwzfXH AHMGE sc-bdVaJa hNhBIV hl-range"
     defaultValue={42}
     max={100}
     min={0}

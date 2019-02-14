@@ -20,17 +20,17 @@ const defaultProps = {
 }
 
 const NakedCheckbox = props => {
-	const checkboxClasses = classNames("fr-checkbox", {
-		"fr-checkbox--checked": props.isChecked,
-		"fr-checkbox--unchecked": !props.isChecked,
-		"fr-checkbox--disabled": props.isDisabled
+	const checkboxClasses = classNames("hl-checkbox", {
+		"hl-checkbox--checked": props.isChecked,
+		"hl-checkbox--unchecked": !props.isChecked,
+		"hl-checkbox--disabled": props.isDisabled
 	})
 
 	return (
 		<div className={ props.className }>
 			<label className={ checkboxClasses }>
 				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ () => props.check() } />
-				<span className="fr-checkbox__mark" />
+				<span className="hl-checkbox__mark" />
 				<Label>{props.label}</Label>
 			</label>
 		</div>
@@ -68,9 +68,9 @@ const Checkbox = styled(NakedCheckbox)`
 		min-width: 1.5rem;
 		width: 1.5rem;
 
-		background-color: var(--fr-ground);
+		background-color: var(--hl-ground);
 		border-radius: 0.125rem;
-		border: 2px solid var(--fr-500);
+		border: 2px solid var(--hl-500);
 		transition: border-color 100ms ease-in-out;
 	}
 
@@ -84,7 +84,7 @@ const Checkbox = styled(NakedCheckbox)`
 		opacity: 0;
 		width: 0.375rem;
 
-		border: solid var(--fr-500);
+		border: solid var(--hl-500);
 		border-width: 0 0.1875rem 0.1875rem 0;
 		transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 		transition: all 100ms ease-in-out;
@@ -102,7 +102,7 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 
 	input:checked ~ .hl-checkbox__mark {
-		background-color: var(--fr-ground);
+		background-color: var(--hl-ground);
 	}
 `
 
