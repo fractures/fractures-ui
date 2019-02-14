@@ -54,18 +54,18 @@ const Toggle = styled(NakedToggle)`
 		visibility: none;
 	}
 
-	.fr-toggle {
+	.hl-toggle {
 		position: relative;
 
 		display: flex;
 	}
 
-	.fr-toggle--disabled {
+	.hl-toggle--disabled {
 		opacity: 0.5;
 		pointer-events: none;
 	}
 
-	.fr-toggle__mark {
+	.hl-toggle__mark {
 		box-sizing: border-box;
 		height: 1.5rem;
 		margin-right: 0.5rem;
@@ -76,7 +76,7 @@ const Toggle = styled(NakedToggle)`
 		border-radius: 3rem;
 	}
 
-	.fr-toggle__mark:after {
+	.hl-toggle__mark:after {
 		left: 0.25rem;
 		top: 0.25rem;
 		position: absolute;
@@ -91,7 +91,7 @@ const Toggle = styled(NakedToggle)`
 		content: " ";
 	}
 
-	.fr-toggle__mark:before {
+	.hl-toggle__mark:before {
 		left: 0;
 		top: 0;
 		position: absolute;
@@ -109,16 +109,16 @@ const Toggle = styled(NakedToggle)`
 		text-align: right;
 	}
 
-	input:checked ~ .fr-toggle__mark:after {
+	input:checked ~ .hl-toggle__mark:after {
 		left: 1.75rem;
 	}
 
-	input:checked ~ .fr-toggle__mark:before {
+	input:checked ~ .hl-toggle__mark:before {
 		content: "On";
 		text-align: left;
 	}
 
-	input:checked ~ .fr-toggle__mark {
+	input:checked ~ .hl-toggle__mark {
 		background-color: var(--fr-900);
 	}
 `

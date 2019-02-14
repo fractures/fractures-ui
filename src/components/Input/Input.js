@@ -65,7 +65,7 @@ const Input = styled(NakedInput)`
 	display: flex;
 	flex-direction: column;
 
-	.fr-input {
+	.hl-input {
 		padding: 0 0.5rem;
 
 		background-color: var(--fr-ground);
@@ -78,30 +78,30 @@ const Input = styled(NakedInput)`
 		font-size: 1rem;
 	}
 
-	.fr-input--input {
+	.hl-input--input {
 		line-height: 2.5rem;
 	}
 
-	.fr-input--textarea {
+	.hl-input--textarea {
 		padding: 0.5rem;
 
 		line-height: 1.5rem;
 		resize: vertical;
 	}
 
-	.fr-input:focus {
+	.hl-input:focus {
 		box-shadow: 0 0 0 0.1875rem var(--fr-focus);
 	}
 
-	.fr-input:active {
+	.hl-input:active {
 		border-color: var(--fr-700);
 	}
 
-	.fr-input:placeholder {
+	.hl-input:placeholder {
 		color: var(--fr-300);
 	}
 
-	.fr-input::-webkit-input-placeholder {
+	.hl-input::-webkit-input-placeholder {
 		color: var(--fr-300);
 	}
 `

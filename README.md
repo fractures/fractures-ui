@@ -1,8 +1,8 @@
-# fractures UI
+# Helios
 
-![](https://travis-ci.org/fractures/fractures-ui.svg)
+![](https://travis-ci.org/helios-ui/helios.svg)
 
-Reusable React Components, built with styled-components.
+[WIP] Reusable React components, built with styled-components.
 
 Goals
 
@@ -10,17 +10,7 @@ Goals
 - Functional prototypes
 - Accessible UI
 
-This is a WIP
+State
 
 - Things are broken
 - Things will break
-
-Usage
-
-```
-yarn add @fractures/ui
-
-import { Button } from "@fractures/ui"
-
-<Button type="primary" value="Primary button" />
-```

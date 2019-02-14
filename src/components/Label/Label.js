@@ -54,39 +54,39 @@ const Label = styled(NakedLabel)`
 		content: " ";
 	}
 
-	&.fr-label--default {
+	&.hl-label--default {
 		background-color: var(--fr-100);
 		color: var(--fr-700);
 	}
 
-	&.fr-label--primary {
+	&.hl-label--primary {
 		background-color: var(--fr-300);
 		color: var(--fr-900);
 	}
 
-	&.fr-label--green span,
-	&.fr-label--red span,
-	&.fr-label--yellow span,
-	&.fr-label--blue span {
+	&.hl-label--green span,
+	&.hl-label--red span,
+	&.hl-label--yellow span,
+	&.hl-label--blue span {
 		mix-blend-mode: multiply;
 	}
 
-	&.fr-label--green {
+	&.hl-label--green {
 		background-color: var(--fr-color-green);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
-	&.fr-label--red {
+	&.hl-label--red {
 		background-color: var(--fr-color-red);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
-	&.fr-label--yellow {
+	&.hl-label--yellow {
 		background-color: var(--fr-color-yellow);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
-	&.fr-label--blue {
+	&.hl-label--blue {
 		background-color: var(--fr-color-blue);
 		color: rgba(0, 0, 0, 0.9);
 	}

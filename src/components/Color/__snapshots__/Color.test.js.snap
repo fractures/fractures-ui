@@ -2,7 +2,7 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-ifAKCX ieNlBV"
+  className="sc-ifAKCX gAbdiW"
 >
   <div
     className="fr-color__box"
@@ -41,7 +41,7 @@ exports[`Color Renders correctly 1`] = `
         Light
       </p>
       <div
-        className="sc-bdVaJa hBHdgd fr-label--default"
+        className="sc-bdVaJa fUxHLW fr-label--default"
       >
         <span>
           Low contrast

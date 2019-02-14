@@ -2,7 +2,7 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH leNrVz "
+  className="sc-bwzfXH dKZeNg "
 >
   <input
     aria-checked={false}

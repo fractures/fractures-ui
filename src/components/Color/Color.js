@@ -87,7 +87,7 @@ const Color = styled(NakedColor)`
 
 	font-size: 0.9125rem;
 
-	.fr-color__box {
+	.hl-color__box {
 		height: 3rem;
 		min-width: 3rem;
 		width: 3rem;
@@ -95,7 +95,7 @@ const Color = styled(NakedColor)`
 		border-radius: 100%;
 	}
 
-	.fr-color__meta {
+	.hl-color__meta {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

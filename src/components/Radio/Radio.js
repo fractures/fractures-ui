@@ -50,7 +50,7 @@ const Radio = styled(NakedRadio)`
 	cursor: pointer;
 	user-select: none;
 
-	&.fr-radio--disabled {
+	&.hl-radio--disabled {
 		opacity: 0.5;
 		pointer-events: none;
 	}
@@ -63,11 +63,11 @@ const Radio = styled(NakedRadio)`
 		visibility: hidden;
 	}
 
-	input:checked ~ .fr-radio__checkmark {
+	input:checked ~ .hl-radio__checkmark {
 		background-color: var(--fr-ground);
 	}
 
-	.fr-radio__checkmark {
+	.hl-radio__checkmark {
 		box-sizing: inherit;
 		height: 1.5rem;
 		margin-right: 0.5rem;
@@ -78,7 +78,7 @@ const Radio = styled(NakedRadio)`
 		border-radius: 100%;
 	}
 
-	.fr-radio__checkmark:after {
+	.hl-radio__checkmark:after {
 		position: absolute;
 		top: 0.3125rem;
 		left: 0.3125rem;
@@ -95,7 +95,7 @@ const Radio = styled(NakedRadio)`
 		content: "";
 	}
 
-	input:checked ~ .fr-radio__checkmark:after {
+	input:checked ~ .hl-radio__checkmark:after {
 		opacity: 1;
 
 		transform: scale(1);

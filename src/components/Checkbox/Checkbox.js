@@ -54,13 +54,13 @@ const Checkbox = styled(NakedCheckbox)`
 		visibility: none;
 	}
 
-	.fr-checkbox {
+	.hl-checkbox {
 		position: relative;
 
 		display: flex;
 	}
 
-	.fr-checkbox__mark {
+	.hl-checkbox__mark {
 		display: flex;
 		height: 1.5rem;
 		margin-right: 0.5rem;
@@ -74,7 +74,7 @@ const Checkbox = styled(NakedCheckbox)`
 		transition: border-color 100ms ease-in-out;
 	}
 
-	.fr-checkbox__mark:after {
+	.hl-checkbox__mark:after {
 		left: 0.625rem;
 		top: 0.25rem;
 		position: absolute;
@@ -91,17 +91,17 @@ const Checkbox = styled(NakedCheckbox)`
 		content: " ";
 	}
 
-	.fr-checkbox--disabled {
+	.hl-checkbox--disabled {
 		opacity: 0.5;
 		pointer-events: none;
 	}
 
-	input:checked ~ .fr-checkbox__mark:after {
+	input:checked ~ .hl-checkbox__mark:after {
 		opacity: 1;
 		transform: rotate(45deg) translateY(0) translateX(0);
 	}
 
-	input:checked ~ .fr-checkbox__mark {
+	input:checked ~ .hl-checkbox__mark {
 		background-color: var(--fr-ground);
 	}
 `

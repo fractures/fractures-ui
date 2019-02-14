@@ -1,6 +1,6 @@
 {
-	"name": "@fractures/ui",
-	"version": "0.4.13",
+	"name": "@helios-ui/helios",
+	"version": "0.0.1",
 	"description": "Reusable React UI components",
 	"main": "dist/index.js",
 	"scripts": {
@@ -19,17 +19,17 @@
 	],
 	"author": {
 		"name": "Krisztian Puska",
-		"email": "pyx@pyx.space",
-		"url": "https://pyx.space"
+		"email": "pyx@pyx.sh",
+		"url": "https://pyx.sh"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/fractures/fractures-ui"
+		"url": "https://github.com/helios-ui/helios"
 	},
 	"license": "MIT",
-	"homepage": "https://fractures.space/ui",
+	"homepage": "https://helios.guide",
 	"bugs": {
-		"url": "https://github.com/fractures/fractures-ui/issues"
+		"url": "https://github.com/helios-ui/helios/issues"
 	},
 	"dependencies": {
 		"@sindresorhus/class-names": "^1.0.0",

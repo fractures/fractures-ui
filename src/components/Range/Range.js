@@ -48,8 +48,8 @@ const NakedRangeWrap = styled(NakedRange)`
 	padding: 0;
 	width: 100%;
 
-	&.fr-range--verbose:before,
-	&.fr-range--verbose:after {
+	&.hl-range--verbose:before,
+	&.hl-range--verbose:after {
 		display: block;
 		height: 1.5rem;
 		padding: 0 0.5rem;
@@ -63,7 +63,7 @@ const NakedRangeWrap = styled(NakedRange)`
 		text-align: center;
 	}
 
-	&.fr-range--verbose:after {
+	&.hl-range--verbose:after {
 		right: 0;
 
 		margin-left: 0.5rem;
@@ -71,7 +71,7 @@ const NakedRangeWrap = styled(NakedRange)`
 		content: attr(max);
 	}
 
-	&.fr-range--verbose:before {
+	&.hl-range--verbose:before {
 		left: 0;
 
 		margin-right: 0.5rem;
@@ -130,7 +130,7 @@ const Range = styled(NakedRangeContainer)`
 	background-color: transparent;
 	-webkit-appearance: none;
 
-	.fr-range__value {
+	.hl-range__value {
 		display: block;
 		height: 1.5rem;
 		padding: 0 0.5rem;
