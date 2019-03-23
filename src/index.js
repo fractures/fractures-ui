@@ -1,8 +1,6 @@
 import A from "./components/Type/A"
 import Button from "./components/Button/Button"
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup"
-import ButtonPrimary from "./components/Button/components/ButtonPrimary"
-import ButtonSecondary from "./components/Button/components/ButtonSecondary"
 import Checkbox from "./components/Checkbox/Checkbox"
 import Code from "./components/Type/Code"
 import Color from "./components/Color/Color"
@@ -32,8 +30,6 @@ export {
 	A,
 	Button,
 	ButtonGroup,
-	ButtonPrimary,
-	ButtonSecondary,
 	Checkbox,
 	Code,
 	Color,
