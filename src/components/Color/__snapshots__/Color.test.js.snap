@@ -2,7 +2,7 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-ifAKCX gAbdiW"
+  className="sc-ifAKCX kSwQjO"
 >
   <div
     className="hl-color__box"
@@ -21,7 +21,7 @@ exports[`Color Renders correctly 1`] = `
     }
   >
     <p
-      className="sc-bxivhb cfzrAM"
+      className="sc-bxivhb cSZrvM"
     >
       <b>
         F
@@ -36,12 +36,12 @@ exports[`Color Renders correctly 1`] = `
   <aside>
     <header>
       <p
-        className="sc-bxivhb cfzrAM"
+        className="sc-bxivhb cSZrvM"
       >
         Light
       </p>
       <div
-        className="sc-bdVaJa fUxHLW hl-label--default"
+        className="sc-bdVaJa hzXAXr hl-label--default"
       >
         <span>
           Low contrast
@@ -50,7 +50,7 @@ exports[`Color Renders correctly 1`] = `
     </header>
     <div>
       <code
-        className="sc-htpNat cjHBxU"
+        className="sc-htpNat bxYCgy"
       >
         #eee
          —

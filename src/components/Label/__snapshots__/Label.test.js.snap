@@ -2,7 +2,7 @@
 
 exports[`Label Matches snapshot 1`] = `
 <div
-  className="sc-bdVaJa fUxHLW hl-label--default"
+  className="sc-bdVaJa hzXAXr hl-label--default"
 >
   <span>
     Green default

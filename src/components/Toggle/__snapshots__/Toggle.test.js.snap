@@ -2,7 +2,7 @@
 
 exports[`Toggle Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH hqzIbj"
+  className="sc-bwzfXH cXEhxl"
 >
   <label
     className="hl-toggle hl-toggle--unchecked"
@@ -16,7 +16,7 @@ exports[`Toggle Renders correctly 1`] = `
       className="hl-toggle__mark"
     />
     <span
-      className="sc-bdVaJa erEhky"
+      className="sc-bdVaJa hOTKmH"
     >
       Toggle
     </span>

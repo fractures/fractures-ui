@@ -2,7 +2,7 @@
 
 exports[`Progress Renders correctly 1`] = `
 <progress
-  className="sc-bdVaJa czqDfu"
+  className="sc-bdVaJa CCncb"
   max={100}
   value={31}
 />

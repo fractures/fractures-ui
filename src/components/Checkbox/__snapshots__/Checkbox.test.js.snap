@@ -2,7 +2,7 @@
 
 exports[`Checkbox Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH bXmHCE"
+  className="sc-bwzfXH eWjfnz"
 >
   <label
     className="hl-checkbox hl-checkbox--unchecked"
@@ -16,7 +16,7 @@ exports[`Checkbox Renders correctly 1`] = `
       className="hl-checkbox__mark"
     />
     <span
-      className="sc-bdVaJa erEhky"
+      className="sc-bdVaJa hOTKmH"
     >
       Checkbox
     </span>
@@ -26,7 +26,7 @@ exports[`Checkbox Renders correctly 1`] = `
 
 exports[`Checkbox checked Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH bXmHCE"
+  className="sc-bwzfXH eWjfnz"
 >
   <label
     className="hl-checkbox hl-checkbox--checked"
@@ -40,7 +40,7 @@ exports[`Checkbox checked Renders correctly 1`] = `
       className="hl-checkbox__mark"
     />
     <span
-      className="sc-bdVaJa erEhky"
+      className="sc-bdVaJa hOTKmH"
     >
       Checked checkbox
     </span>
@@ -50,7 +50,7 @@ exports[`Checkbox checked Renders correctly 1`] = `
 
 exports[`Checkbox disabled Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH bXmHCE"
+  className="sc-bwzfXH eWjfnz"
 >
   <label
     className="hl-checkbox hl-checkbox--unchecked hl-checkbox--disabled"
@@ -64,7 +64,7 @@ exports[`Checkbox disabled Renders correctly 1`] = `
       className="hl-checkbox__mark"
     />
     <span
-      className="sc-bdVaJa erEhky"
+      className="sc-bdVaJa hOTKmH"
     >
       Disabled checkbox
     </span>

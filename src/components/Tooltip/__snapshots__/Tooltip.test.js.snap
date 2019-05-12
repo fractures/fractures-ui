@@ -2,7 +2,7 @@
 
 exports[`Tooltip Renders correctly 1`] = `
 <div
-  className="sc-bdVaJa bQPgRh"
+  className="sc-bdVaJa ciBcQg"
   data-tooltip="Tooltip"
 >
   Content

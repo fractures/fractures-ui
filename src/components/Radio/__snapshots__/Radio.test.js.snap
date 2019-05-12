@@ -2,12 +2,13 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH dKZeNg "
+  className="sc-bwzfXH jhzBpA "
 >
   <input
     aria-checked={false}
     defaultChecked={false}
     name="radio"
+    onBlur={[Function]}
     onChange={[Function]}
     type="radio"
   />
@@ -15,7 +16,7 @@ exports[`Radio Renders correctly 1`] = `
     className="hl-radio__checkmark"
   />
   <span
-    className="sc-bdVaJa erEhky"
+    className="sc-bdVaJa hOTKmH"
   >
     
   </span>

@@ -2,11 +2,12 @@
 
 exports[`Input Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH fGQUIV"
+  className="sc-bwzfXH cTlflQ"
 >
   <input
     className="hl-input hl-input--input"
     defaultValue=""
+    onBlur={[Function]}
     onChange={[Function]}
     placeholder=""
     type="text"
