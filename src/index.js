@@ -1,3 +1,4 @@
+import "parse-prop-types"
 import A from "./components/Type/A"
 import Button from "./components/Button/Button"
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup"
