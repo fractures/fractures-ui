@@ -5,7 +5,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
-	check: PropTypes.func.isRequired,
+	onChange: PropTypes.func.isRequired,
 	className: PropTypes.string,
 	isChecked: PropTypes.bool,
 	isDisabled: PropTypes.bool,
@@ -29,7 +29,7 @@ const NakedToggle = props => {
 	return (
 		<div className={ props.className }>
 			<label className={ checkboxClasses }>
-				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ () => props.check() } />
+				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ e => props.onChange(e) } />
 				<span className="hl-toggle__mark" />
 				<Label>{props.label}</Label>
 			</label>

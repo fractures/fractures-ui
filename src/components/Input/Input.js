@@ -6,7 +6,8 @@ import styled from "styled-components"
 
 const propTypes = {
 	className: PropTypes.string,
-	change: PropTypes.func.isRequired,
+	onBlur: PropTypes.func,
+	onChange: PropTypes.func.isRequired,
 	label: PropTypes.string,
 	placeholder: PropTypes.string,
 	type: PropTypes.string,
@@ -14,7 +15,8 @@ const propTypes = {
 }
 
 const defaultProps = {
-	change: () => null,
+	onChange: () => null,
+	onBlur: () => null,
 	placeholder: "",
 	type: "text",
 	value: ""
@@ -31,7 +33,8 @@ const NakedInput = props => {
 	const input = (
 		<input
 			placeholder={ props.placeholder }
-			onChange={ e => props.change(e.target.value) }
+			onBlur={ e => props.onBlur(e) }
+			onChange={ e => props.onChange(e) }
 			className={ inputClasses }
 			type={ props.type }
 			defaultValue={ props.value }
@@ -42,7 +45,8 @@ const NakedInput = props => {
 		<textarea
 			placeholder={ props.placeholder }
 			rows={ 6 }
-			onChange={ e => props.change(e.target.value) }
+			onBlur={ e => props.onBlur(e) }
+			onChange={ e => props.onChange(e) }
 			className={ inputClasses }
 			defaultValue={ props.value }
 		/>

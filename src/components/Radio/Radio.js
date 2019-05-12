@@ -8,7 +8,8 @@ const propTypes = {
 	className: PropTypes.string,
 	isDisabled: PropTypes.bool,
 	label: PropTypes.string,
-	set: PropTypes.func.isRequired,
+	onBlur: PropTypes.func,
+	onChange: PropTypes.func.isRequired,
 	state: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]),
 	value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool])
 }
@@ -16,7 +17,8 @@ const propTypes = {
 const defaultProps = {
 	isDisabled: false,
 	label: "",
-	set: () => null,
+	onBlur: () => null,
+	onChange: () => null,
 	state: false,
 	value: ""
 }
@@ -32,7 +34,8 @@ const NakedRadio = props => {
 				aria-checked={ props.state === props.value }
 				type="radio"
 				name="radio"
-				onChange={ () => props.set(props.value) }
+				onBlur={ e => props.onBlur(e) }
+				onChange={ e => props.onChange(e) }
 				defaultChecked={ props.state === props.value }
 			/>
 			<span className="hl-radio__checkmark" />

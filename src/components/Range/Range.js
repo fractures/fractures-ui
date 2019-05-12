@@ -8,7 +8,7 @@ const propTypes = {
 	isVerbose: PropTypes.bool,
 	max: PropTypes.number.isRequired,
 	min: PropTypes.number.isRequired,
-	set: PropTypes.func.isRequired,
+	onChange: PropTypes.func.isRequired,
 	step: PropTypes.number,
 	value: PropTypes.number
 }
@@ -17,7 +17,7 @@ const defaultProps = {
 	isVerbose: false,
 	max: 100,
 	min: 0,
-	set: () => null,
+	onChange: () => null,
 	step: null,
 	value: 0
 }
@@ -31,7 +31,7 @@ const NakedRange = props => {
 		<input
 			className={ `${ props.className } ${ nakedClasses }` }
 			defaultValue={ props.value }
-			onChange={ e => props.set(e.target.value) }
+			onChange={ e => props.onChange(e) }
 			type="range"
 			step={ props.step }
 			min={ props.min }

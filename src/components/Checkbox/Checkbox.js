@@ -5,7 +5,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
-	check: PropTypes.func.isRequired,
+	onChange: PropTypes.func.isRequired,
 	className: PropTypes.string,
 	isChecked: PropTypes.bool,
 	isDisabled: PropTypes.bool,
@@ -13,7 +13,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	check: () => null,
+	onChange: () => null,
 	isChecked: false,
 	isDisabled: false,
 	label: ""
@@ -29,7 +29,7 @@ const NakedCheckbox = props => {
 	return (
 		<div className={ props.className }>
 			<label className={ checkboxClasses }>
-				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ () => props.check() } />
+				<input type="checkbox" defaultChecked={ props.isChecked } onChange={ () => props.onChange() } />
 				<span className="hl-checkbox__mark" />
 				<Label>{props.label}</Label>
 			</label>

@@ -17,7 +17,7 @@ const Button = props => {
 	const LoadingColor = props.type === "secondary" ? "var(--hl-500)" : null
 
 	return (
-		<div style={ { position: "relative", display: "inline-flex", alignItems: "center" } } onClick={ e => props.action(e) }>
+		<div style={ { position: "relative", display: "inline-flex", alignItems: "center" } } onClick={ e => props.onClick(e) }>
 			{props.type === "primary" && <ButtonPrimary { ...props } className={ buttonClasses } />}
 			{props.type === "secondary" && <ButtonSecondary { ...props } className={ buttonClasses } />}
 			{props.isLoading && <LoadingIcon color={ LoadingColor } size={ props.isSmall ? 10 : 20 } />}
