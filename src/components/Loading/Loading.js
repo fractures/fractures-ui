@@ -9,7 +9,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	color: null,
+	color: "var(--color-gray-300)",
 	size: 20
 }
 
@@ -24,21 +24,12 @@ const NakedLoading = ({ className, color, size }) => {
 			<circle
 				fill="none"
 				strokeWidth={ 4 }
-				stroke="var(--color-gray-300)"
+				stroke={ color }
 				cx={ cSize }
 				cy={ cSize }
 				r={ rSize }
 				style={ { opacity: 0.25 } } />
-			<circle
-				fill="none"
-				strokeWidth={ 4 }
-				stroke={ color || "var(--color-gray-500)" }
-				strokeDasharray={ dashSize }
-				strokeLinecap="round"
-				cx={ cSize }
-				cy={ cSize }
-				r={ rSize }
-			/>
+			<circle fill="none" strokeWidth={ 4 } stroke={ color } strokeDasharray={ dashSize } strokeLinecap="round" cx={ cSize } cy={ cSize } r={ rSize } />
 		</svg>
 	)
 }

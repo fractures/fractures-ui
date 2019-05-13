@@ -19,7 +19,7 @@ const Progress = styled(NakedProgress)`
 	height: 0.5rem;
 	width: 100%;
 
-	background-color: var(--color-gray-500);
+	background-color: var(--color-gray-100);
 	border: 0;
 	border-radius: 10rem;
 

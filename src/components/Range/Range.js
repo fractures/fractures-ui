@@ -54,7 +54,7 @@ const NakedRangeWrap = styled(NakedRange)`
 		height: 1.5rem;
 		padding: 0 0.5rem;
 
-		background-color: var(--color-gray-500);
+		background-color: var(--color-gray-100);
 		border-radius: 1rem;
 		color: var(--color-gray-500);
 
@@ -87,7 +87,7 @@ const NakedRangeWrap = styled(NakedRange)`
 		height: 0.5rem;
 		width: 100%;
 
-		background-color: var(--color-gray-500);
+		background-color: var(--color-gray-100);
 		border-radius: 1rem;
 
 		cursor: pointer;
@@ -138,7 +138,7 @@ const Range = styled(NakedRangeContainer)`
 
 		background-color: var(--color-gray-500);
 		border-radius: 1rem;
-		color: var(--color-gray-0);
+		color: var(--color-gray-100);
 
 		font-size: 0.75rem;
 		font-weight: bold;

@@ -91,8 +91,6 @@ const Color = styled(NakedColor)`
 		height: 3rem;
 		min-width: 3rem;
 		width: 3rem;
-
-		border-radius: 100%;
 	}
 
 	.hl-color__meta {

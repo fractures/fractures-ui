@@ -55,7 +55,7 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--default {
-		background-color: var(--color-gray-300);
+		background-color: var(--color-gray-100);
 		color: var(--color-gray-700);
 	}
 
@@ -64,31 +64,24 @@ const Label = styled(NakedLabel)`
 		color: var(--color-gray-900);
 	}
 
-	&.hl-label--green span,
-	&.hl-label--red span,
-	&.hl-label--yellow span,
-	&.hl-label--blue span {
-		mix-blend-mode: multiply;
-	}
-
 	&.hl-label--green {
 		background-color: var(--color-green-500);
-		color: rgba(0, 0, 0, 0.9);
+		color: var(--color-green-900);
 	}
 
 	&.hl-label--red {
 		background-color: var(--color-red-500);
-		color: rgba(0, 0, 0, 0.9);
+		color: var(--color-red-900);
 	}
 
 	&.hl-label--yellow {
 		background-color: var(--color-yellow-500);
-		color: rgba(0, 0, 0, 0.9);
+		color: var(--color-yellow-900);
 	}
 
 	&.hl-label--blue {
 		background-color: var(--color-blue-500);
-		color: rgba(0, 0, 0, 0.9);
+		color: var(--color-blue-900);
 	}
 `
 

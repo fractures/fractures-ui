@@ -14,7 +14,7 @@ const ButtonSecondary = styled(DefaultButton)`
 	&.isActive:not(.isDisabled),
 	&:active:not(.isDisabled),
 	&:active:focus:not(.isDisabled) {
-		background-color: var(--color-gray-500);
+		background-color: var(--color-gray-100);
 		box-shadow: inset 0 0 0 1px var(--color-gray-500);
 		color: var(--color-gray-900);
 	}

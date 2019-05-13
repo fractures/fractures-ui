@@ -6,10 +6,34 @@ const fonts = {
 }
 
 const normalColors = {
-	red: { 500: "#f94b56" },
-	yellow: { 500: "#ffd058" },
-	green: { 500: "#82c971" },
-	blue: { 500: "#76a7e7" }
+	red: {
+		100: "#FFD8DA",
+		300: "#FF979D",
+		500: "#f94b56",
+		700: "#CF2E38",
+		900: "#8F171F"
+	},
+	yellow: {
+		100: "#FFF2D2",
+		300: "#FFE6A6",
+		500: "#FFD058",
+		700: "#DFA103",
+		900: "#8D5D00"
+	},
+	green: {
+		100: "#E4FBDF",
+		300: "#B3E8A7",
+		500: "#82C971",
+		700: "#4DA439",
+		900: "#1A6309"
+	},
+	blue: {
+		100: "#D3E6FF",
+		300: "#95C3FF",
+		500: "#539DFE",
+		700: "#216FD3",
+		900: "#073775"
+	}
 }
 
 const themes = [
@@ -84,8 +108,7 @@ const themes = [
 				700: "#414885",
 				900: "#26262b"
 			},
-			...normalColors,
-			blue: { 500: "#5a68e8" }
+			...normalColors
 		},
 		...fonts
 	}

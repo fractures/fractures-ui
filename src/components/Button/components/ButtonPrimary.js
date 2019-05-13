@@ -17,7 +17,7 @@ const ButtonPrimary = styled(DefaultButton)`
 	}
 
 	&.isDisabled {
-		background-color: var(--color-gray-300);
+		background-color: var(--color-gray-100);
 		color: var(--color-gray-500);
 	}
 `
