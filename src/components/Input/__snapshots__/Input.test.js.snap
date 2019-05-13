@@ -2,7 +2,7 @@
 
 exports[`Input Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH cTlflQ"
+  className="sc-bwzfXH bgdDfy"
 >
   <input
     className="hl-input hl-input--input"

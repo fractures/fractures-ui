@@ -2,10 +2,10 @@
 
 exports[`Range Renders correctly 1`] = `
 <div
-  className="sc-bwzfXH guUJnV"
+  className="sc-bwzfXH kobrUA"
 >
   <input
-    className="sc-bwzfXH guUJnV sc-bdVaJa keEplg hl-range"
+    className="sc-bwzfXH kobrUA sc-bdVaJa cNAEgf hl-range"
     defaultValue={42}
     max={100}
     min={0}

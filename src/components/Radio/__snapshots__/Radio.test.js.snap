@@ -2,7 +2,7 @@
 
 exports[`Radio Renders correctly 1`] = `
 <label
-  className="sc-bwzfXH jhzBpA "
+  className="sc-bwzfXH drYrjH "
 >
   <input
     aria-checked={false}
@@ -16,7 +16,7 @@ exports[`Radio Renders correctly 1`] = `
     className="hl-radio__checkmark"
   />
   <span
-    className="sc-bdVaJa hOTKmH"
+    className="sc-bdVaJa ehcbJe"
   >
     
   </span>

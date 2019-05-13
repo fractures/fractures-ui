@@ -1,13 +1,13 @@
-import Fractures from "./Fractures.js"
+import Helios from "./Helios.js"
 
-describe("Fractures", () => {
-	const tree = renderer.create(<Fractures />).toJSON()
+describe("Helios", () => {
+	const tree = renderer.create(<Helios />).toJSON()
 
 	it("Renders correctly", () => expect(tree).toMatchSnapshot())
 })
 
-describe("Fractures with theme", () => {
-	const tree = renderer.create(<Fractures theme="blue" />).toJSON()
+describe("Helios with theme", () => {
+	const tree = renderer.create(<Helios theme="blue" />).toJSON()
 
 	it("Renders correctly", () => expect(tree).toMatchSnapshot())
 })

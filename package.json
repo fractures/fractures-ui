@@ -7,7 +7,7 @@
 		"build": "parcel build ./src/index.js --detailed-report",
 		"dev": "parcel watch ./src/index.js",
 		"prepare": "parcel build ./src/index.js --detailed-report",
-		"test": "NODE_ENV=test jest -u --verbose"
+		"test": "NODE_ENV=test jest --verbose"
 	},
 	"keywords": [
 		"react",
