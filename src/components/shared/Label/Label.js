@@ -14,7 +14,7 @@ const Label = styled(NakedLabel)`
 	display: flex;
 	white-space: nowrap;
 
-	color: var(--hl-900);
+	color: var(--color-gray-900);
 
 	font-size: 0.875rem;
 	font-weight: 500;

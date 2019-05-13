@@ -19,7 +19,7 @@ const P = styled.p`
 	}
 
 	& > cite {
-		background-color: var(--hl-color-yellow);
+		background-color: var(--color-yellow-500);
 	}
 `
 

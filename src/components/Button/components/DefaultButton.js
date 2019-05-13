@@ -24,7 +24,7 @@ const DefaultButton = styled(NakedButton)`
 
 	&.isSmall:focus,
 	&.isSmall:focus:hover {
-		box-shadow: inset 0 0 0 1px var(--hl-500), 0 0 0 0.125rem var(--hl-focus);
+		box-shadow: inset 0 0 0 1px var(--color-gray-500), 0 0 0 0.125rem var(--color-gray-100);
 	}
 
 	&:focus {
@@ -32,13 +32,13 @@ const DefaultButton = styled(NakedButton)`
 	}
 
 	&:focus:not(.isDisabled):not(.isLoading):not(.isSmall) {
-		box-shadow: 0 0 0 0.1875rem var(--hl-focus);
+		box-shadow: 0 0 0 0.1875rem var(--color-gray-100);
 	}
 
 	&.isLoading {
 		padding-left: 2.5rem;
 
-		color: var(--hl-300);
+		color: var(--color-gray-300);
 
 		pointer-events: none;
 	}

@@ -68,9 +68,9 @@ const Checkbox = styled(NakedCheckbox)`
 		min-width: 1.5rem;
 		width: 1.5rem;
 
-		background-color: var(--hl-ground);
+		background-color: var(--color-gray-0);
 		border-radius: 0.125rem;
-		border: 2px solid var(--hl-500);
+		border: 2px solid var(--color-gray-500);
 		transition: border-color 100ms ease-in-out;
 	}
 
@@ -84,7 +84,7 @@ const Checkbox = styled(NakedCheckbox)`
 		opacity: 0;
 		width: 0.375rem;
 
-		border: solid var(--hl-500);
+		border: solid var(--color-gray-500);
 		border-width: 0 0.1875rem 0.1875rem 0;
 		transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 		transition: all 100ms ease-in-out;
@@ -102,7 +102,7 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 
 	input:checked ~ .hl-checkbox__mark {
-		background-color: var(--hl-ground);
+		background-color: var(--color-gray-0);
 	}
 `
 

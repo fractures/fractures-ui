@@ -8,17 +8,17 @@ exports[`Fractures with theme Renders correctly 1`] = `
     Object {
       "__html": "
 		:root {
-			--hl-ground: #fff;
-			--hl-focus: rgba(52, 130, 218, 0.25);
-			--hl-100: #e8f2fd;
-			--hl-300: #76a7e7;
-			--hl-500: #3482da;
-			--hl-700: #2463a5;
-			--hl-900: #102a45;
+			--color-gray-0: #fff;
+			--color-gray-100: rgba(52, 130, 218, 0.25);
+			--color-gray-500: #e8f2fd;
+			--color-gray-300: #76a7e7;
+			--color-gray-500: #3482da;
+			--color-gray-700: #2463a5;
+			--color-gray-900: #102a45;
 
 			--hl-color-red: #f94b56;
 			--hl-color-green: #82c971;
-			--hl-color-yellow: #ffd058;
+			--color-yellow-500: #ffd058;
 			--hl-color-blue: #76a7e7;
 
 			--hl-font-mono: \\"Roboto Mono\\", monospace;

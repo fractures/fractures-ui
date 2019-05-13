@@ -72,7 +72,7 @@ const Toggle = styled(NakedToggle)`
 		overflow: hidden;
 		width: 3rem;
 
-		background-color: var(--hl-500);
+		background-color: var(--color-gray-500);
 		border-radius: 3rem;
 	}
 
@@ -85,7 +85,7 @@ const Toggle = styled(NakedToggle)`
 		height: 1rem;
 		width: 1rem;
 
-		background-color: var(--hl-ground);
+		background-color: var(--color-gray-0);
 		border-radius: 100%;
 		transition: all 100ms ease-in-out;
 		content: " ";
@@ -100,7 +100,7 @@ const Toggle = styled(NakedToggle)`
 		padding: 0 0.5rem;
 		width: 3rem;
 
-		color: var(--hl-ground);
+		color: var(--color-gray-0);
 
 		content: "Off";
 		font-size: 0.75rem;
@@ -119,7 +119,7 @@ const Toggle = styled(NakedToggle)`
 	}
 
 	input:checked ~ .hl-toggle__mark {
-		background-color: var(--hl-900);
+		background-color: var(--color-gray-900);
 	}
 `
 

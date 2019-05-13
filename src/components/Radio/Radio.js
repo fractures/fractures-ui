@@ -67,7 +67,7 @@ const Radio = styled(NakedRadio)`
 	}
 
 	input:checked ~ .hl-radio__checkmark {
-		background-color: var(--hl-ground);
+		background-color: var(--color-gray-0);
 	}
 
 	.hl-radio__checkmark {
@@ -76,8 +76,8 @@ const Radio = styled(NakedRadio)`
 		margin-right: 0.5rem;
 		width: 1.5rem;
 
-		background-color: var(--hl-ground);
-		border: 2px solid var(--hl-500);
+		background-color: var(--color-gray-0);
+		border: 2px solid var(--color-gray-500);
 		border-radius: 100%;
 	}
 
@@ -90,7 +90,7 @@ const Radio = styled(NakedRadio)`
 		height: 0.875rem;
 		width: 0.875rem;
 
-		background: var(--hl-500);
+		background: var(--color-gray-500);
 		border-radius: 100%;
 		transform: scale(0);
 		transition: all 100ms ease-in-out;

@@ -24,7 +24,7 @@ const NakedLoading = ({ className, color, size }) => {
 			<circle
 				fill="none"
 				strokeWidth={ 4 }
-				stroke="var(--hl-300)"
+				stroke="var(--color-gray-300)"
 				cx={ cSize }
 				cy={ cSize }
 				r={ rSize }
@@ -32,7 +32,7 @@ const NakedLoading = ({ className, color, size }) => {
 			<circle
 				fill="none"
 				strokeWidth={ 4 }
-				stroke={ color || "var(--hl-100)" }
+				stroke={ color || "var(--color-gray-500)" }
 				strokeDasharray={ dashSize }
 				strokeLinecap="round"
 				cx={ cSize }

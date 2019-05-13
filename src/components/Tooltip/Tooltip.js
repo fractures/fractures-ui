@@ -38,9 +38,9 @@ const Tooltip = styled(NakedTooltip)`
 		padding: 0.5rem 0.5rem;
 		width: 10rem;
 
-		background-color: var(--hl-900);
+		background-color: var(--color-gray-900);
 		border-radius: 0.125rem;
-		color: var(--hl-100);
+		color: var(--color-gray-500);
 		content: attr(data-tooltip);
 
 		font-size: 0.875rem;
@@ -61,7 +61,7 @@ const Tooltip = styled(NakedTooltip)`
 
 		border: solid transparent;
 		border-color: rgba(0, 0, 0, 0);
-		border-bottom-color: var(--hl-900);
+		border-bottom-color: var(--color-gray-900);
 		border-width: 0.25rem;
 		content: " ";
 

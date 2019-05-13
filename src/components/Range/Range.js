@@ -54,9 +54,9 @@ const NakedRangeWrap = styled(NakedRange)`
 		height: 1.5rem;
 		padding: 0 0.5rem;
 
-		background-color: var(--hl-100);
+		background-color: var(--color-gray-500);
 		border-radius: 1rem;
-		color: var(--hl-500);
+		color: var(--color-gray-500);
 
 		font-size: 0.75rem;
 		line-height: 1.5rem;
@@ -87,7 +87,7 @@ const NakedRangeWrap = styled(NakedRange)`
 		height: 0.5rem;
 		width: 100%;
 
-		background-color: var(--hl-100);
+		background-color: var(--color-gray-500);
 		border-radius: 1rem;
 
 		cursor: pointer;
@@ -104,13 +104,13 @@ const NakedRangeWrap = styled(NakedRange)`
 		border-radius: 1rem;
 		border: 0;
 
-		background: var(--hl-500);
+		background: var(--color-gray-500);
 		cursor: pointer;
 		transform: translateY(calc(-0.5rem + 0.25rem));
 	}
 
 	&:focus::-webkit-slider-thumb {
-		box-shadow: 0 0 0 0.1875rem var(--hl-focus);
+		box-shadow: 0 0 0 0.1875rem var(--color-gray-100);
 	}
 `
 
@@ -136,9 +136,9 @@ const Range = styled(NakedRangeContainer)`
 		padding: 0 0.5rem;
 		margin-left: 0.5rem;
 
-		background-color: var(--hl-500);
+		background-color: var(--color-gray-500);
 		border-radius: 1rem;
-		color: var(--hl-ground);
+		color: var(--color-gray-0);
 
 		font-size: 0.75rem;
 		font-weight: bold;

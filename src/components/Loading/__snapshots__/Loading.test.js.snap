@@ -10,7 +10,7 @@ exports[`Loading Renders correctly 1`] = `
     cy={12}
     fill="none"
     r={10}
-    stroke="var(--hl-300)"
+    stroke="var(--color-gray-300)"
     strokeWidth={4}
     style={
       Object {
@@ -23,7 +23,7 @@ exports[`Loading Renders correctly 1`] = `
     cy={12}
     fill="none"
     r={10}
-    stroke="var(--hl-100)"
+    stroke="var(--color-gray-500)"
     strokeDasharray={32}
     strokeLinecap="round"
     strokeWidth={4}
@@ -41,7 +41,7 @@ exports[`Loading with color Renders correctly 1`] = `
     cy={12}
     fill="none"
     r={10}
-    stroke="var(--hl-300)"
+    stroke="var(--color-gray-300)"
     strokeWidth={4}
     style={
       Object {

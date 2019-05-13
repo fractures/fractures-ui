@@ -83,7 +83,7 @@ const Color = styled(NakedColor)`
 	display: flex;
 	flex-wrap: wrap;
 
-	color: var(--hl-900);
+	color: var(--color-gray-900);
 
 	font-size: 0.9125rem;
 

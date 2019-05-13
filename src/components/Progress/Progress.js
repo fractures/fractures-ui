@@ -19,7 +19,7 @@ const Progress = styled(NakedProgress)`
 	height: 0.5rem;
 	width: 100%;
 
-	background-color: var(--hl-100);
+	background-color: var(--color-gray-500);
 	border: 0;
 	border-radius: 10rem;
 
@@ -28,7 +28,7 @@ const Progress = styled(NakedProgress)`
 	}
 
 	&::-webkit-progress-value {
-		background-color: var(--hl-500);
+		background-color: var(--color-gray-500);
 		border-radius: 1rem;
 	}
 `

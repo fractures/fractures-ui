@@ -55,13 +55,13 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--default {
-		background-color: var(--hl-100);
-		color: var(--hl-700);
+		background-color: var(--color-gray-500);
+		color: var(--color-gray-700);
 	}
 
 	&.hl-label--primary {
-		background-color: var(--hl-300);
-		color: var(--hl-900);
+		background-color: var(--color-gray-300);
+		color: var(--color-gray-900);
 	}
 
 	&.hl-label--green span,
@@ -72,22 +72,22 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--green {
-		background-color: var(--hl-color-green);
+		background-color: var(--color-green-500);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--red {
-		background-color: var(--hl-color-red);
+		background-color: var(--color-red-500);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--yellow {
-		background-color: var(--hl-color-yellow);
+		background-color: var(--color-yellow-500);
 		color: rgba(0, 0, 0, 0.9);
 	}
 
 	&.hl-label--blue {
-		background-color: var(--hl-color-blue);
+		background-color: var(--color-blue-500);
 		color: rgba(0, 0, 0, 0.9);
 	}
 `

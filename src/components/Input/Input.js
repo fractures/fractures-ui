@@ -72,8 +72,8 @@ const Input = styled(NakedInput)`
 	.hl-input {
 		padding: 0 0.5rem;
 
-		background-color: var(--hl-ground);
-		border: 1px solid var(--hl-500);
+		background-color: var(--color-gray-0);
+		border: 1px solid var(--color-gray-500);
 		border-radius: 0.125rem;
 		color: var(--shade-6);
 		outline: none;
@@ -94,19 +94,19 @@ const Input = styled(NakedInput)`
 	}
 
 	.hl-input:focus {
-		box-shadow: 0 0 0 0.1875rem var(--hl-focus);
+		box-shadow: 0 0 0 0.1875rem var(--color-gray-100);
 	}
 
 	.hl-input:active {
-		border-color: var(--hl-700);
+		border-color: var(--color-gray-700);
 	}
 
 	.hl-input:placeholder {
-		color: var(--hl-300);
+		color: var(--color-gray-300);
 	}
 
 	.hl-input::-webkit-input-placeholder {
-		color: var(--hl-300);
+		color: var(--color-gray-300);
 	}
 `
 

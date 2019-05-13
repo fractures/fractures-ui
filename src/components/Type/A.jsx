@@ -7,11 +7,11 @@ const propTypes = {
 }
 
 const A = styled.a`
-	color: var(--hl-500);
+	color: var(--color-gray-500);
 	font-weight: 700;
 
 	&:hover {
-		color: var(--hl-900);
+		color: var(--color-gray-900);
 	}
 `
 

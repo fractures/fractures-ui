@@ -2,23 +2,23 @@ import DefaultButton from "./DefaultButton"
 import styled from "styled-components"
 
 const ButtonPrimary = styled(DefaultButton)`
-	background-color: var(--hl-500);
-	color: var(--hl-ground);
+	background-color: var(--color-gray-500);
+	color: var(--color-gray-0);
 
 	&:hover:not(.isLoading):not(.isActive):not(.isDisabled) {
-		background-color: var(--hl-700);
+		background-color: var(--color-gray-700);
 	}
 
 	&.isActive:not(.isDisabled),
 	&:active:not(.isDisabled),
 	&:active:focus:not(.isDisabled) {
-		background-color: var(--hl-900);
-		color: var(--hl-100);
+		background-color: var(--color-gray-900);
+		color: var(--color-gray-500);
 	}
 
 	&.isDisabled {
-		background-color: var(--hl-300);
-		color: var(--hl-100);
+		background-color: var(--color-gray-300);
+		color: var(--color-gray-500);
 	}
 `
 

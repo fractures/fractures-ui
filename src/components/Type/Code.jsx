@@ -12,10 +12,10 @@ const defaultProps = {
 }
 
 const Code = styled.code`
-	color: var(--hl-700);
+	color: var(--color-gray-700);
 
 	font-size: ${ props => (props.isSmall ? "0.75rem" : "1rem;") };
-	font-family: var(--hl-font-mono);
+	font-family: var(--font-mono);
 	line-height: 1rem;
 `
 
