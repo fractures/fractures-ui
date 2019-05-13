@@ -34,10 +34,13 @@ const Helios = props => {
 		return `--font-${ font[0] }: ${ font[1] };`
 	})
 
+	const flatShades = shades.reduce((a, b) => a.concat(b)).reduce((a, b) => a.concat(b))
+	const flatFontFamilies = fontFamilies.reduce((a, b) => a.concat(b))
+
 	const themeCSS = `
 		:root {
-			${ shades.flat(2).join("\n") }
-			${ fontFamilies.flat().join("\n") }
+			${ flatShades }
+			${ flatFontFamilies }
 		}
 	`
 
