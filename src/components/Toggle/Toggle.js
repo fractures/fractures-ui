@@ -13,7 +13,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	check: () => null,
+	onChange: () => null,
 	isChecked: false,
 	isDisabled: false,
 	label: ""

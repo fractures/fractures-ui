@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const propTypes = {
-	children: PropTypes.node.isRequired,
+	children: PropTypes.any,
 	className: PropTypes.string,
 	isSmall: PropTypes.bool
 }

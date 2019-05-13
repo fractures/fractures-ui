@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 const propTypes = {
-	color: PropTypes.oneOf([null, "primary", "green", "red", "yellow", "blue"]),
+	color: PropTypes.oneOf(["primary", "green", "red", "yellow", "blue"]),
 	label: PropTypes.string.isRequired
 }
 
@@ -55,7 +55,7 @@ const Label = styled(NakedLabel)`
 	}
 
 	&.hl-label--default {
-		background-color: var(--color-gray-500);
+		background-color: var(--color-gray-300);
 		color: var(--color-gray-700);
 	}
 
