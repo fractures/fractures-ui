@@ -6,7 +6,7 @@ import Checkbox from "./components/Checkbox/Checkbox"
 import Code from "./components/Type/Code"
 import Color from "./components/Color/Color"
 import Container from "./components/Container/Container"
-import Fractures from "./components/Fractures/Fractures"
+import Helios from "./components/Helios/Helios"
 import H0 from "./components/Type/H0"
 import H1 from "./components/Type/H1"
 import H2 from "./components/Type/H2"
@@ -35,7 +35,7 @@ export {
 	Code,
 	Color,
 	Container,
-	Fractures,
+	Helios,
 	H0,
 	H1,
 	H2,

@@ -1,85 +1,93 @@
-// NOTE WIP
+const fonts = {
+	fonts: {
+		default: "Roboto, 'sans-serif'",
+		mono: "'Roboto Mono', monospace"
+	}
+}
+
+const normalColors = {
+	red: { 500: "#f94b56" },
+	yellow: { 500: "#ffd058" },
+	green: { 500: "#82c971" },
+	blue: { 500: "#76a7e7" }
+}
 
 const themes = [
 	{
 		name: "blue",
 		colors: {
-			ground: "#fff",
-			shade100: "#e8f2fd",
-			shade300: "#76a7e7",
-			shade500: "#3482da",
-			shade700: "#2463a5",
-			shade900: "#102a45",
-			focus: "rgba(52, 130, 218, 0.25)",
-			red: "#f94b56",
-			yellow: "#ffd058",
-			green: "#82c971",
-			blue: "#76a7e7"
-		}
+			gray: {
+				0: "#fff",
+				100: "#e8f2fd",
+				300: "#76a7e7",
+				500: "#3482da",
+				700: "#2463a5",
+				900: "#102a45"
+			},
+			...normalColors
+		},
+		...fonts
 	},
 	{
 		name: "black",
 		colors: {
-			ground: "#fff",
-			shade100: "#eee",
-			shade300: "#919191",
-			shade500: "#666666",
-			shade700: "#484848",
-			shade900: "#111",
-			focus: "rgba(102, 102, 102, 0.25)",
-			red: "#f94b56",
-			yellow: "#ffd058",
-			green: "#82c971",
-			blue: "#76a7e7"
-		}
+			gray: {
+				0: "#fff",
+				100: "#eee",
+				300: "#919191",
+				500: "#666666",
+				700: "#484848",
+				900: "#111"
+			},
+			...normalColors
+		},
+		...fonts
 	},
 	{
 		name: "invert",
 		colors: {
-			ground: "#111",
-			shade100: "#303030",
-			shade300: "#696969",
-			shade500: "#888888",
-			shade700: "#a9a9a9",
-			shade900: "#eee",
-			focus: "rgba(136, 136, 136, 0.4)",
-			red: "#f94b56",
-			yellow: "#ffd058",
-			green: "#82c971",
-			blue: "#76a7e7"
-		}
+			gray: {
+				0: "#111",
+				100: "#303030",
+				300: "#696969",
+				500: "#888888",
+				700: "#a9a9a9",
+				900: "#eee"
+			},
+			...normalColors
+		},
+		...fonts
 	},
 	{
 		name: "test",
 		colors: {
-			ground: "#caffb8",
-			shade100: "#92dfb4",
-			shade300: "#4e999d",
-			shade500: "#437684",
-			shade700: "#3c5564",
-			shade900: "#1d1d1f",
-			focus: "rgba(67, 118, 132, 0.4)",
-			red: "#f94b56",
-			yellow: "#ffd058",
-			green: "#82c971",
-			blue: "#76a7e7"
-		}
+			gray: {
+				0: "#caffb8",
+				100: "#92dfb4",
+				300: "#4e999d",
+				500: "#437684",
+				700: "#3c5564",
+				900: "#1d1d1f"
+			},
+			...normalColors
+		},
+		...fonts
 	},
 	{
 		name: "secret",
 		colors: {
-			ground: "#fff",
-			shade100: "#f5f5f8",
-			shade300: "#c3c5d3",
-			shade500: "#5a68e8",
-			shade700: "#414885",
-			shade900: "#26262b",
-			focus: "rgba(90, 104, 232, 0.25)",
-			red: "#f94b56",
-			yellow: "#ffd058",
-			green: "#82c971",
-			blue: "#5a68e8"
-		}
+			gray: {
+				0: "#caffb8",
+				100: "#f5f5f8",
+				300: "#c3c5d3",
+				500: "#5a68e8",
+				700: "#414885",
+				900: "#26262b"
+			},
+			...normalColors,
+			blue: { 500: "#5a68e8" }
+		},
+		...fonts
 	}
 ]
 
