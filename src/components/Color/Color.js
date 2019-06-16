@@ -63,25 +63,26 @@ const NakedColor = props => {
 				</P>
 				<Small>{calcValue}</Small>
 			</div>
-			<aside>
-				<header>
-					<P>{props.name}</P>
-					{isInvert && <Label label="Low contrast" />}
-				</header>
-				<div>
-					<Code isSmall={ true }>
-						{props.hex} &mdash;{` `}
-						{normalizeColor(props.hex)}
-					</Code>
-				</div>
-			</aside>
+			{props.isVerbose && (
+				<aside>
+					<header>
+						<Code isSmall={ true }>{props.name}</Code>
+						{isInvert && <Label label="Low contrast" />}
+					</header>
+					<div>
+						<Code isSmall={ true }>
+							{props.hex} &mdash;{` `}
+							{normalizeColor(props.hex)}
+						</Code>
+					</div>
+				</aside>
+			)}
 		</div>
 	)
 }
 
 const Color = styled(NakedColor)`
 	display: flex;
-	flex-wrap: wrap;
 
 	color: var(--color-gray-900);
 
@@ -89,6 +90,7 @@ const Color = styled(NakedColor)`
 
 	.hl-color__box {
 		height: 3rem;
+		min-height: 3rem;
 		min-width: 3rem;
 		width: 3rem;
 	}

@@ -39,6 +39,7 @@ const Label = styled(NakedLabel)`
 	font-size: 0.75rem;
 	font-weight: 500;
 	line-height: 1.5rem;
+	white-space: nowrap;
 
 	&:after {
 		position: absolute;
