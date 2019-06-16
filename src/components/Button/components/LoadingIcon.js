@@ -1,9 +1,9 @@
-import Loading from "../../Loading/Loading"
-import PropTypes from "prop-types"
-import styled from "styled-components"
+import Loading from '../../Loading/Loading'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 const propTypes = { isSmall: PropTypes.string }
-const defaultProps = { isSmall: "0.5rem" }
+const defaultProps = { isSmall: '0.5rem' }
 
 const LoadingIcon = styled(Loading)`
 	position: absolute;

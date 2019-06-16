@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 
 const propTypes = {
 	className: PropTypes.string,
@@ -8,7 +8,7 @@ const propTypes = {
 	isRounded: PropTypes.bool,
 	isSmall: PropTypes.bool,
 	onClick: PropTypes.func,
-	type: PropTypes.oneOf(["primary", "secondary"]),
+	type: PropTypes.oneOf(['primary', 'secondary']),
 	value: PropTypes.string.isRequired
 }
 
@@ -19,8 +19,8 @@ const defaultProps = {
 	isRounded: null,
 	isSmall: false,
 	onClick: () => null,
-	type: "primary",
-	value: ""
+	type: 'primary',
+	value: ''
 }
 
 export { propTypes, defaultProps }

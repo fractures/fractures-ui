@@ -1,9 +1,9 @@
-import themes from "../../config/themes"
-import PropTypes from "prop-types"
-import React from "react"
+import themes from '../../config/themes'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const propTypes = {
-	theme: PropTypes.oneOf(["blue", "black", "invert", "test"])
+	theme: PropTypes.oneOf(['blue', 'black', 'invert', 'test'])
 }
 
 const defaultProps = {

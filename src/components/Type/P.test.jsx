@@ -1,9 +1,9 @@
-import P from "./P"
+import P from './P'
 
-describe("P", () => {
+describe('P', () => {
 	const tree = renderer.create(<P>Lorem ipsum</P>).toJSON()
 
-	it("Matches snapshot", () => {
+	it('Matches snapshot', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

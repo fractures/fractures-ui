@@ -1,9 +1,9 @@
-import Small from "./Small"
+import Small from './Small'
 
-describe("Small", () => {
+describe('Small', () => {
 	const tree = renderer.create(<Small>Lorem ipsum</Small>).toJSON()
 
-	it("Matches snapshot", () => {
+	it('Matches snapshot', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

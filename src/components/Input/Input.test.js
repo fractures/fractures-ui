@@ -1,11 +1,11 @@
-import Input from "./Input.js"
+import Input from './Input.js'
 
-describe("Input", () => {
+describe('Input', () => {
 	const componentRender = <Input />
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
+	it('Renders correctly', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

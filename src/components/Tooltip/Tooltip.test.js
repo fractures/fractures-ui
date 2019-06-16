@@ -1,7 +1,7 @@
-import Tooltip from "./Tooltip.js"
+import Tooltip from './Tooltip.js'
 
-describe("Tooltip", () => {
+describe('Tooltip', () => {
 	const tree = renderer.create(<Tooltip text="Tooltip">Content</Tooltip>).toJSON()
 
-	it("Renders correctly", () => expect(tree).toMatchSnapshot())
+	it('Renders correctly', () => expect(tree).toMatchSnapshot())
 })

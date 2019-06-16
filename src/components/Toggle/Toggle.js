@@ -1,8 +1,8 @@
-import classNames from "@sindresorhus/class-names"
-import Label from "../shared/Label/Label"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import Label from '../shared/Label/Label'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	onChange: PropTypes.func.isRequired,
@@ -16,14 +16,14 @@ const defaultProps = {
 	onChange: () => null,
 	isChecked: false,
 	isDisabled: false,
-	label: ""
+	label: ''
 }
 
 const NakedToggle = props => {
-	const checkboxClasses = classNames("hl-toggle", {
-		"hl-toggle--checked": props.isChecked,
-		"hl-toggle--unchecked": !props.isChecked,
-		"hl-toggle--disabled": props.isDisabled
+	const checkboxClasses = classNames('hl-toggle', {
+		'hl-toggle--checked': props.isChecked,
+		'hl-toggle--unchecked': !props.isChecked,
+		'hl-toggle--disabled': props.isDisabled
 	})
 
 	return (
@@ -88,7 +88,7 @@ const Toggle = styled(NakedToggle)`
 		background-color: var(--color-gray-0);
 		border-radius: 100%;
 		transition: all 100ms ease-in-out;
-		content: " ";
+		content: ' ';
 	}
 
 	.hl-toggle__mark:before {
@@ -102,7 +102,7 @@ const Toggle = styled(NakedToggle)`
 
 		color: var(--color-gray-0);
 
-		content: "Off";
+		content: 'Off';
 		font-size: 0.75rem;
 		font-weight: 500;
 		line-height: 1.5rem;
@@ -114,7 +114,7 @@ const Toggle = styled(NakedToggle)`
 	}
 
 	input:checked ~ .hl-toggle__mark:before {
-		content: "On";
+		content: 'On';
 		text-align: left;
 	}
 

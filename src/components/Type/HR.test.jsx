@@ -1,9 +1,9 @@
-import HR from "./HR"
+import HR from './HR'
 
-describe("HR", () => {
+describe('HR', () => {
 	const tree = renderer.create(<HR />).toJSON()
 
-	it("Matches snapshot", () => {
+	it('Matches snapshot', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

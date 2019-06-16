@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
-import React from "react"
-import styled, { keyframes } from "styled-components"
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled, { keyframes } from 'styled-components'
 
 const propTypes = {
 	className: PropTypes.string,
@@ -9,7 +9,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-	color: "var(--color-gray-300)",
+	color: 'var(--color-gray-300)',
 	size: 20
 }
 

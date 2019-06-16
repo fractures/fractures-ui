@@ -1,7 +1,7 @@
-import classNames from "@sindresorhus/class-names"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	className: PropTypes.string,
@@ -23,8 +23,8 @@ const defaultProps = {
 }
 
 const NakedRange = props => {
-	const nakedClasses = classNames("hl-range", {
-		"hl-range--verbose": props.isVerbose
+	const nakedClasses = classNames('hl-range', {
+		'hl-range--verbose': props.isVerbose
 	})
 
 	return (

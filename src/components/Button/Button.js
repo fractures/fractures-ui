@@ -1,9 +1,9 @@
-import { propTypes, defaultProps } from "./Button.proptypes"
-import ButtonPrimary from "./components/ButtonPrimary"
-import ButtonSecondary from "./components/ButtonSecondary"
-import classNames from "@sindresorhus/class-names"
-import LoadingIcon from "./components/LoadingIcon"
-import React from "react"
+import { propTypes, defaultProps } from './Button.proptypes'
+import ButtonPrimary from './components/ButtonPrimary'
+import ButtonSecondary from './components/ButtonSecondary'
+import classNames from '@sindresorhus/class-names'
+import LoadingIcon from './components/LoadingIcon'
+import React from 'react'
 
 const Button = props => {
 	const buttonClasses = classNames({
@@ -14,12 +14,12 @@ const Button = props => {
 		isSmall: props.isSmall
 	})
 
-	const LoadingColor = props.type === "secondary" ? "var(--color-gray-300)" : "var(--color-gray-100)"
+	const LoadingColor = props.type === 'secondary' ? 'var(--color-gray-300)' : 'var(--color-gray-100)'
 
 	return (
-		<div style={ { position: "relative", display: "inline-flex", alignItems: "center" } } onClick={ e => props.onClick(e) }>
-			{props.type === "primary" && <ButtonPrimary { ...props } className={ buttonClasses } />}
-			{props.type === "secondary" && <ButtonSecondary { ...props } className={ buttonClasses } />}
+		<div style={ { position: 'relative', display: 'inline-flex', alignItems: 'center' } } onClick={ e => props.onClick(e) }>
+			{props.type === 'primary' && <ButtonPrimary { ...props } className={ buttonClasses } />}
+			{props.type === 'secondary' && <ButtonSecondary { ...props } className={ buttonClasses } />}
 			{props.isLoading && <LoadingIcon color={ LoadingColor } size={ props.isSmall ? 10 : 20 } />}
 		</div>
 	)

@@ -1,9 +1,9 @@
-import ButtonGroup from "./ButtonGroup.js"
+import ButtonGroup from './ButtonGroup.js'
 
-describe("ButtonGroup", () => {
+describe('ButtonGroup', () => {
 	const componentRender = <ButtonGroup>Children.</ButtonGroup>
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => expect(tree).toMatchSnapshot())
+	it('Renders correctly', () => expect(tree).toMatchSnapshot())
 })

@@ -1,8 +1,8 @@
-import classNames from "@sindresorhus/class-names"
-import Label from "../shared/Label/Label"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import Label from '../shared/Label/Label'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	className: PropTypes.string,
@@ -17,17 +17,17 @@ const propTypes = {
 const defaultProps = {
 	onChange: () => null,
 	onBlur: () => null,
-	placeholder: "",
-	type: "text",
-	value: ""
+	placeholder: '',
+	type: 'text',
+	value: ''
 }
 
 const NakedInput = props => {
-	const isTextarea = props.type === "textarea"
-	const inputClasses = classNames("hl-input", {
-		"hl-input--input": props.type !== "textarea",
-		"hl-input--textarea": props.type === "textarea",
-		"hl-btn-primary": props.type === "primary"
+	const isTextarea = props.type === 'textarea'
+	const inputClasses = classNames('hl-input', {
+		'hl-input--input': props.type !== 'textarea',
+		'hl-input--textarea': props.type === 'textarea',
+		'hl-btn-primary': props.type === 'primary'
 	})
 
 	const input = (

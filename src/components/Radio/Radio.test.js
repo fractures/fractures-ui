@@ -1,13 +1,13 @@
-import Radio from "./Radio.js"
+import Radio from './Radio.js'
 
 const mockFn = jest.fn()
 
-describe("Radio", () => {
+describe('Radio', () => {
 	const componentRender = <Radio set={ mockFn() } />
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
+	it('Renders correctly', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

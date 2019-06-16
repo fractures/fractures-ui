@@ -1,8 +1,8 @@
-import classNames from "@sindresorhus/class-names"
-import Label from "../shared/Label/Label"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import Label from '../shared/Label/Label'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	className: PropTypes.string,
@@ -16,16 +16,16 @@ const propTypes = {
 
 const defaultProps = {
 	isDisabled: false,
-	label: "",
+	label: '',
 	onBlur: () => null,
 	onChange: () => null,
 	state: false,
-	value: ""
+	value: ''
 }
 
 const NakedRadio = props => {
 	const radioClasses = classNames({
-		"hl-radio--disabled": props.isDisabled
+		'hl-radio--disabled': props.isDisabled
 	})
 
 	return (
@@ -95,7 +95,7 @@ const Radio = styled(NakedRadio)`
 		transform: scale(0);
 		transition: all 100ms ease-in-out;
 
-		content: "";
+		content: '';
 	}
 
 	input:checked ~ .hl-radio__checkmark:after {

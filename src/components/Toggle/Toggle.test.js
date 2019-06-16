@@ -1,13 +1,13 @@
-import Toggle from "./Toggle"
+import Toggle from './Toggle'
 
 const mockFn = jest.fn()
 
-describe("Toggle", () => {
+describe('Toggle', () => {
 	const componentRender = <Toggle label="Toggle" check={ mockFn() } />
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
+	it('Renders correctly', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

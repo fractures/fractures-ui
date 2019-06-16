@@ -1,21 +1,21 @@
-import classNames from "@sindresorhus/class-names"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
-	color: PropTypes.oneOf(["primary", "green", "red", "yellow", "blue"]),
+	color: PropTypes.oneOf(['primary', 'green', 'red', 'yellow', 'blue']),
 	label: PropTypes.string.isRequired
 }
 
 const defaultProps = {
 	color: null,
-	label: ""
+	label: ''
 }
 
 const NakedLabel = props => {
 	const labelClass = classNames(props.className, {
-		"hl-label--default": !props.color,
+		'hl-label--default': !props.color,
 		[`hl-label--${ props.color }`]: props.color
 	})
 
@@ -51,7 +51,7 @@ const Label = styled(NakedLabel)`
 		background-color: rgba(0, 0, 0, 0.2);
 		background-blend-mode: multiply;
 		border-top-left-radius: 0.125rem;
-		content: " ";
+		content: ' ';
 	}
 
 	&.hl-label--default {

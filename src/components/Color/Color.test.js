@@ -1,11 +1,11 @@
-import Color from "./Color.js"
+import Color from './Color.js'
 
-describe("Color", () => {
+describe('Color', () => {
 	const componentRender = <Color background="#fff" hex="#eee" name="Light" />
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
+	it('Renders correctly', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })

@@ -1,12 +1,12 @@
-import * as wcag from "wcag-contrast"
-import chroma from "chroma-js"
-import Label from "../Label/Label"
-import Small from "../Type/Small"
-import Code from "../Type/Code"
-import P from "../Type/P"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import * as wcag from 'wcag-contrast'
+import chroma from 'chroma-js'
+import Label from '../Label/Label'
+import Small from '../Type/Small'
+import Code from '../Type/Code'
+import P from '../Type/P'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	background: PropTypes.string.isRequired,
@@ -20,7 +20,7 @@ const defaultProps = {
 }
 
 // Get the rounded color contrast value
-const colorValue = (color, background = "white") => {
+const colorValue = (color, background = 'white') => {
 	const normalizedColor = chroma(color).hex()
 	const normalizedBackgroundColor = chroma(background).hex()
 
@@ -52,7 +52,7 @@ const normalizeColor = color => {
 const NakedColor = props => {
 	const calcValue = colorValue(props.hex, props.background)
 	const calcScore = colorScore(calcValue)
-	const isInvert = calcScore === "F"
+	const isInvert = calcScore === 'F'
 
 	return (
 		<div className={ props.className }>

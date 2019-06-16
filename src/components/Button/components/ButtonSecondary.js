@@ -1,5 +1,5 @@
-import DefaultButton from "./DefaultButton"
-import styled from "styled-components"
+import DefaultButton from './DefaultButton'
+import styled from 'styled-components'
 
 const ButtonSecondary = styled(DefaultButton)`
 	background-color: var(--color-gray-0);

@@ -1,8 +1,8 @@
-import classNames from "@sindresorhus/class-names"
-import Label from "../shared/Label/Label"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import classNames from '@sindresorhus/class-names'
+import Label from '../shared/Label/Label'
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	onChange: PropTypes.func.isRequired,
@@ -16,14 +16,14 @@ const defaultProps = {
 	onChange: () => null,
 	isChecked: false,
 	isDisabled: false,
-	label: ""
+	label: ''
 }
 
 const NakedCheckbox = props => {
-	const checkboxClasses = classNames("hl-checkbox", {
-		"hl-checkbox--checked": props.isChecked,
-		"hl-checkbox--unchecked": !props.isChecked,
-		"hl-checkbox--disabled": props.isDisabled
+	const checkboxClasses = classNames('hl-checkbox', {
+		'hl-checkbox--checked': props.isChecked,
+		'hl-checkbox--unchecked': !props.isChecked,
+		'hl-checkbox--disabled': props.isDisabled
 	})
 
 	return (
@@ -88,7 +88,7 @@ const Checkbox = styled(NakedCheckbox)`
 		border-width: 0 0.1875rem 0.1875rem 0;
 		transform: rotate(45deg) translateY(-0.125rem) translateX(-0.125rem);
 		transition: all 100ms ease-in-out;
-		content: " ";
+		content: ' ';
 	}
 
 	.hl-checkbox--disabled {

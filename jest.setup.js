@@ -1,7 +1,7 @@
-import Adapter from "enzyme-adapter-react-16"
-import Enzyme, { shallow, render, mount } from "enzyme"
-import React from "react"
-import renderer from "react-test-renderer"
+import Adapter from 'enzyme-adapter-react-16'
+import Enzyme, { shallow, render, mount } from 'enzyme'
+import React from 'react'
+import renderer from 'react-test-renderer'
 
 Enzyme.configure({ adapter: new Adapter() })
 

@@ -1,6 +1,6 @@
-import { propTypes, defaultProps } from "../Button.proptypes"
-import NakedButton from "./NakedButton"
-import styled from "styled-components"
+import { propTypes, defaultProps } from '../Button.proptypes'
+import NakedButton from './NakedButton'
+import styled from 'styled-components'
 
 const DefaultButton = styled(NakedButton)`
 	padding: 0.25rem 1rem;

@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const propTypes = {
 	children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
@@ -63,7 +63,7 @@ const Tooltip = styled(NakedTooltip)`
 		border-color: rgba(0, 0, 0, 0);
 		border-bottom-color: var(--color-gray-900);
 		border-width: 0.25rem;
-		content: " ";
+		content: ' ';
 
 		pointer-events: none;
 	}

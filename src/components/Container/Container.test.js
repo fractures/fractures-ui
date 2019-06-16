@@ -1,6 +1,6 @@
-import Container from "./Container.js"
+import Container from './Container.js'
 
-describe("Container", () => {
+describe('Container', () => {
 	const componentRender = (
 		<Container>
 			<div />
@@ -9,7 +9,7 @@ describe("Container", () => {
 	const component = renderer.create(componentRender)
 	const tree = component.toJSON()
 
-	it("Renders correctly", () => {
+	it('Renders correctly', () => {
 		expect(tree).toMatchSnapshot()
 	})
 })
