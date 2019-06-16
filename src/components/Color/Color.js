@@ -1,8 +1,6 @@
 import * as wcag from 'wcag-contrast'
 import chroma from 'chroma-js'
-import Label from '../Label/Label'
 import Small from '../Type/Small'
-import Code from '../Type/Code'
 import P from '../Type/P'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -12,11 +10,14 @@ const propTypes = {
 	background: PropTypes.string.isRequired,
 	hex: PropTypes.string.isRequired,
 	isVerbose: PropTypes.bool,
-	name: PropTypes.string.isRequired
+	name: PropTypes.string.isRequired,
+	variant: PropTypes.number.isRequired
 }
 
 const defaultProps = {
-	isVerbose: false
+	name: '',
+	isVerbose: false,
+	variant: 0
 }
 
 // Get the rounded color contrast value
@@ -36,47 +37,47 @@ const colorScore = contrastValue => {
 
 	if(contrastValue > 7) score = `AAA`
 	else if(contrastValue >= 4.51) score = `AA`
-	else if(contrastValue < 4.51 && contrastValue > 3) score = `AA Large`
+	else if(contrastValue < 4.51 && contrastValue > 3) score = `AA L`
 	else score = `F`
 
 	return score
 }
 
 // Normalize input color
-const normalizeColor = color => {
-	const normalizedColor = chroma(color).rgb()
-
-	return `R: ${ normalizedColor[0] } G: ${ normalizedColor[1] } B: ${ normalizedColor[2] }`
-}
+// const normalizeColor = color => {
+// 	const normalizedColor = chroma(color).rgb()
+//
+// 	return `R: ${ normalizedColor[0] } G: ${ normalizedColor[1] } B: ${ normalizedColor[2] }`
+// }
 
 const NakedColor = props => {
 	const calcValue = colorValue(props.hex, props.background)
 	const calcScore = colorScore(calcValue)
-	const isInvert = calcScore === 'F'
+	const hasFailingContrast = Boolean(calcScore === 'F')
+	const color = hasFailingContrast ? 'currentColor' : props.hex
 
 	return (
 		<div className={ props.className }>
 			<div className="hl-color__box" style={ { backgroundColor: props.hex } } />
-			<div className="hl-color__meta" style={ { color: props.hex } }>
-				<P>
-					<b>{calcScore}</b>
-				</P>
-				<Small>{calcValue}</Small>
-			</div>
 			{props.isVerbose && (
-				<aside>
-					<header>
-						<Code isSmall={ true }>{props.name}</Code>
-						{isInvert && <Label label="Low contrast" />}
-					</header>
-					<div>
-						<Code isSmall={ true }>
-							{props.hex} &mdash;{` `}
-							{normalizeColor(props.hex)}
-						</Code>
-					</div>
-				</aside>
+				<div className="hl-color__a11y" style={ { color: color } }>
+					<Small>
+						<b>{calcScore}</b>
+					</Small>
+					<Small>{calcValue}</Small>
+				</div>
 			)}
+			<div className="hl-color__meta" style={ { color: color } }>
+				<P>
+					<b>
+						{props.name} {props.variant}
+					</b>
+				</P>
+				<Small>
+					{props.hex}
+					{/* {normalizeColor(props.hex)} */}
+				</Small>
+			</div>
 		</div>
 	)
 }
@@ -86,12 +87,19 @@ const Color = styled(NakedColor)`
 
 	color: var(--color-gray-900);
 
-	font-size: 0.9125rem;
-
 	.hl-color__box {
 		height: 3rem;
-		min-height: 3rem;
 		min-width: 3rem;
+		width: 3rem;
+	}
+
+	.hl-color__a11y {
+		display: flex;
+		flex-direction: column;
+		height: 3rem;
+		justify-content: center;
+		min-width: 3rem;
+		padding: 0 0.5rem;
 		width: 3rem;
 	}
 
@@ -103,33 +111,7 @@ const Color = styled(NakedColor)`
 		margin-right: 1rem;
 		width: 6rem;
 	}
-
-	aside div {
-		align-items: center;
-		display: flex;
-	}
-
-	aside div small {
-		margin-right: 0.5rem;
-	}
-
-	aside header {
-		display: flex;
-		align-items: center;
-	}
-
-	aside header p {
-		margin-right: 0.5rem;
-	}
-
-	b,
-	small {
-		display: block;
-	}
 `
-
-NakedColor.propTypes = propTypes
-NakedColor.defaultProps = defaultProps
 
 Color.propTypes = propTypes
 Color.defaultProps = defaultProps

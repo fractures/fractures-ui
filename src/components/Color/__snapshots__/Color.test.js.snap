@@ -2,7 +2,7 @@
 
 exports[`Color Renders correctly 1`] = `
 <div
-  className="sc-ifAKCX hizsWj"
+  className="sc-htpNat zrFKX"
 >
   <div
     className="hl-color__box"
@@ -16,48 +16,24 @@ exports[`Color Renders correctly 1`] = `
     className="hl-color__meta"
     style={
       Object {
-        "color": "#eee",
+        "color": "currentColor",
       }
     }
   >
     <p
-      className="sc-bxivhb jTlyeP"
+      className="sc-bwzfXH eViDXA"
     >
       <b>
-        F
+        Light
+         
+        0
       </b>
     </p>
     <small
-      className="sc-bwzfXH hFESPj"
+      className="sc-bdVaJa iLNvYn"
     >
-      1.16
+      #eee
     </small>
   </div>
-  <aside>
-    <header>
-      <p
-        className="sc-bxivhb jTlyeP"
-      >
-        Light
-      </p>
-      <div
-        className="sc-bdVaJa faaDks hl-label--default"
-      >
-        <span>
-          Low contrast
-        </span>
-      </div>
-    </header>
-    <div>
-      <code
-        className="sc-htpNat idQPeq"
-      >
-        #eee
-         —
-         
-        R: 238 G: 238 B: 238
-      </code>
-    </div>
-  </aside>
 </div>
 `;
