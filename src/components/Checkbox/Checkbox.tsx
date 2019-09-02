@@ -4,14 +4,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-const propTypes = {
-	onChange: PropTypes.func.isRequired,
-	className: PropTypes.string,
-	isChecked: PropTypes.bool,
-	isDisabled: PropTypes.bool,
-	label: PropTypes.string.isRequired
-}
-
 const defaultProps = {
 	onChange: () => null,
 	isChecked: false,
@@ -36,6 +28,8 @@ const NakedCheckbox = props => {
 		</div>
 	)
 }
+
+NakedCheckbox.defaultProps = defaultProps
 
 const Checkbox = styled(NakedCheckbox)`
 	box-sizing: border-box;
@@ -106,10 +100,6 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 `
 
-NakedCheckbox.propTypes = propTypes
-NakedCheckbox.defaultProps = defaultProps
 
-Checkbox.propTypes = propTypes
-Checkbox.defaultProps = defaultProps
 
 export default Checkbox

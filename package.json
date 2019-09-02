@@ -4,9 +4,9 @@
 	"description": "Reusable React UI components",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "parcel build ./src/index.js --detailed-report",
-		"dev": "parcel watch ./src/index.js",
-		"prepare": "parcel build ./src/index.js --detailed-report",
+		"build": "parcel build ./src/index.ts --detailed-report",
+		"dev": "parcel watch ./src/index.ts",
+		"prepare": "parcel build ./src/index.ts --detailed-report",
 		"test": "NODE_ENV=test jest --verbose"
 	},
 	"keywords": [
@@ -32,6 +32,7 @@
 		"url": "https://github.com/helios-ui/helios/issues"
 	},
 	"dependencies": {
+		"@babel/preset-typescript": "^7.3.3",
 		"@sindresorhus/class-names": "^1.1.0",
 		"chroma-js": "^2.0.4",
 		"parse-prop-types": "^0.3.0",

@@ -1,4 +1,4 @@
-import Color from './Color.js'
+import Color from './Color'
 
 describe('Color', () => {
 	const componentRender = <Color background="#fff" hex="#eee" name="Light" />
