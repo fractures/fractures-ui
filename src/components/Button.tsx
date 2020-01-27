@@ -1,8 +1,7 @@
-import { propTypes, defaultProps } from './Button.proptypes'
-import ButtonPrimary from './components/ButtonPrimary'
-import ButtonSecondary from './components/ButtonSecondary'
+import ButtonPrimary from './ButtonPrimary'
+import ButtonSecondary from './ButtonSecondary'
 import classNames from '@sindresorhus/class-names'
-import LoadingIcon from './components/LoadingIcon'
+import LoadingIcon from './LoadingIcon'
 import React from 'react'
 
 const Button = props => {
@@ -24,8 +23,5 @@ const Button = props => {
 		</div>
 	)
 }
-
-Button.propTypes = propTypes
-Button.defaultProps = defaultProps
 
 export default Button

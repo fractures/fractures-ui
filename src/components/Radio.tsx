@@ -1,5 +1,5 @@
 import classNames from '@sindresorhus/class-names'
-import Label from '../shared/Label/Label'
+import Label from './SharedLabel'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'

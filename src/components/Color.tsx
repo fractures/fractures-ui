@@ -1,7 +1,5 @@
 import * as wcag from 'wcag-contrast'
 import chroma from 'chroma-js'
-import Small from '../Type/Small'
-import P from '../Type/P'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
@@ -61,22 +59,22 @@ const NakedColor = props => {
 			<div className="hl-color__box" style={ { backgroundColor: props.hex } } />
 			{props.isVerbose && (
 				<div className="hl-color__a11y" style={ { color: color } }>
-					<Small>
+					<small>
 						<b>{calcScore}</b>
-					</Small>
-					<Small>{calcValue}</Small>
+					</small>
+					<small>{calcValue}</small>
 				</div>
 			)}
 			<div className="hl-color__meta" style={ { color: color } }>
-				<P>
+				<p>
 					<b>
 						{props.name} {props.variant}
 					</b>
-				</P>
-				<Small>
+				</p>
+				<small>
 					{props.hex}
 					{/* {normalizeColor(props.hex)} */}
-				</Small>
+				</small>
 			</div>
 		</div>
 	)
