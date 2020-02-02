@@ -81,36 +81,6 @@ const themes = [
 			...normalColors
 		},
 		...fonts
-	},
-	{
-		name: 'test',
-		colors: {
-			gray: {
-				0: '#caffb8',
-				100: '#92dfb4',
-				300: '#4e999d',
-				500: '#437684',
-				700: '#3c5564',
-				900: '#1d1d1f'
-			},
-			...normalColors
-		},
-		...fonts
-	},
-	{
-		name: 'secret',
-		colors: {
-			gray: {
-				0: '#caffb8',
-				100: '#f5f5f8',
-				300: '#c3c5d3',
-				500: '#5a68e8',
-				700: '#414885',
-				900: '#26262b'
-			},
-			...normalColors
-		},
-		...fonts
 	}
 ]
 
