@@ -34,8 +34,11 @@ const Table = ({ props }) => {
 				</div>
 
 				{propsArray.map((prop, key) => {
-					const name = prop[0]
-					const value = prop[1]
+					const name: any = prop[0]
+					const value: any = prop[1]
+
+					if(!value) return null
+
 					const defaultValue = value.defaultValue ? displayValue(value.defaultValue.value) : '-'
 					const typeName = value.type.name
 
@@ -45,19 +48,19 @@ const Table = ({ props }) => {
 								<p>{name}</p>
 							</div>
 							<div className="flex flex-ycenter grow-4">
-								<code isSmall={ true }>{typeName}</code>
+								<code>{typeName}</code>
 								{typeName === 'oneOf' && (
-									<code isSmall={ true }>
+									<code>
 										{`: `}
 										{value.type.value.join(', ')}
 									</code>
 								)}
 							</div>
 							<div className="flex flex-ycenter grow-1">
-								<code isSmall={ true }>{value.required ? 'yes' : '-'}</code>
+								<code>{value.required ? 'yes' : '-'}</code>
 							</div>
 							<div className="flex flex-ycenter grow-1">
-								<code isSmall={ true }>{defaultValue}</code>
+								<code>{defaultValue}</code>
 							</div>
 						</div>
 					)

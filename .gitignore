@@ -2,5 +2,6 @@
 .next
 coverage
 dist
+dist-site
 node_modules
 yarn-error.log

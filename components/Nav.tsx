@@ -1,4 +1,4 @@
-import * as helios from '@helios-ui/helios'
+import * as helios from '../src'
 import Helios from './Helios'
 
 const { Label } = helios
