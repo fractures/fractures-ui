@@ -99,6 +99,4 @@ const Checkbox = styled(NakedCheckbox)`
 	}
 `
 
-
-
 export default Checkbox

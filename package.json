@@ -4,9 +4,13 @@
 	"description": "Reusable React UI components",
 	"main": "dist/index.js",
 	"scripts": {
-		"build": "parcel build ./src/index.ts --detailed-report",
-		"dev": "parcel watch ./src/index.ts",
+		"now-build": "next build && next export -o dist-site",
+		"package:build": "parcel build ./src/index.ts --detailed-report",
+		"package:dev": "parcel watch ./src/index.ts",
 		"prepare": "parcel build ./src/index.ts --detailed-report",
+		"site:build": "next build",
+		"site:dev": "next",
+		"site:start": "next start",
 		"test": "NODE_ENV=test jest --verbose --passWithNoTests"
 	},
 	"keywords": [
@@ -47,16 +51,22 @@
 		"@babel/preset-env": "^7.5.5",
 		"@babel/preset-react": "^7.0.0",
 		"@let/eslint-config": "^0.2.1",
+		"@types/react": "^16.9.35",
 		"babel-core": "^7.0.0-bridge.0",
 		"babel-jest": "^24.8.0",
 		"babel-loader": "^8.0.6",
 		"enzyme": "^3.10.0",
 		"enzyme-adapter-react-16": "^1.14.0",
 		"jest": "^24.8.0",
+		"next": "^9.0.2",
 		"parcel-bundler": "^1.12.3",
+		"parse-prop-types": "^0.3.0",
 		"prop-types": "^15.7.2",
 		"raw-loader": "^3.1.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
 		"react-test-renderer": "^16.8.6",
+		"styled-components": "^4.3.2",
 		"webpack": "^4.38.0",
 		"webpack-cli": "^3.3.6"
 	}
