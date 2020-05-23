@@ -1,10 +1,9 @@
 {
 	"alias": "helios.guide",
-	"builds": [{ "src": "package.json", "use": "@now/static-build" }],
 	"version": 2,
 	"build": {
 		"env": {
-      "FATHOM_HELIOS_GUIDE": "@fathom_helios_guide"
-    }
- 	}
+			"FATHOM_HELIOS_GUIDE": "@fathom_helios_guide"
+		}
+	}
 }
