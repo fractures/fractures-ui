@@ -1,16 +1,7 @@
 import * as wcag from 'wcag-contrast'
 import chroma from 'chroma-js'
-import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-
-const propTypes = {
-	background: PropTypes.string.isRequired,
-	hex: PropTypes.string.isRequired,
-	isVerbose: PropTypes.bool,
-	name: PropTypes.string.isRequired,
-	variant: PropTypes.number.isRequired
-}
 
 const defaultProps = {
 	name: '',
@@ -111,7 +102,6 @@ const Color = styled(NakedColor)`
 	}
 `
 
-Color.propTypes = propTypes
 Color.defaultProps = defaultProps
 
 export default Color
