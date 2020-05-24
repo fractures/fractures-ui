@@ -1,4 +1,3 @@
-import 'parse-prop-types'
 import Button from './components/Button'
 import Checkbox from './components/Checkbox'
 import Color from './components/Color'
@@ -14,19 +13,4 @@ import Small from './components/Small'
 import themes from './config/themes'
 import Toggle from './components/Toggle'
 
-export {
-	Button,
-	Checkbox,
-	Color,
-	Container,
-	Helios,
-	Input,
-	Label,
-	Loading,
-	Progress,
-	Radio,
-	Range,
-	Small,
-	themes,
-	Toggle
-}
+export { Button, Checkbox, Color, Container, Helios, Input, Label, Loading, Progress, Radio, Range, Small, themes, Toggle }
